@@ -1,5 +1,6 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 
 module.exports = {
 	entry: './src/main.js',
@@ -35,6 +36,12 @@ module.exports = {
 						},
 					},
 				],
+			},
+			{
+				enforce: 'pre',
+				test: /\.(js|vue)$/,
+				loader: 'eslint-loader',
+				exclude: /node_modules/
 			}
 		]
 	},
@@ -44,5 +51,5 @@ module.exports = {
 		},
 		extensions: ["*", ".js", ".vue", ".json"]
 	},
-	plugins: [new VueLoaderPlugin()],
+	plugins: [new VueLoaderPlugin(), new VuetifyLoaderPlugin()],
 };
