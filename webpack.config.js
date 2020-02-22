@@ -1,3 +1,4 @@
+require('dotenv').config();
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
@@ -51,5 +52,8 @@ module.exports = {
 		},
 		extensions: ["*", ".js", ".vue", ".json"]
 	},
-	plugins: [new VueLoaderPlugin(), new VuetifyLoaderPlugin()],
+	plugins: [
+		new VueLoaderPlugin(),
+		new VuetifyLoaderPlugin()
+	],
 };
