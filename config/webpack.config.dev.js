@@ -28,12 +28,13 @@ const webpackConfig = merge(commonConfig, {
         new FriendlyErrorsPlugin()
     ],
     devServer: {
+        contentBase: helpers.root('public'),
         compress: true,
         historyApiFallback: true,
         hot: true,
-        open: true,
+        // open: true,
         overlay: true,
-        port: 8000,
+        port: 8080,
         stats: {
             normal: true
         }

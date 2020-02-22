@@ -12,7 +12,7 @@ const webpackConfig = {
         main: helpers.root('src', 'main'),
     },
     resolve: {
-        extensions: [ '.js', '.vue' ],
+        extensions: [ '.js', '.vue', '.json' ],
         alias: {
             'vue$': isDev ? 'vue/dist/vue.runtime.js' : 'vue/dist/vue.runtime.min.js',
             '@': helpers.root('src')
@@ -57,7 +57,7 @@ const webpackConfig = {
     },
     plugins: [
         new VueLoaderPlugin(),
-        new HtmlPlugin({ template: 'index.html', chunksSortMode: 'dependency' })
+        new HtmlPlugin({ template: helpers.root('/index.html'), chunksSortMode: 'dependency' })
     ]
 };
 

@@ -1,5 +1,6 @@
 require('dotenv').config();
 const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 
@@ -54,6 +55,7 @@ module.exports = {
 	},
 	plugins: [
 		new VueLoaderPlugin(),
-		new VuetifyLoaderPlugin()
+		new VuetifyLoaderPlugin(),
+    new CopyPlugin([{ from: './public' }])
 	],
 };
