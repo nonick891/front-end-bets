@@ -4,20 +4,16 @@
     clipped-left
   >
     <v-toolbar-title>bet</v-toolbar-title>
-    
     <v-spacer />
     <template v-slot:extension>
-      <v-breadcrumbs :items="breadcrumbs" large>
-        <template v-slot:item="{ item }">
-          <v-breadcrumbs-item
-            :href="item.href"
-            :disabled="item.disabled"
-          >
-            <v-icon v-if="item.text === ''">mdi-chevron-left</v-icon>
-            <span v-else>{{ item.text }}</span>
-          </v-breadcrumbs-item>
-        </template>
-      </v-breadcrumbs>
+      <v-btn
+        tile
+        depressed
+        class="px-0 mr-3 breadcrumb-back"
+      >
+        <v-icon>mdi-chevron-left</v-icon>
+      </v-btn>
+      <v-breadcrumbs class="px-0" :items="breadcrumbs" large></v-breadcrumbs>
     </template>
   </v-app-bar>
 </template>
@@ -26,9 +22,6 @@ export default {
   name: 'BasicBar',
   data: () => ({
     breadcrumbs: [
-      {
-        text: ''
-      },
       {
         text: 'Country',
         disabled: false,
