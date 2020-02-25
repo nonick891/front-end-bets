@@ -1,48 +1,17 @@
 <template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
-  <v-content>
+  <v-content
+  >
     <v-container
-      class="fill-height"
+      class="fill-height pa-0"
       fluid
     >
-      <v-row
-        align="center"
-        justify="center"
-      >
-        <v-col class="shrink">
-          <v-tooltip right>
-            <template v-slot:activator="{ on }">
-              <v-btn
-                icon
-                large
-                target="_blank"
-                v-on="on"
-              >
-                <v-icon large>mdi-code-tags</v-icon>
-              </v-btn>
-            </template>
-            <span>Source</span>
-          </v-tooltip>
-          <v-tooltip right>
-            <template v-slot:activator="{ on }">
-              <v-btn
-                icon
-                large
-                href="https://codepen.io/johnjleider/pen/bXNzZL"
-                target="_blank"
-                v-on="on"
-              >
-                <v-icon large>mdi-codepen</v-icon>
-              </v-btn>
-            </template>
-            <span>Codepen</span>
-          </v-tooltip>
-        </v-col>
-      </v-row>
+      <events-detail-page />
     </v-container>
   </v-content>
 </template>
 <script>
+import EventsDetailPage from '../../pages/events/detail.vue'
 export default {
-  data: () => ({})
+  components: { EventsDetailPage }
 }
 </script>

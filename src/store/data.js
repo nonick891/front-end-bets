@@ -1,7 +1,7 @@
 import fixture from './data/fixture.json'
 
 const state = {
-	fixture: fixture
+	fixture: fixture.fixture
 };
 
 const getters = {};
