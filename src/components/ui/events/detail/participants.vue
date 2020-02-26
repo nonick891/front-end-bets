@@ -4,18 +4,25 @@
       class="col-12 pa-0"
     >
       <v-card
-        style="background-image: radial-gradient(circle 188px at top,#397300,#264d00); width: 100%"
-        class="pa-2"
+        class="participants pa-2"
         outlined
         tile
       >
         <v-row>
           <v-col
-            v-for="(participant, index) in participants"
-            :key="index"
-            class="col-6"
+            class="col-5 pr-2 text-left"
           >
-            {{ participant.name.value }}
+            {{ participants[0].name.value }}
+          </v-col>
+          <v-col
+            class="col-2 px-0 text-center"
+          >
+            <span class="font-weight-bold">2</span> | <span class="font-weight-bold">0</span>
+          </v-col>
+          <v-col
+            class="col-5 pl-2 text-right"
+          >
+            {{ participants[1].name.value }}
           </v-col>
         </v-row>
       </v-card>
@@ -31,3 +38,9 @@ export default {
   }
 }
 </script>
+<style>
+  .participants {
+    width: 100%;
+    background-image: radial-gradient(circle 188px at top, #397300, #264d00);
+  }
+</style>

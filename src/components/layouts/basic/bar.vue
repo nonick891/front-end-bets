@@ -9,7 +9,7 @@
       <v-btn
         tile
         depressed
-        class="px-0 mr-3 breadcrumb-back"
+        class="px-0 mr-3 pr-3 breadcrumb-back"
       >
         <v-icon>mdi-chevron-left</v-icon>
       </v-btn>
@@ -34,3 +34,10 @@ export default {
   })
 }
 </script>
+<style>
+  .breadcrumb-back {
+    min-width: 0!important;
+    height: 25px!important;
+    border-right: 1px solid #fff
+  }
+</style>
