@@ -3,8 +3,41 @@
     app
     clipped-left
   >
-    <v-toolbar-title>bet</v-toolbar-title>
-    <v-spacer />
+    <v-bottom-navigation
+      shift
+    >
+      <v-btn
+        value="recent"
+        @click.stop="toggleMenu"
+      >
+        <span>Menu</span>
+        <v-icon>mdi-menu</v-icon>
+      </v-btn>
+      <v-btn
+        tile
+      >
+        <span>Live</span>
+        <v-icon>mdi-menu</v-icon>
+      </v-btn>
+      <v-btn
+        tile
+      >
+        <span>Betslip</span>
+        <v-icon>mdi-clipboard-list-outline</v-icon>
+      </v-btn>
+      <v-btn
+        tile
+      >
+        <span>My bets</span>
+        <v-icon>mdi-menu</v-icon>
+      </v-btn>
+      <v-btn
+        tile
+      >
+        <span>Slots</span>
+        <v-icon>mdi-menu</v-icon>
+      </v-btn>
+    </v-bottom-navigation>
     <template v-slot:extension>
       <v-btn
         tile
@@ -18,6 +51,7 @@
   </v-app-bar>
 </template>
 <script>
+import { mapMutations } from 'vuex'
 export default {
   name: 'BasicBar',
   data: () => ({
@@ -31,7 +65,10 @@ export default {
         disabled: false,
       }
     ]
-  })
+  }),
+  methods: {
+    ...mapMutations({ toggleMenu: 'interface/TOGGLE_MENU' })
+  }
 }
 </script>
 <style>
@@ -39,5 +76,8 @@ export default {
     min-width: 0!important;
     height: 25px!important;
     border-right: 1px solid #fff
+  }
+  .v-app-bar .v-toolbar__content {
+    padding: 0;
   }
 </style>

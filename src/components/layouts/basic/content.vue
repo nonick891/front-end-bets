@@ -3,7 +3,6 @@
   >
     <v-container
       class="fill-height pa-0"
-      fluid
     >
       <events-detail-page />
     </v-container>

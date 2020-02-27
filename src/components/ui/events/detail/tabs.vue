@@ -3,31 +3,21 @@
     <v-col
       class="col-12 pa-0"
     >
-      <v-tabs
-        v-model="tab"
-        grow
-        dark
-      >
-        <v-tab
-          v-for="item in items"
-          :key="item"
+      <v-card>
+        <v-tabs
+          v-model="tab"
+          grow
+          dark
+          show-arrows
         >
-          {{ item }}
-        </v-tab>
-      </v-tabs>
-      <v-tabs-items v-model="tab">
-        <v-tab-item
-          v-for="item in items"
-          :key="item"
-        >
-          <v-card
-            color="basil"
-            flat
+          <v-tab
+            v-for="item in items"
+            :key="item"
           >
-            <v-card-text>{{ text }}</v-card-text>
-          </v-card>
-        </v-tab-item>
-      </v-tabs-items>
+            {{ item }}
+          </v-tab>
+        </v-tabs>
+      </v-card>
     </v-col>
   </v-row>
 </template>
@@ -36,7 +26,7 @@ export default {
   name: 'main-tabs',
   data: () => ({
     tab: 'test',
-    items: ['All', 'Main', 'Handicaps'],
+    items: ['All', 'Main', 'Handicaps', 'Other', 'More tabs'],
     text: 'here will be new tabs'
   })
 }
