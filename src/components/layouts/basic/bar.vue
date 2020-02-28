@@ -18,7 +18,7 @@
         tile
       >
         <span>Live</span>
-        <v-icon>mdi-menu</v-icon>
+        <v-icon>mdi-radar</v-icon>
       </v-btn>
       <v-btn
         tile
@@ -30,13 +30,13 @@
         tile
       >
         <span>My bets</span>
-        <v-icon>mdi-menu</v-icon>
+        <v-icon>mdi-account-details-outline</v-icon>
       </v-btn>
       <v-btn
         tile
       >
         <span>Slots</span>
-        <v-icon>mdi-menu</v-icon>
+        <v-icon>mdi-dots-vertical</v-icon>
       </v-btn>
     </v-bottom-navigation>
     <template v-slot:extension>

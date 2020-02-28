@@ -8,7 +8,10 @@
         outlined
         tile
       >
-        <v-row>
+        <v-row
+          class="py-12"
+          no-gutters
+        >
           <v-col
             class="col-5 pr-2 text-left"
           >
