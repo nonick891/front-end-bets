@@ -5,6 +5,7 @@
   >
     <v-bottom-navigation
       shift
+      grow
     >
       <v-btn
         value="recent"
@@ -51,21 +52,12 @@
   </v-app-bar>
 </template>
 <script>
-import { mapMutations } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 export default {
   name: 'BasicBar',
-  data: () => ({
-    breadcrumbs: [
-      {
-        text: 'Country',
-        disabled: false,
-      },
-      {
-        text: 'Premier league',
-        disabled: false,
-      }
-    ]
-  }),
+  computed: {
+    ...mapState({ breadcrumbs: state => state.interface.breadcrumbs })
+  },
   methods: {
     ...mapMutations({ toggleMenu: 'interface/TOGGLE_MENU' })
   }

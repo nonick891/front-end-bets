@@ -12,17 +12,17 @@
           <v-col
             class="col-5 pr-2 text-left"
           >
-            {{ participants[0].name.value }}
+            {{ participants[0].name.short }}
           </v-col>
           <v-col
             class="col-2 px-0 text-center"
           >
-            <span class="font-weight-bold">2</span> | <span class="font-weight-bold">0</span>
+            <span class="font-weight-bold">0</span> | <span class="font-weight-bold">0</span>
           </v-col>
           <v-col
             class="col-5 pl-2 text-right"
           >
-            {{ participants[1].name.value }}
+            {{ participants[1].name.short }}
           </v-col>
         </v-row>
       </v-card>
