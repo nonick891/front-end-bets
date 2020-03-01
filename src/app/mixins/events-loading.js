@@ -1,4 +1,5 @@
-import {mapState, mapMutations} from 'vuex'
+import { mapState, mapMutations } from 'vuex'
+
 export default {
   computed: {
     ...mapState({
@@ -8,6 +9,7 @@ export default {
   },
   methods: {
     initEvents() {
+      // sortByGroups(this.fixture.games);
       this.setParticipants(this.fixture.participants);
       this.setBreadcrumbs(this.getBreadcrumbsObject());
     },
