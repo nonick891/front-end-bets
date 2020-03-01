@@ -1,6 +1,5 @@
 <template>
   <v-bottom-navigation
-    shift
     grow
   >
     <v-btn
@@ -8,31 +7,31 @@
       style="height:100%"
       @click.stop="toggleMenu"
     >
-      <v-icon v-html="'$vuetify.icons.homeRun'"></v-icon>
+      <v-icon>$vuetify.icons.homeRun</v-icon>
     </v-btn>
     <v-btn
       tile
       style="height:100%"
     >
-      <v-icon v-html="'$vuetify.icons.live'"></v-icon>
+      <v-icon>$vuetify.icons.live</v-icon>
     </v-btn>
     <v-btn
       tile
       style="height:100%"
     >
-      <v-icon v-html="'$vuetify.icons.toDo'"></v-icon>
+      <v-icon>$vuetify.icons.ball</v-icon>
     </v-btn>
     <v-btn
       tile
       style="height:100%"
     >
-      <v-icon v-html="'$vuetify.icons.newsfeed'"></v-icon>
+      <v-icon>$vuetify.icons.newsfeed</v-icon>
     </v-btn>
     <v-btn
       tile
       style="height:100%"
     >
-      <v-icon v-html="'$vuetify.icons.wallet'"></v-icon>
+      <v-icon>$vuetify.icons.wallet</v-icon>
     </v-btn>
   </v-bottom-navigation>
 </template>

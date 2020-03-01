@@ -18,10 +18,6 @@ export const sortByGroups = (games) => {
 const setGamesStructure = (orderGames, game, group) => {
   let chain = '';
   for (let line in group) {
-    if (group[line] === 'Match Result') {
-      console.log(group.name);
-      console.log(game);
-    }
     chain += group[line] + '.';
   }
   chain = trimEnd(chain, '.');
