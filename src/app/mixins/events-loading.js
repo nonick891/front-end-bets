@@ -1,5 +1,5 @@
 import { mapState, mapMutations } from 'vuex'
-
+import { sortByGroups } from '../groups/filters'
 export default {
   computed: {
     ...mapState({
@@ -9,7 +9,7 @@ export default {
   },
   methods: {
     initEvents() {
-      // sortByGroups(this.fixture.games);
+      sortByGroups(this.fixture.games);
       this.setParticipants(this.fixture.participants);
       this.setBreadcrumbs(this.getBreadcrumbsObject());
     },

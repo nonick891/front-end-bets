@@ -1,10 +1,13 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify/lib'
-
+import iconsComponents from '../components/ui/icons/index.js'
 Vue.use(Vuetify);
 
 export default new Vuetify({
- icons: { iconfont: 'mdi' },
+ icons: {
+   iconfont: 'mdi',
+   values: iconsComponents
+ },
  theme: {
    dark: true,
    themes: {

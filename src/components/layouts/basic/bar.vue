@@ -3,42 +3,7 @@
     app
     clipped-left
   >
-    <v-bottom-navigation
-      shift
-      grow
-    >
-      <v-btn
-        value="recent"
-        @click.stop="toggleMenu"
-      >
-        <span>Menu</span>
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
-      <v-btn
-        tile
-      >
-        <span>Live</span>
-        <v-icon>mdi-radar</v-icon>
-      </v-btn>
-      <v-btn
-        tile
-      >
-        <span>Betslip</span>
-        <v-icon>mdi-clipboard-list-outline</v-icon>
-      </v-btn>
-      <v-btn
-        tile
-      >
-        <span>My bets</span>
-        <v-icon>mdi-account-details-outline</v-icon>
-      </v-btn>
-      <v-btn
-        tile
-      >
-        <span>Slots</span>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
-    </v-bottom-navigation>
+    <main-menu />
     <template v-slot:extension>
       <v-btn
         tile
@@ -52,14 +17,13 @@
   </v-app-bar>
 </template>
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapState } from 'vuex'
+import mainMenu from '../../ui/bar/menu.vue'
 export default {
   name: 'BasicBar',
+  components: { mainMenu },
   computed: {
     ...mapState({ breadcrumbs: state => state.interface.breadcrumbs })
-  },
-  methods: {
-    ...mapMutations({ toggleMenu: 'interface/TOGGLE_MENU' })
   }
 }
 </script>
