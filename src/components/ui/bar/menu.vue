@@ -1,5 +1,6 @@
 <template>
   <v-bottom-navigation
+    tile
     grow
   >
     <v-btn
