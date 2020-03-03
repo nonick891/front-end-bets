@@ -2,6 +2,7 @@
   <v-content>
     <v-container
       fluid
+      class="pa-0"
     >
       <slider />
       <custom-breadcrumbs />

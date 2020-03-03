@@ -2,6 +2,7 @@
   <v-bottom-navigation
     tile
     grow
+    background-color="dark"
   >
     <v-btn
       tile
@@ -45,3 +46,8 @@ export default {
   }
 }
 </script>
+<style>
+  .v-toolbar__content {
+    border-bottom: 2px solid #4C4C4C;
+  }
+</style>
