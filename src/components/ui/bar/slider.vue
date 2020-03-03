@@ -1,26 +1,38 @@
 <template>
-  <v-row no-gutters>
+  <v-row
+    no-gutters
+    class="pt-1"
+  >
     <v-col>
       <swiper :options="swiperOption">
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
-        <swiper-slide>Slide 4</swiper-slide>
-        <swiper-slide>Slide 5</swiper-slide>
-        <swiper-slide>Slide 6</swiper-slide>
-        <swiper-slide>Slide 7</swiper-slide>
-        <swiper-slide>Slide 8</swiper-slide>
-        <swiper-slide>Slide 9</swiper-slide>
-        <swiper-slide>Slide 10</swiper-slide>
+        <swiper-slide
+          :key="key"
+          v-for="(slide, key) in slides"
+        >
+          <teams-card
+            :opponents="slide"
+          />
+        </swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
     </v-col>
   </v-row>
 </template>
 <script>
+import teamsCard from '../../ui/slider/bar/teams-card.vue'
 export default {
+  components: { teamsCard },
   data() {
     return {
+      slides: [
+        [{name: 'Team 7', goals: 0}, {name: 'Team 7', goals: 1, time: '42:20'}],
+        [{name: 'Team 7', goals: 0}, {name: 'Team 7', goals: 1, time: '42:20'}],
+        [{name: 'Team 7', goals: 0}, {name: 'Team 7', goals: 1, time: '42:20'}],
+        [{name: 'Team 7', goals: 0}, {name: 'Team 7', goals: 1, time: '42:20'}],
+        [{name: 'Team 7', goals: 0}, {name: 'Team 7', goals: 1, time: '42:20'}],
+        [{name: 'Team 7', goals: 0}, {name: 'Team 7', goals: 1, time: '42:20'}],
+        [{name: 'Team 7', goals: 0}, {name: 'Team 7', goals: 1, time: '42:20'}]
+      ],
       swiperOption: {
         slidesPerView: 3,
         spaceBetween: 30,
