@@ -2,10 +2,11 @@
   <v-card
     outlined
     color="dark"
+    width="120"
   >
     <v-row
       no-gutters
-      class="pa-1"
+      class="pa-1 pl-2 pb-0"
       style="border: 1px solid #4C4C4C; border-radius: 10px;"
     >
       <team-line

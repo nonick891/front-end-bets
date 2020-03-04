@@ -35,7 +35,7 @@ export default {
       ],
       swiperOption: {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 14,
         freeMode: true,
         pagination: {
           clickable: true
@@ -45,3 +45,8 @@ export default {
   }
 }
 </script>
+<style>
+  .swiper-slide {
+    width: 120px!important;
+  }
+</style>
