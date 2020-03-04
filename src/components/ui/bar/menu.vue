@@ -31,9 +31,18 @@
     </v-btn>
     <v-btn
       tile
+      class="white-text"
       style="height:100%"
     >
-      <v-icon>$vuetify.icons.wallet</v-icon>
+      <v-row no-gutters>
+        <v-col cols="12">
+          MIKEL
+        </v-col>
+        <v-col offset="3" cols="3">
+          <v-icon size="13">$vuetify.icons.wallet</v-icon>
+        </v-col>
+        <v-col offset="1" cols="3">23</v-col>
+      </v-row>
     </v-btn>
   </v-bottom-navigation>
 </template>
@@ -47,6 +56,9 @@ export default {
 }
 </script>
 <style>
+  .white-text {
+    color: #fff;
+  }
   .v-toolbar__content {
     border-bottom: 2px solid #4C4C4C;
   }

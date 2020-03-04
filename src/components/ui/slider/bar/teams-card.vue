@@ -2,7 +2,6 @@
   <v-card
     outlined
     color="dark"
-    width="120"
   >
     <v-row
       no-gutters

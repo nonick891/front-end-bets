@@ -45,8 +45,3 @@ export default {
   }
 }
 </script>
-<style>
-  .swiper-slide {
-    width: 120px!important;
-  }
-</style>
