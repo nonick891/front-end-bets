@@ -6,8 +6,7 @@
     justify="center"
   >
     <v-col
-      cols="1"
-      class="d-flex flex-row-reverse"
+      class="flex-grow-0 flex-shrink-1"
     >
       <v-btn
         tile
@@ -22,10 +21,10 @@
         >$vuetify.icons.chevronLeft</v-icon>
       </v-btn>
     </v-col>
-    <v-col cols="8">
+    <v-col class="flex-grow-1">
       <v-breadcrumbs
         large
-        class="pa-0"
+        class="pa-0 custom-breadcrumbs"
         :divider="'|'"
         :items="breadcrumbs"
       ></v-breadcrumbs>
@@ -36,22 +35,22 @@
         class="d-flex flex-row-reverse"
       >
         <v-btn
-          class="pa-0"
           x-small
-          color="dark"
-        >
-          <v-icon
-            size="16px"
-          >$vuetify.icons.calendar</v-icon>
-        </v-btn>
-        <v-btn
           class="pa-0"
-          x-small
           color="dark"
         >
           <v-icon
             size="16px"
           >$vuetify.icons.chart</v-icon>
+        </v-btn>
+        <v-btn
+          x-small
+          class="pa-0"
+          color="dark"
+        >
+          <v-icon
+            size="16px"
+          >$vuetify.icons.calendar</v-icon>
         </v-btn>
       </v-card>
     </v-col>
@@ -75,7 +74,7 @@ export default {
     text-transform: uppercase;
     color: #999999;
   }
-  .v-breadcrumbs__divider {
+  .v-breadcrumbs.custom-breadcrumbs li:nth-child(even) {
     padding: 0 5px;
   }
 </style>

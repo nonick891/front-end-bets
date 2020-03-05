@@ -4,28 +4,63 @@
       class="col-12 pa-0"
     >
       <v-card
-        class="participants pa-2"
-        outlined
         tile
+        outlined
+        class="participants"
       >
         <v-row
-          class="py-12"
           no-gutters
+          align="center"
         >
           <v-col
-            class="col-5 pr-2 text-left"
+            class="col-5 text-center font-weight-bold team-title"
           >
             {{ participants[0].name.short }}
           </v-col>
           <v-col
             class="col-2 px-0 text-center"
           >
-            <span class="font-weight-bold">0</span> | <span class="font-weight-bold">0</span>
+            <span class="font-weight-bold score">1</span>
+            <span class="divider"></span>
+            <span class="font-weight-bold score">3</span>
           </v-col>
           <v-col
-            class="col-5 pl-2 text-right"
+            class="col-5 text-center font-weight-bold team-title"
           >
             {{ participants[1].name.short }}
+          </v-col>
+        </v-row>
+        <v-row
+          no-gutters
+          class="mt-2"
+        >
+          <v-col
+            class="text-center time"
+          >
+            43:30
+          </v-col>
+        </v-row>
+        <v-row
+          class="mt-4"
+          no-gutters
+        >
+          <v-col class="flex-grow-1">
+            <span>
+              <v-icon size="14">$vuetify.icons.flag</v-icon>
+            </span>
+            <span class="details">
+              7th corner for Team 1
+            </span>
+          </v-col>
+          <v-col class="flex-shrink-1 flex-grow-0">
+            <v-btn
+              tile
+              x-small
+              depressed
+              color="transparent"
+            >
+              <v-icon size="10">$vuetify.icons.chevronBottom</v-icon>
+            </v-btn>
           </v-col>
         </v-row>
       </v-card>
@@ -42,8 +77,26 @@ export default {
 }
 </script>
 <style>
+  .time {
+    font-size: 11px;
+  }
+  .team-title {
+    font-size: 16px;
+  }
+  .score {
+    font-size: 22px;
+  }
+  .divider {
+    margin: 0 9px;
+    border: 0.5px solid #999999;
+  }
   .participants {
     width: 100%;
-    background-image: radial-gradient(circle 188px at top, #397300, #264d00);
+    border: none!important;
+    background: linear-gradient(180deg, #009918 -22.02%, rgba(7, 150, 39, 0) 122.02%);
+  }
+  .details {
+    font-size: 12px;
+    line-height: 14px;
   }
 </style>
