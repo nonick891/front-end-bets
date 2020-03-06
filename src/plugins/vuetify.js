@@ -20,7 +20,7 @@ export default new Vuetify({
        warning: '#FB8C00',
        error: '#FF5252',
        dark: '#121212',
-       border: '#F8D12E'
+       border: '#F3C515'
      },
      light: {
        primary: '#1976D2',

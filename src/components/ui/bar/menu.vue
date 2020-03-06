@@ -2,6 +2,8 @@
   <v-bottom-navigation
     tile
     grow
+    color="border"
+    class="colored"
     background-color="dark"
   >
     <v-btn
@@ -31,7 +33,6 @@
     </v-btn>
     <v-btn
       tile
-      class="white-text"
       style="height:100%"
     >
       <v-row no-gutters>
@@ -59,7 +60,10 @@ export default {
   .white-text {
     color: #fff;
   }
+  .theme--dark.v-bottom-navigation.colored .v-btn:not(.v-btn--active) {
+    color: #fff!important;
+  }
   .v-toolbar__content {
-    border-bottom: 2px solid #4C4C4C;
+    border-bottom: 1.1px solid #A58625;
   }
 </style>
