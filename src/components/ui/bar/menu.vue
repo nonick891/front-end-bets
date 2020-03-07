@@ -57,9 +57,6 @@ export default {
 }
 </script>
 <style>
-  .white-text {
-    color: #fff;
-  }
   .theme--dark.v-bottom-navigation.colored .v-btn:not(.v-btn--active) {
     color: #fff!important;
   }

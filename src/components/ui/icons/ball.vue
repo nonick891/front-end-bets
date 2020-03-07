@@ -5,17 +5,11 @@
 </template>
 <script>
 export default {
-  name: 'iconBall',
-  props: {
-    fill: {
-      type: String,
-      default: '#4C4C4C'
-    }
-  },
-  mounted() {
-    for(let element of this.$el.children) {
-      element.setAttribute('fill', this.fill);
-    }
-  }
+  name: 'iconBall'
 }
 </script>
+<style>
+  svg * {
+    fill: currentColor;
+  }
+</style>

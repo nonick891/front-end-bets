@@ -3,13 +3,8 @@
     <path d="M2.47053 10.0051L11.1616 1.314C11.4621 1.0135 11.4621 0.526304 11.1616 0.225799C10.8611 -0.0746154 10.3739 -0.0746154 10.0734 0.225799L0.838226 9.46101C0.537811 9.76151 0.537811 10.2487 0.838226 10.5492L10.0734 19.7844C10.3792 20.0797 10.8664 20.0712 11.1616 19.7655C11.4496 19.4672 11.4496 18.9944 11.1616 18.6962L2.47053 10.0051Z" fill="white"/>
   </svg>
 </template>
-<script>
-export default {
-  props: ['fill'],
-  mounted() {
-    for (let element of this.$el.children) {
-      element.setAttribute('fill', this.fill);
-    }
+<style>
+  svg * {
+    fill: currentColor;
   }
-}
-</script>
+</style>

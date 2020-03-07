@@ -9,12 +9,8 @@
     <path d="m432.734375 208.867188h-224.933594c-8.285156 0-15 6.714843-15 15 0 8.285156 6.714844 15 15 15h224.933594c8.28125 0 15-6.714844 15-15 0-8.285157-6.71875-15-15-15zm0 0"/>
   </svg>
 </template>
-<script>
-export default {
-  props: ['fill'],
-  mounted() {
-    for(let child of this.$el.children)
-      child.setAttribute('fill', this.fill);
+<style>
+  svg * {
+    fill: currentColor;
   }
-}
-</script>
+</style>

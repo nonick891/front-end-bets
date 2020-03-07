@@ -16,11 +16,8 @@
     </g>
   </svg>
 </template>
-<script>
-export default {
-  props: ['fill'],
-  mounted() {
-    this.$el.firstChild.setAttribute('fill', this.fill);
+<style>
+  svg * {
+    fill: currentColor;
   }
-}
-</script>
+</style>

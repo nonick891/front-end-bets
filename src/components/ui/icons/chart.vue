@@ -12,13 +12,8 @@
     </defs>
   </svg>
 </template>
-<script>
-export default {
-  props: ['fill'],
-  mounted() {
-    for(let element of this.$el.children) {
-      element.setAttribute('fill', this.fill);
-    }
+<style>
+  svg * {
+    fill: currentColor;
   }
-}
-</script>
+</style>
