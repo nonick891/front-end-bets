@@ -35,6 +35,7 @@
         class="d-flex flex-row-reverse"
       >
         <v-btn
+          tile
           x-small
           class="pa-0"
           color="dark"
@@ -44,6 +45,7 @@
           >$vuetify.icons.chart</v-icon>
         </v-btn>
         <v-btn
+          tile
           x-small
           class="pa-0"
           color="dark"

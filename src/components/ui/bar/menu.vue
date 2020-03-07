@@ -8,32 +8,32 @@
   >
     <v-btn
       tile
-      style="height:100%"
+      height="100%"
       @click.stop="toggleMenu"
     >
       <v-icon>$vuetify.icons.homeRun</v-icon>
     </v-btn>
     <v-btn
       tile
-      style="height:100%"
+      height="100%"
     >
       <v-icon>$vuetify.icons.live</v-icon>
     </v-btn>
     <v-btn
       tile
-      style="height:100%"
+      height="100%"
     >
       <v-icon>$vuetify.icons.ball</v-icon>
     </v-btn>
     <v-btn
       tile
-      style="height:100%"
+      height="100%"
     >
       <v-icon>$vuetify.icons.newsfeed</v-icon>
     </v-btn>
     <v-btn
       tile
-      style="height:100%"
+      height="100%"
     >
       <v-row no-gutters>
         <v-col style="font-size: 13px" cols="12">

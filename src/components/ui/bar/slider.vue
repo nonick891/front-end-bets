@@ -4,7 +4,10 @@
     class="pt-1"
   >
     <v-col>
-      <swiper :options="swiperOption">
+      <swiper
+        ref="swiperComponent"
+        :options="swiperOption"
+      >
         <swiper-slide
           :key="key"
           v-for="(slide, key) in slides"
@@ -13,7 +16,6 @@
             :opponents="slide"
           />
         </swiper-slide>
-        <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
     </v-col>
   </v-row>
@@ -42,6 +44,33 @@ export default {
         }
       }
     }
+  },
+  computed: {
+    xs() {
+      return this.$vuetify.breakpoint.xs;
+    }
+  },
+  watch: {
+    xs: {
+      handler: 'setSlides',
+      immediate: true
+    }
+  },
+  methods: {
+    setSlides(val) {
+      if (!this.$refs.swiperComponent) return false;
+      let swiperObject = this.$refs.swiperComponent.swiper;
+      swiperObject.params.slidesPerView = this.getSlidesNumber(val);
+      swiperObject.update();
+    },
+    getSlidesNumber(val) {
+      return val ? 3 : 4
+    }
   }
 }
 </script>
+<style>
+  .swiper-slide {
+    transition: width 0.1s, margin 0.1s;
+  }
+</style>
