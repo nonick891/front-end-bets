@@ -1,5 +1,7 @@
 <template>
-  <v-content>
+  <v-content
+    class="pb-0"
+  >
     <v-container
       fluid
       class="pa-0"

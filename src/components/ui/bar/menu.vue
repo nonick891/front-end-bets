@@ -9,6 +9,7 @@
     <v-btn
       tile
       height="100%"
+      class="pa-0"
       @click.stop="toggleMenu"
     >
       <v-icon>$vuetify.icons.homeRun</v-icon>
@@ -34,15 +35,22 @@
     <v-btn
       tile
       height="100%"
+      class="pa-0"
     >
       <v-row no-gutters>
         <v-col style="font-size: 13px" cols="12">
           MIKEL
         </v-col>
-        <v-col offset="3" cols="3">
+        <v-col
+          cols="6"
+          class="text-right"
+        >
           <v-icon size="13">$vuetify.icons.wallet</v-icon>
         </v-col>
-        <v-col cols="3">23</v-col>
+        <v-col
+          cols="6"
+          class="text-left"
+        >23</v-col>
       </v-row>
     </v-btn>
   </v-bottom-navigation>
