@@ -2,9 +2,7 @@
   <v-btn
     tile
     depressed
-    width="20"
     class="pa-0"
-    min-width="40"
     color="transparent"
   >
     <v-icon
@@ -15,6 +13,8 @@
 </template>
 <script>
 export default {
-  props: ['color']
+  props: {
+    color: String
+  }
 }
 </script>

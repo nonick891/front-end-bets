@@ -4,17 +4,20 @@
   >
     <v-container>
       <dialog-header />
+      <dialog-item class="no-border-top" />
       <dialog-item />
-      <dialog-item class="border-top" />
+      <dialog-item />
+      <dialog-footer />
     </v-container>
   </v-content>
 </template>
 <script>
 import DialogHeader from '../../ui/dialog/header.vue'
 import DialogItem from '../../ui/dialog/item.vue'
+import DialogFooter from '../../ui/dialog/footer.vue'
 export default {
   name: 'BasicDialog',
-  components: { DialogHeader, DialogItem }
+  components: { DialogHeader, DialogItem, DialogFooter }
 }
 </script>
 <style>
