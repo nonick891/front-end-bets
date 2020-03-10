@@ -5,6 +5,7 @@
     class="dialog-item"
   >
     <v-col
+      v-if="decision"
       cols="10"
       class="pb-3 pl-1"
     >
@@ -12,7 +13,9 @@
         no-gutters
         class="mt-2 mb-1"
       >
-        <v-col class="bet-game-name">
+        <v-col
+          class="bet-game-name"
+        >
           {{ decision.name }}
         </v-col>
       </v-row>
@@ -21,7 +24,10 @@
         :key="key"
         v-for="(item, key) in decision.items"
       >
-        <v-col class="bet-decision">
+        <v-col
+          v-if="item"
+          class="bet-decision"
+        >
           {{ item.name }}
         </v-col>
       </v-row>
@@ -33,6 +39,7 @@
         fill-height
       >
         <v-row
+          v-if="decision"
           no-gutters
           align="stretch"
           justify="center"

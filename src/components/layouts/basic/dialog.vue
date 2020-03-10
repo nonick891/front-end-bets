@@ -41,8 +41,9 @@ export default {
   methods: {
     calculateResults() {
       for(let decision of this.decisions) {
-        this.count += decision.items.length;
-        this.total += decision.items.reduce((total, item) => item.value + total, 0);
+        let items = decision.items;
+        this.count += items.length;
+        this.total += items.reduce((total, item) => item.value + total, 0);
       }
     }
   }

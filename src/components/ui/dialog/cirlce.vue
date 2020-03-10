@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: 'circle',
+  name: 'TotalCircle',
   props: ['number']
 }
 </script>
