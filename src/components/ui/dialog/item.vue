@@ -13,65 +13,51 @@
         class="mt-2 mb-1"
       >
         <v-col class="bet-game-name">
-          Game team 1
+          {{ decision.name }}
         </v-col>
       </v-row>
-      <v-row no-gutters>
+      <v-row
+        no-gutters
+        :key="key"
+        v-for="(item, key) in decision.items"
+      >
         <v-col class="bet-decision">
-          Bet decision 1
-        </v-col>
-      </v-row>
-      <v-row no-gutters>
-        <v-col class="bet-decision">
-          Bet decision 2
+          {{ item.name }}
         </v-col>
       </v-row>
     </v-col>
     <v-col
       cols="2"
     >
-      
-      <!--<v-row
-        no-gutters
-        justify="center"
-      >
-        <v-row
-          no-gutters
-          class="mt-2 mb-1"
-        >
-          <v-col class="bet-game-name">test</v-col>
-        </v-row>
-        <v-row
-          no-gutters
-        >
-          <v-col class="bet-decision">2.75</v-col>
-        </v-row>
-        <v-row
-          no-gutters
-        >
-          <v-col class="bet-decision">1.65</v-col>
-        </v-row>
-      </v-row>-->
-      
       <v-container
         fill-height
-        style="background-color: #7D2227"
       >
         <v-row
           no-gutters
+          align="stretch"
           justify="center"
+          class="text-right mt-4"
         >
-          <close-button />
+          <v-col
+            :key="key"
+            v-for="(item, key) in decision.items"
+            class="bet-decision"
+          >{{ item.value }}</v-col>
         </v-row>
       </v-container>
+  
+      <!--<remove-bet />-->
     </v-col>
   </v-row>
 </template>
 <script>
-import CloseButton from '../buttons/close.vue'
+//import RemoveBet from './remove-bet.vue'
 export default {
   name: 'DialogItem',
-  components: { CloseButton }
+//  components: { RemoveBet },
+  props: {
+    decision: Object
+  }
 }
 </script>
 <style>

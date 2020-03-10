@@ -7,13 +7,13 @@
     <v-col
       cols="1"
     >
-      <circle-number :number="3" />
+      <circle-number :number="count" />
     </v-col>
     <v-col
       class="flex-grow-1"
     >
       <span class="dialog-total">
-        Total: 65
+        Total: {{ total }}
       </span>
     </v-col>
     <v-col
@@ -32,6 +32,10 @@ import circleNumber from './cirlce.vue'
 import closeButton from '../buttons/close.vue'
 export default {
   name: 'DialogHeader',
+  props: {
+    count: Number,
+    total: Number
+  },
   components: { circleNumber, closeButton }
 }
 </script>

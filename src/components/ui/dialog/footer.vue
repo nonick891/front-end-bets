@@ -2,7 +2,7 @@
   <v-row
     no-gutters
     align="center"
-    class="dialog-footer"
+    class="dialog-footer py-1"
   >
     <v-col
       class="flex-shrink-1 flex-grow-0 pl-1"
@@ -15,7 +15,7 @@
     <v-col
       class="flex-shrink-0 flex-grow-1 text-center"
     >
-      <span class="dialog-total-money">0.0</span>
+      <span class="dialog-total-money">{{ total }}</span>
     </v-col>
     <v-col
       cols="6"
@@ -33,7 +33,10 @@
 </template>
 <script>
 export default {
-  name: 'DialogFooter'
+  name: 'DialogFooter',
+  props: {
+    total: Number
+  }
 }
 </script>
 <style>
