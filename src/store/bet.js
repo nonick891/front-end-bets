@@ -13,7 +13,7 @@ const state = {
         },
         {
           name: 'Bet decision 3',
-          value: 0.35
+          value: 1.05
         },
       ]
     },

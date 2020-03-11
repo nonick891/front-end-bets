@@ -7,14 +7,14 @@
         :count="count"
         :total="total"
       />
-      <dialog-item class="no-border-top" />
       <dialog-item
         :key="key"
         v-for="(decision, key) in decisions"
         :decision="decision"
+        :class="key === 0 ? 'no-border-top' : ''"
       />
       <dialog-footer
-        :total="total"
+        v-model="bet"
       />
     </v-container>
   </v-content>
@@ -29,22 +29,29 @@ export default {
   name: 'BasicDialog',
   components: { DialogHeader, DialogItem, DialogFooter },
   data: () => ({
+    bet: 0,
     total: 0,
     count: 0
   }),
   computed: {
     ...mapState({ decisions: state => state.bet.decisions })
   },
-  mounted() {
-    this.calculateResults();
+  watch: {
+    bet: {
+      immediate: true,
+      handler: 'calculateResults'
+    }
   },
   methods: {
     calculateResults() {
+      this.count = 0;
+      this.total = 1;
       for(let decision of this.decisions) {
         let items = decision.items;
         this.count += items.length;
-        this.total += items.reduce((total, item) => item.value + total, 0);
+        this.total *= items.reduce((total, item) => item.value * total, 1);
       }
+      this.total = parseFloat((this.total * this.bet).toFixed(0));
     }
   }
 }

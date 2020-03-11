@@ -13,9 +13,15 @@
       >$vuetify.icons.euro</v-icon>
     </v-col>
     <v-col
+      cols="5"
       class="flex-shrink-0 flex-grow-1 text-center"
     >
-      <span class="dialog-total-money">{{ total }}</span>
+      <input
+        :value="bet"
+        @input="updateBet"
+        type="number"
+        class="dialog-total-money"
+      />
     </v-col>
     <v-col
       cols="6"
@@ -34,8 +40,18 @@
 <script>
 export default {
   name: 'DialogFooter',
+  model: {
+    prop: 'bet',
+    event: 'change-bet'
+  },
   props: {
-    total: Number
+    bet: Number
+  },
+  methods: {
+    updateBet(e) {
+      let value = parseFloat(e.target.value);
+      this.$emit('change-bet', value ? value : 0)
+    }
   }
 }
 </script>
@@ -52,9 +68,11 @@ export default {
   .dialog-left-border {
     border-left: 1px solid #000;
   }
-  .dialog-total-money {
+  .dialog-total-money[type=number] {
     font-size: 20px;
     line-height: 23px;
+    width: 100%;
+    text-align: center;
     color: #666;
   }
 </style>
