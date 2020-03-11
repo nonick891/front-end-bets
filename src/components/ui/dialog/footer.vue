@@ -60,10 +60,11 @@ export default {
     background: #F3C515;
     border-radius: 0 0 10px 10px;
   }
-  .dialog-finish {
+  .v-btn.dialog-finish {
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
+    letter-spacing: 0.1em;
   }
   .dialog-left-border {
     border-left: 1px solid #000;
@@ -74,5 +75,6 @@ export default {
     width: 100%;
     text-align: center;
     color: #666;
+    outline: none;
   }
 </style>
