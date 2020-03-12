@@ -55,11 +55,10 @@
           >{{ item.value }}</v-col>
         </v-row>
       </v-container>
-      <v-slide-y-transition>
-        <remove-bet
-          v-if="showRemove"
-        />
-      </v-slide-y-transition>
+      <remove-bet
+        v-model="showRemove"
+        :index="index"
+      />
     </v-col>
   </v-row>
 </template>

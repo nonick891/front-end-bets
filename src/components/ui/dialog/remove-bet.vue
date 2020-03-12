@@ -1,21 +1,43 @@
 <template>
-  <v-container
-    fill-height
-    class="close-container"
+  <v-slide-y-transition
+    hide-on-leave
   >
-    <v-row
-      no-gutters
-      justify="center"
+    <v-container
+      fill-height
+      class="close-container"
+      v-if="show"
     >
-      <close-button />
-    </v-row>
-  </v-container>
+      <v-row
+        no-gutters
+        justify="center"
+      >
+        <close-button
+          @click.native="removeDecision"
+        />
+      </v-row>
+    </v-container>
+  </v-slide-y-transition>
 </template>
 <script>
+import { mapMutations } from 'vuex'
 import CloseButton from '../buttons/close.vue'
 export default {
   name: 'RemoveBet',
-  components: { CloseButton }
+  model: {
+    prop: 'show',
+    event: 'change-show'
+  },
+  props: ['index', 'show'],
+  components: { CloseButton },
+  methods: {
+    ...mapMutations({ deleteDecision: 'bet/REMOVE_DECISION' }),
+    removeDecision() {
+      this.$emit('change-show', false);
+      this.$nextTick(() => {
+        this.deleteDecision(this.index);
+      });
+    }
+  }
 }
 </script>
 <style>

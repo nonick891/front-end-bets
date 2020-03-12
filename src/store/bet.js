@@ -1,39 +1,20 @@
+import decisions from './bet/decisions'
+
+import { REMOVE_DECISION } from './bet/mutations-types'
+
 const state = {
-  decisions: [
-    {
-      name: 'Game team 1',
-      items: [
-        {
-          name: 'Bet decision 1',
-          value: 2.75
-        },
-        {
-          name: 'Bet decision 2',
-          value: 1.75
-        },
-        {
-          name: 'Bet decision 3',
-          value: 1.05
-        },
-      ]
-    },
-    {
-      name: 'Game team 2',
-      items: [
-        {
-          name: 'Bet decision 1',
-          value: 2.75
-        }
-      ]
-    }
-  ]
+  decisions: decisions
 }
 
 const getters = {}
 
 const actions = {}
 
-const mutations = {}
+const mutations = {
+  [REMOVE_DECISION](state, index) {
+    state.decisions.splice(index, 1);
+  }
+}
 
 export default {
   namespaced: true,
