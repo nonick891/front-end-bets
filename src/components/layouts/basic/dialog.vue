@@ -9,6 +9,7 @@
       />
       <dialog-item
         :key="key"
+        :index="key"
         v-for="(decision, key) in decisions"
         :decision="decision"
         :class="key === 0 ? 'no-border-top' : ''"

@@ -6,6 +6,8 @@
   >
     <v-col
       v-if="decision"
+      v-touch:swipe.left="swipeLeft"
+      v-touch:swipe.right="swipeRight"
       cols="10"
       class="pb-3 pl-1"
     >
@@ -34,6 +36,7 @@
     </v-col>
     <v-col
       cols="2"
+      style="position: relative"
     >
       <v-container
         fill-height
@@ -52,18 +55,37 @@
           >{{ item.value }}</v-col>
         </v-row>
       </v-container>
-  
-      <!--<remove-bet />-->
+      <v-slide-y-transition>
+        <remove-bet
+          v-if="showRemove"
+        />
+      </v-slide-y-transition>
     </v-col>
   </v-row>
 </template>
 <script>
-//import RemoveBet from './remove-bet.vue'
+import RemoveBet from './remove-bet.vue'
 export default {
   name: 'DialogItem',
-//  components: { RemoveBet },
+  components: { RemoveBet },
+  model: {
+    prop: 'decision',
+    event: 'decision-remove'
+  },
   props: {
-    decision: Object
+    decision: Object,
+    index: Number
+  },
+  data: () => ({
+    showRemove: false
+  }),
+  methods: {
+    swipeLeft() {
+      this.showRemove = true;
+    },
+    swipeRight() {
+      this.showRemove = false;
+    }
   }
 }
 </script>
