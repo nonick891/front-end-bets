@@ -17,6 +17,9 @@
       class="flex-shrink-0 flex-grow-1 text-center"
     >
       <input
+        title="bet"
+        pattern="[0-9]*"
+        inputmode="numeric"
         :value="bet"
         @input="updateBet"
         type="number"
