@@ -19,7 +19,7 @@
   </v-slide-y-transition>
 </template>
 <script>
-import { mapMutations } from 'vuex'
+import { mapMutations, mapActions } from 'vuex'
 import CloseButton from '../buttons/close.vue'
 export default {
   name: 'RemoveBet',
@@ -30,11 +30,13 @@ export default {
   props: ['index', 'show'],
   components: { CloseButton },
   methods: {
+    ...mapActions({ calculateAll: 'bet/calculateAll' }),
     ...mapMutations({ deleteDecision: 'bet/REMOVE_DECISION' }),
     removeDecision() {
       this.$emit('change-show', false);
       this.$nextTick(() => {
         this.deleteDecision(this.index);
+        this.calculateAll();
       });
     }
   }

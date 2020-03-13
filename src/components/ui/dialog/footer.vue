@@ -17,12 +17,11 @@
       class="flex-shrink-0 flex-grow-1 text-center"
     >
       <input
+        v-model="amount"
+        type="number"
         title="bet"
         pattern="[0-9]*"
         inputmode="numeric"
-        :value="bet"
-        @input="updateBet"
-        type="number"
         class="dialog-total-money"
       />
     </v-col>
@@ -43,17 +42,14 @@
 <script>
 export default {
   name: 'DialogFooter',
-  model: {
-    prop: 'bet',
-    event: 'change-bet'
-  },
-  props: {
-    bet: Number
-  },
-  methods: {
-    updateBet(e) {
-      let value = parseFloat(e.target.value);
-      this.$emit('change-bet', value ? value : 0)
+  computed: {
+    amount: {
+      get() {
+        return this.$store.state.bet.amount
+      },
+      set(value) {
+        this.$store.state.bet.amount = value;
+      }
     }
   }
 }

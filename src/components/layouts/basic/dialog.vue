@@ -14,14 +14,12 @@
         :decision="decision"
         :class="key === 0 ? 'no-border-top' : ''"
       />
-      <dialog-footer
-        v-model="betAmount"
-      />
+      <dialog-footer />
     </v-container>
   </v-content>
 </template>
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 
 import DialogHeader from '../../ui/dialog/header.vue'
 import DialogItem from '../../ui/dialog/item.vue'
@@ -29,37 +27,17 @@ import DialogFooter from '../../ui/dialog/footer.vue'
 export default {
   name: 'BasicDialog',
   components: { DialogHeader, DialogItem, DialogFooter },
-  data: () => ({
-    betAmount: 0,
-    total: 0,
-    count: 0
-  }),
   computed: {
-    ...mapState({ decisions: state => state.bet.decisions })
+    ...mapState('bet', ['decisions', 'amount', 'count', 'total'])
   },
   watch: {
-    betAmount: {
+    amount: {
       immediate: true,
-      handler: 'calculateResults'
+      handler: 'calculateAll'
     }
   },
   methods: {
-    calculateResults() {
-      this.count = 0;
-      this.total = 1;
-      for(let decision of this.decisions) {
-        let items = decision.items;
-        this.count += items.length;
-        this.total *= items.reduce(this.getOdds, 1);
-      }
-      this.total = this.getTotalMoney();
-    },
-    getOdds(total, item) {
-      return item.value * total
-    },
-    getTotalMoney() {
-      return parseFloat((this.total * this.betAmount).toFixed(0))
-    }
+    ...mapActions({ calculateAll: 'bet/calculateAll' })
   }
 }
 </script>
