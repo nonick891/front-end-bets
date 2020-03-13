@@ -23,20 +23,33 @@
         color="#000"
         width="20"
         min-width="40"
+        @click.native="closeDialog"
       />
     </v-col>
   </v-row>
 </template>
 <script>
+import { mapMutations } from 'vuex'
 import totalCircle from './cirlce.vue'
 import closeButton from '../buttons/close.vue'
 export default {
   name: 'DialogHeader',
+  model: {
+    prop: 'opened',
+    event: 'toggle-modal'
+  },
   props: {
+    opened: Boolean,
     count: Number,
     total: Number
   },
-  components: { totalCircle, closeButton }
+  components: { totalCircle, closeButton },
+  methods: {
+    ...mapMutations({ clearBetData: 'bet/CLEAR_ALL' }),
+    closeDialog() {
+      this.clearBetData();
+    }
+  }
 }
 </script>
 <style>

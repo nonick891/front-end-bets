@@ -1,13 +1,17 @@
 import decisions from './bet/decisions'
 
-import { REMOVE_DECISION } from './bet/mutations-types'
-import { CALCULATE_ALL } from './bet/mutations-types'
+import {
+  REMOVE_DECISION,
+  CALCULATE_ALL,
+  CLEAR_ALL
+} from './bet/mutations-types'
 
 const state = {
   decisions: decisions,
   amount: 0,
   count: 0,
   total: 0,
+  dialog: true
 }
 
 const getters = {
@@ -21,6 +25,13 @@ const actions = {
 }
 
 const mutations = {
+  [CLEAR_ALL](state) {
+    state.decisions = [];
+    state.amount = 0;
+    state.count = 0;
+    state.total = 0;
+    state.dialog = false;
+  },
   [REMOVE_DECISION](state, index) {
     state.decisions.splice(index, 1);
   },

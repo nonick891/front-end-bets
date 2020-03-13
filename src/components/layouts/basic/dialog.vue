@@ -1,5 +1,6 @@
 <template>
   <v-content
+    v-if="dialog"
     class="pa-0 custom-dialog"
   >
     <v-container class="framed">
@@ -28,7 +29,7 @@ export default {
   name: 'BasicDialog',
   components: { DialogHeader, DialogItem, DialogFooter },
   computed: {
-    ...mapState('bet', ['decisions', 'amount', 'count', 'total'])
+    ...mapState('bet', ['dialog', 'decisions', 'amount', 'count', 'total'])
   },
   watch: {
     amount: {

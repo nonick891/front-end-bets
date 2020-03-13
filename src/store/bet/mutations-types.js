@@ -1,2 +1,3 @@
 export const REMOVE_DECISION = 'REMOVE_DECISION';
 export const CALCULATE_ALL = 'CALCULATE_ALL';
+export const CLEAR_ALL = 'CLEAR_ALL';

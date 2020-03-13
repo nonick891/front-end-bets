@@ -3,9 +3,9 @@
     hide-on-leave
   >
     <v-container
+      v-if="show"
       fill-height
       class="close-container"
-      v-if="show"
     >
       <v-row
         no-gutters
@@ -19,7 +19,7 @@
   </v-slide-y-transition>
 </template>
 <script>
-import { mapMutations, mapActions } from 'vuex'
+import { mapState, mapMutations, mapActions } from 'vuex'
 import CloseButton from '../buttons/close.vue'
 export default {
   name: 'RemoveBet',
@@ -29,14 +29,22 @@ export default {
   },
   props: ['index', 'show'],
   components: { CloseButton },
+  computed: {
+    ...mapState('bet', ['decisions'])
+  },
   methods: {
     ...mapActions({ calculateAll: 'bet/calculateAll' }),
-    ...mapMutations({ deleteDecision: 'bet/REMOVE_DECISION' }),
+    ...mapMutations({
+      deleteDecision: 'bet/REMOVE_DECISION',
+      clearAll: 'bet/CLEAR_ALL'
+    }),
     removeDecision() {
       this.$emit('change-show', false);
       this.$nextTick(() => {
         this.deleteDecision(this.index);
-        this.calculateAll();
+        this.decisions.length > 0
+          ? this.calculateAll()
+          : this.clearAll()
       });
     }
   }
