@@ -40,39 +40,51 @@
             43:30
           </v-col>
         </v-row>
-        <v-row
-          class="mt-4"
-          no-gutters
-        >
-          <v-col class="flex-grow-1">
-            <span>
-              <v-icon size="14">$vuetify.icons.flag</v-icon>
-            </span>
-            <span class="details">
-              7th corner for Team 1
-            </span>
-          </v-col>
-          <v-col class="flex-shrink-1 flex-grow-0">
-            <v-btn
-              tile
-              x-small
-              depressed
-              color="transparent"
-            >
-              <v-icon size="10">$vuetify.icons.chevronBottom</v-icon>
-            </v-btn>
-          </v-col>
-        </v-row>
+        <v-expand-transition>
+          <v-row
+            v-if="toggleParticipantsControl"
+            class="mt-4"
+            no-gutters
+          >
+            <v-col class="flex-grow-1">
+              <span>
+                <v-icon size="14">$vuetify.icons.flag</v-icon>
+              </span>
+              <span class="details">
+                7th corner for Team 1
+              </span>
+            </v-col>
+            <v-col class="flex-shrink-1 flex-grow-0">
+              <toggle-button
+                :rotate="expandParticipantsDetail"
+                @click.native="toggleParticipants"
+              />
+            </v-col>
+          </v-row>
+        </v-expand-transition>
+        <v-expand-transition>
+          <v-row v-if="expandParticipantsDetail">
+            <v-col>
+              a lot of details will be here
+            </v-col>
+          </v-row>
+        </v-expand-transition>
       </v-card>
     </v-col>
   </v-row>
 </template>
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
+import toggleButton from '../../buttons/participants-toggle.vue'
 export default {
   name: 'participants',
+  components: { toggleButton },
   computed: {
-    ...mapState({ participants: state => state.game.participants })
+    ...mapState('game', ['participants']),
+    ...mapState('interface', ['expandParticipantsDetail', 'toggleParticipantsControl'])
+  },
+  methods: {
+    ...mapMutations({ toggleParticipants: 'interface/TOGGLE_PARTICIPANTS_DETAIL' })
   }
 }
 </script>

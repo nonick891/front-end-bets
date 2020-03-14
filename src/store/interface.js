@@ -1,11 +1,14 @@
 import {
   TOGGLE_MENU,
-  SET_BREADCRUMBS
+  SET_BREADCRUMBS,
+  TOGGLE_PARTICIPANTS_DETAIL
 } from './interface/mutations-types'
 
 const state = {
   drawer: null,
-  breadcrumbs: []
+  breadcrumbs: [],
+  toggleParticipantsControl: true,
+  expandParticipantsDetail: false
 };
 
 const getters = {};
@@ -18,6 +21,13 @@ const mutations = {
   },
   [SET_BREADCRUMBS](state, breadcrumbs) {
     state.breadcrumbs = breadcrumbs;
+  },
+  [TOGGLE_PARTICIPANTS_DETAIL](state) {
+    state.expandParticipantsDetail = !state.expandParticipantsDetail;
+    setTimeout(
+      () => state.toggleParticipantsControl = !state.toggleParticipantsControl,
+      state.toggleParticipantsControl ? 300 : 0
+    );
   }
 };
 

@@ -34,36 +34,31 @@
         color="dark"
         class="d-flex flex-row-reverse"
       >
-        <v-btn
-          tile
-          x-small
-          class="pa-0"
-          color="dark"
-        >
-          <v-icon
-            size="16px"
-          >$vuetify.icons.chart</v-icon>
-        </v-btn>
-        <v-btn
-          tile
-          x-small
-          class="pa-0"
-          color="dark"
-        >
-          <v-icon
-            size="16px"
-          >$vuetify.icons.calendar</v-icon>
-        </v-btn>
+        <small-button
+          @click.native="toggleParticipants"
+          iconName="chart"
+          :highlighted="expandParticipantsDetail"
+        />
+        <small-button
+          @click.native="toggleParticipants"
+          iconName="calendar"
+          :highlighted="!expandParticipantsDetail"
+        />
       </v-card>
     </v-col>
   </v-row>
 </template>
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
+import smallButton from '../buttons/small-icon.vue'
 export default {
   name: 'CustomBreadcrumbs',
+  components: { smallButton },
   computed: {
-    ...mapState({ breadcrumbs: state => state.interface.breadcrumbs })
+    ...mapState('interface', ['breadcrumbs', 'expandParticipantsDetail'])
+  },
+  methods: {
+    ...mapMutations({ toggleParticipants: 'interface/TOGGLE_PARTICIPANTS_DETAIL' })
   }
 }
 </script>
