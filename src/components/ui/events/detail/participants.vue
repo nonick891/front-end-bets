@@ -63,9 +63,13 @@
           </v-row>
         </v-expand-transition>
         <v-expand-transition>
-          <v-row v-if="expandParticipantsDetail">
+          <v-row
+            v-if="expandParticipantsDetail"
+            no-gutters
+            class="pt-1"
+          >
             <v-col>
-              a lot of details will be here
+              <half-time />
             </v-col>
           </v-row>
         </v-expand-transition>
@@ -76,9 +80,10 @@
 <script>
 import { mapState, mapMutations } from 'vuex'
 import toggleButton from '../../buttons/participants-toggle.vue'
+import halfTime from '../../tabs/participants-halftime.vue'
 export default {
   name: 'participants',
-  components: { toggleButton },
+  components: { toggleButton, halfTime },
   computed: {
     ...mapState('game', ['participants']),
     ...mapState('interface', ['expandParticipantsDetail', 'toggleParticipantsControl'])
