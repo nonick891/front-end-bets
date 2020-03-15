@@ -35,12 +35,12 @@
         class="d-flex flex-row-reverse"
       >
         <small-button
-          @click.native="toggleParticipants"
+          @click.native="showParticipants"
           iconName="chart"
           :highlighted="expandParticipantsDetail"
         />
         <small-button
-          @click.native="toggleParticipants"
+          @click.native="hideParticipants"
           iconName="calendar"
           :highlighted="!expandParticipantsDetail"
         />
@@ -58,7 +58,10 @@ export default {
     ...mapState('interface', ['breadcrumbs', 'expandParticipantsDetail'])
   },
   methods: {
-    ...mapMutations({ toggleParticipants: 'interface/TOGGLE_PARTICIPANTS_DETAIL' })
+    ...mapMutations({
+      showParticipants: 'interface/SHOW_PARTICIPANTS_DETAIL',
+      hideParticipants: 'interface/HIDE_PARTICIPANTS_DETAIL'
+    })
   }
 }
 </script>

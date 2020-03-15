@@ -1,7 +1,9 @@
 import {
   TOGGLE_MENU,
   SET_BREADCRUMBS,
-  TOGGLE_PARTICIPANTS_DETAIL
+  TOGGLE_PARTICIPANTS_DETAIL,
+  SHOW_PARTICIPANTS_DETAIL,
+  HIDE_PARTICIPANTS_DETAIL
 } from './interface/mutations-types'
 
 const state = {
@@ -26,8 +28,19 @@ const mutations = {
     state.expandParticipantsDetail = !state.expandParticipantsDetail;
     setTimeout(
       () => state.toggleParticipantsControl = !state.toggleParticipantsControl,
-      state.toggleParticipantsControl ? 300 : 0
+      state.toggleParticipantsControl ? 150 : 0
     );
+  },
+  [SHOW_PARTICIPANTS_DETAIL](state) {
+    state.expandParticipantsDetail = true;
+    setTimeout(
+      () => state.toggleParticipantsControl = false,
+      150
+    );
+  },
+  [HIDE_PARTICIPANTS_DETAIL](state) {
+    state.expandParticipantsDetail = false;
+    state.toggleParticipantsControl = true;
   }
 };
 
