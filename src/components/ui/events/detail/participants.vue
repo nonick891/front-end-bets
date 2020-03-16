@@ -40,39 +40,34 @@
             43:30
           </v-col>
         </v-row>
-        <v-expand-transition>
-          <v-row
-            v-if="toggleParticipantsControl"
-            class="mt-4"
-            no-gutters
-          >
-            <v-col class="flex-grow-1">
-              <span>
-                <v-icon size="14">$vuetify.icons.flag</v-icon>
-              </span>
-              <span class="details">
-                7th corner for Team 1
-              </span>
-            </v-col>
-            <v-col class="flex-shrink-1 flex-grow-0">
-              <toggle-button
-                :rotate="expandParticipantsDetail"
-                @click.native="toggleParticipants"
-              />
-            </v-col>
-          </v-row>
-        </v-expand-transition>
-        <v-expand-transition>
-          <v-row
-            v-if="expandParticipantsDetail"
-            no-gutters
-            class="pt-1"
-          >
-            <v-col>
-              <half-time />
-            </v-col>
-          </v-row>
-        </v-expand-transition>
+        <v-row
+          class="mt-4"
+          no-gutters
+        >
+          <v-col class="flex-grow-1">
+            <span>
+              <v-icon size="14">$vuetify.icons.flag</v-icon>
+            </span>
+            <span class="details">
+              7th corner for Team 1
+            </span>
+          </v-col>
+          <v-col class="flex-shrink-1 flex-grow-0">
+            <toggle-button
+              :rotate="expandParticipantsDetail"
+              @click.native="toggleParticipants"
+            />
+          </v-col>
+        </v-row>
+        <v-row
+          v-if="expandParticipantsDetail"
+          no-gutters
+          class="pt-1"
+        >
+          <v-col>
+            <half-time />
+          </v-col>
+        </v-row>
       </v-card>
     </v-col>
   </v-row>
@@ -105,7 +100,7 @@ export default {
   }
   .divider {
     margin: 0 9px;
-    border: 0.5px solid #999999;
+    border: 1px solid #999999;
   }
   .participants {
     width: 100%;

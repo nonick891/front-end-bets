@@ -19,10 +19,10 @@ export default {
 }
 </script>
 <style>
-  .icon {
-    transition: all .5s;
+  .v-btn .icon {
+    transition: transform 0s;
   }
-  .icon.rotate {
+  .v-btn .icon.rotate {
     transform: rotate(180deg);
   }
 </style>
