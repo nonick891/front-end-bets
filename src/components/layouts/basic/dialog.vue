@@ -44,7 +44,7 @@ export default {
 </script>
 <style>
   .custom-dialog {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
     border-radius: 10px;

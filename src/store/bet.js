@@ -3,7 +3,10 @@ import decisions from './bet/decisions'
 import {
   REMOVE_DECISION,
   CALCULATE_ALL,
-  CLEAR_ALL
+  CLEAR_ALL,
+  SET_GAMES,
+  SET_CHUNK_GAMES,
+  GET_CHUNK_GAMES
 } from './bet/mutations-types'
 
 const state = {
@@ -11,7 +14,10 @@ const state = {
   amount: 0,
   count: 0,
   total: 0,
-  dialog: true
+  dialog: true,
+  games: [],
+  chunkGames: [],
+  lastIndex: 0
 }
 
 const getters = {
@@ -45,8 +51,18 @@ const mutations = {
       state.total *= items.reduce(getOdds, 1);
     }
     state.total = getters.totalMoney;
+  },
+  [SET_GAMES](state, games) {
+    state.games = games;
+  },
+  [SET_CHUNK_GAMES](state, chunk) {
+    state.lastIndex = state.lastIndex + chunk.length - 1;
+    state.chunkGames = state.chunkGames.concat(chunk)
+  },
+  [GET_CHUNK_GAMES](state) {
+    return state.games.splice(state.lastIndex, state.lastIndex + 10);
   }
-}
+};
 
 export default {
   namespaced: true,

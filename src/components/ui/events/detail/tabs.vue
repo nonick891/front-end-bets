@@ -16,25 +16,35 @@
           slider-color="border"
           background-color="transparent"
         >
-          <v-tab
-            v-for="item in items"
-            :key="item"
-          >
-            {{ item }}
-          </v-tab>
+          <v-tab :key="'All'">All</v-tab>
         </v-tabs>
       </v-card>
+    </v-col>
+    <v-col cols="12">
+      <v-tabs-items v-model="tab">
+        <v-tab-item>
+          <game
+            :key="key"
+            v-for="(game, key) in games"
+            :odd="game"
+          />
+        </v-tab-item>
+      </v-tabs-items>
     </v-col>
   </v-row>
 </template>
 <script>
+import { mapState } from 'vuex'
+import game from './game.vue'
 export default {
   name: 'main-tabs',
+  components: { game },
   data: () => ({
-    tab: 'test',
-    items: ['All', 'Main', 'Handicap', 'Other', 'More tabs'],
-    text: 'here will be new tabs'
-  })
+    tab: null
+  }),
+  computed: {
+    ...mapState('bet', ['games'])
+  }
 }
 </script>
 <style>
@@ -59,5 +69,8 @@ export default {
   }
   .v-tabs-bar.v-slide-group--is-overflowing.v-tabs-bar--is-mobile:not(.v-tabs-bar--show-arrows):not(.v-slide-group--has-affixes) .v-slide-group__prev.v-slide-group__prev--disabled {
     display: none;
+  }
+  .theme--dark.v-tabs-items {
+    background-color: transparent;
   }
 </style>
