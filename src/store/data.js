@@ -1,7 +1,9 @@
 import fixture from './data/fixture.json'
+import fixtureData from './data/fixture-data.json'
 
 const state = {
-	fixture: fixture.fixture
+	fixture: fixture.fixture,
+	groups: fixtureData.gameGroups
 };
 
 const getters = {};
