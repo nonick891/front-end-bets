@@ -15,7 +15,7 @@
           <v-col
             class="col-5 text-center font-weight-bold team-title"
           >
-            {{ participants[0].name.short }}
+            {{ get(participants, '0.name.short', '') }}
           </v-col>
           <v-col
             class="col-2 px-0 text-center"
@@ -27,7 +27,7 @@
           <v-col
             class="col-5 text-center font-weight-bold team-title"
           >
-            {{ participants[1].name.short }}
+            {{ get(participants, '1.name.short', '') }}
           </v-col>
         </v-row>
         <v-row
@@ -73,12 +73,16 @@
   </v-row>
 </template>
 <script>
+import { get } from 'lodash'
 import { mapState, mapMutations } from 'vuex'
 import toggleButton from '../../buttons/participants-toggle.vue'
 import halfTime from '../../tabs/participants-halftime.vue'
 export default {
   name: 'participants',
   components: { toggleButton, halfTime },
+  data: () => ({
+    get: get
+  }),
   computed: {
     ...mapState('game', ['participants']),
     ...mapState('interface', ['expandParticipantsDetail', 'toggleParticipantsControl'])

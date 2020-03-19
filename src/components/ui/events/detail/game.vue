@@ -1,31 +1,31 @@
-<template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
+<template>
   <v-row>
     <v-col>
-      <v-simple-table>
-        <template v-slot:default>
-          <thead>
-          <tr>
-            <th colspan="2" class="text-left">{{ odd.name.value }}</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr
-            :key="key"
-            v-for="(game, key) in odd.results"
-          >
-            <td>{{ game.name.value }}</td>
-            <td>{{ game.odds }}</td>
-          </tr>
-          </tbody>
-        </template>
-      </v-simple-table>
+      <over-under-table
+        v-if="getMarketType(odd) === 'OverUnder'"
+        :odd="odd"
+      />
+      <default-table
+        v-else
+        :odd="odd"
+      />
     </v-col>
   </v-row>
 </template>
 <script>
+import { get } from 'lodash'
+
+import defaultTable from './table/default.vue'
+import overUnderTable from './table/over-under.vue'
 export default {
   props: {
     odd: Object
+  },
+  components: { defaultTable, overUnderTable },
+  methods: {
+    getMarketType(odd) {
+      return get(odd, 'grouping.parameters.marketType', '')
+    }
   }
 }
 </script>

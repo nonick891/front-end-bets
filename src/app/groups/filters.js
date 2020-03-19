@@ -1,4 +1,4 @@
-import { set, has } from 'lodash';
+import { has } from 'lodash';
 
 /**
  * Get ordered games by group id
@@ -12,7 +12,11 @@ export const sortByGroups = (games) => {
     let game = games[i],
         groups = game.grouping.detailed;
     for (let group of groups) {
-      set(orderedGames, group.group, game);
+      if (Array.isArray(orderedGames[group.group])) {
+        orderedGames[group.group].push(game);
+      } else {
+        orderedGames[group.group] = [game];
+      }
     }
   }
   return orderedGames;
@@ -24,8 +28,6 @@ export const getExistsGroups = (groupIds, groups) => {
 };
 
 const getGroupIdAsKey = (array, value) => {
-  if (value) {
-    array[value.id] = value;
-    return array;
-  }
+  array[value.id] = value;
+  return array;
 };

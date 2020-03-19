@@ -31,7 +31,7 @@
         >
           <game
             :key="key"
-            v-for="(game, key) in games"
+            v-for="(game, key) in games[group.id]"
             :odd="game"
           />
         </v-tab-item>
