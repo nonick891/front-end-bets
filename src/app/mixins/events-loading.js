@@ -1,16 +1,18 @@
-import { mapState, mapMutations } from 'vuex'
-// import { sortByGroups } from '../groups/filters'
+import { mapState, mapGetters, mapMutations } from 'vuex'
+import { sortByGroups, getExistsGroups } from '../groups/filters'
 export default {
   computed: {
     ...mapState({
       fixture: state => state.data.fixture,
+      groups: state => state.data.groups,
       participants: state => state.game.participants
-    })
+    }),
+    ...mapGetters({ groupIds: 'bet/groupIds' })
   },
   methods: {
     initEvents() {
-      // sortByGroups(this.fixture.games);
-      this.setGames(this.fixture.games);
+      this.setGames(sortByGroups(this.fixture.games));
+      this.setGroups(getExistsGroups(this.groupIds, this.groups));
       this.setParticipants(this.fixture.participants);
       this.setBreadcrumbs(this.getBreadcrumbsObject());
     },
@@ -25,6 +27,7 @@ export default {
       ];
     },
     ...mapMutations({
+      setGroups: 'group/SET_GROUPS',
       setParticipants: 'game/SET_PARTICIPANTS',
       setBreadcrumbs: 'interface/SET_BREADCRUMBS',
       setGames: 'bet/SET_GAMES'

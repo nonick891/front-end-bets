@@ -17,8 +17,8 @@
           background-color="transparent"
         >
           <v-tab
-            :key="group.name"
-            v-for="group in groups"
+            :key="key"
+            v-for="(group, key) in groups"
           >{{ group.name }}</v-tab>
         </v-tabs>
       </v-card>
@@ -26,8 +26,8 @@
     <v-col cols="12">
       <v-tabs-items v-model="tab">
         <v-tab-item
-          :key="group.name"
-          v-for="group in groups"
+          :key="key"
+          v-for="(group, key) in groups"
         >
           <game
             :key="key"
@@ -50,7 +50,7 @@ export default {
   }),
   computed: {
     ...mapState('bet', ['games']),
-    ...mapState('data', ['groups'])
+    ...mapState('group', ['groups'])
   }
 }
 </script>

@@ -11,7 +11,7 @@ export default {
   name: 'App',
   mixins: [EventsLoadingMixin],
   components: { BasicLayout },
-  created() {
+  mounted() {
     this.initEvents();
   }
 }
