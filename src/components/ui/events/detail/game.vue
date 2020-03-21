@@ -1,8 +1,12 @@
 <template>
   <v-row>
     <v-col>
+      <correct-score
+        v-if="getMarketType(odd) === 'CorrectScore'"
+        :odd="odd"
+      />
       <over-under-table
-        v-if="getMarketType(odd) === 'OverUnder'"
+        v-else-if="getMarketType(odd) === 'OverUnder'"
         :odd="odd"
       />
       <default-table
@@ -17,11 +21,12 @@ import { get } from 'lodash'
 
 import defaultTable from './table/default.vue'
 import overUnderTable from './table/over-under.vue'
+import correctScore from './table/correct-score.vue'
 export default {
   props: {
     odd: Object
   },
-  components: { defaultTable, overUnderTable },
+  components: { defaultTable, overUnderTable, correctScore },
   methods: {
     getMarketType(odd) {
       return get(odd, 'grouping.parameters.marketType', '')

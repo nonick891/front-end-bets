@@ -27,9 +27,6 @@
 export default {
   props: {
     odd: Object
-  },
-  mounted() {
-    console.log(this.odd);
   }
 }
 </script>

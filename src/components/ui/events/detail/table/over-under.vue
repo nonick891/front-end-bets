@@ -12,8 +12,10 @@
       <tbody>
       <tr>
         <td></td>
-        <td>Over</td>
-        <td>Under</td>
+        <td
+          :key="key"
+          v-for="(result, key) in odd.results"
+        >{{ result.name.value.replace(odd.attr, '') }}</td>
       </tr>
       <tr>
         <td>{{ odd.attr }}</td>
