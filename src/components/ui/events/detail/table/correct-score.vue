@@ -3,13 +3,17 @@
     <template v-slot:default>
       <thead>
       <th
+        @click="handleTable"
         colspan="3"
         class="text-left"
       >
-        {{ odd.name.value }}
+        <toggle-row
+          :show="showed"
+          :title="odd.name.value"
+        />
       </th>
       </thead>
-      <tbody>
+      <tbody v-show="showed">
       <tr>
         <th class="text-center">1</th>
         <th class="text-center">x</th>
@@ -33,7 +37,11 @@
 </template>
 <script>
 import { get } from 'lodash'
+import toggleRow from './toggle-row.vue'
+import toggleTableMixin from '../../../../../app/mixins/table-toggle'
 export default {
+  mixins: [toggleTableMixin],
+  components: { toggleRow },
   props: {
     odd: Object
   },

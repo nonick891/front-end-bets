@@ -75,7 +75,7 @@
 <script>
 import { get } from 'lodash'
 import { mapState, mapMutations } from 'vuex'
-import toggleButton from '../../buttons/participants-toggle.vue'
+import toggleButton from '../../buttons/toggle.vue'
 import halfTime from '../../tabs/participants-halftime.vue'
 export default {
   name: 'participants',
