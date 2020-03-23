@@ -18,7 +18,7 @@
         <v-col
           class="bet-game-name"
         >
-          {{ decision.name }}
+          {{ decision.participants[0].name.value }} vs {{ decision.participants[1].name.value }}
         </v-col>
       </v-row>
       <v-row
@@ -27,10 +27,12 @@
         v-for="(item, key) in decision.items"
       >
         <v-col
-          v-if="item"
+          :key="k"
+          v-for="(result, k) in item.results"
           class="bet-decision"
+          cols="12"
         >
-          {{ item.name }}
+          {{ item.name.value }}: {{ result.name.value }}
         </v-col>
       </v-row>
     </v-col>
@@ -52,7 +54,15 @@
             :key="key"
             v-for="(item, key) in decision.items"
             class="bet-decision"
-          >{{ item.value }}</v-col>
+          >
+            <v-row
+              class="bet-decision"
+              :key="k"
+              v-for="(result, k) in item.results"
+            >
+              {{ result.odds }}
+            </v-row>
+          </v-col>
         </v-row>
       </v-container>
       <remove-bet
