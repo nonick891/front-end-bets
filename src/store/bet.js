@@ -49,7 +49,7 @@ const mutations = {
   [CALCULATE_ALL](state, getters) {
     state.count = 0;
     state.total = 1;
-    const getOdds = (total, item) => item.value * total;
+    const getOdds = (total, item) => item.results.reduce((t, el) => t * el.odds, 1) * total;
     for (let decision of state.decisions) {
       let items = decision.items;
       state.count += items.length;
