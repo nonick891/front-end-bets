@@ -83,7 +83,7 @@ export default {
   },
   props: {
     decision: Object,
-    index: Number
+    index: String
   },
   data: () => ({
     showRemove: false

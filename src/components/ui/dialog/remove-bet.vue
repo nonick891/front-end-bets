@@ -19,6 +19,7 @@
   </v-slide-y-transition>
 </template>
 <script>
+import { keys } from 'lodash';
 import { mapState, mapMutations, mapActions } from 'vuex'
 import CloseButton from '../buttons/close.vue'
 export default {
@@ -42,7 +43,7 @@ export default {
       this.$emit('change-show', false);
       this.$nextTick(() => {
         this.deleteDecision(this.index);
-        this.decisions.length > 0
+        keys(this.decisions).length > 0
           ? this.calculateAll()
           : this.clearAll()
       });

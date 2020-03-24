@@ -1,4 +1,4 @@
-import { get, keys } from 'lodash'
+import { get, has, keys } from 'lodash'
 import decisions from './bet/decisions'
 import {
   REMOVE_DECISION,
@@ -44,16 +44,17 @@ const mutations = {
     state.dialog = false;
   },
   [REMOVE_DECISION](state, index) {
-    state.decisions.splice(index, 1);
+    delete state.decisions[index];
   },
   [CALCULATE_ALL](state, getters) {
     state.count = 0;
     state.total = 1;
-    const getOdds = (total, item) => item.results.reduce((t, el) => t * el.odds, 1) * total;
-    for (let decision of state.decisions) {
-      let items = decision.items;
-      state.count += items.length;
-      state.total *= items.reduce(getOdds, 1);
+    const getOdds = (total, item) => Object.values(item.results).reduce((t, el) => t * el.odds, 1) * total;
+    for (let index in state.decisions) {
+      if (!has(state.decisions, index)) continue;
+      let decision = state.decisions[index],
+        items = decision.items;
+      state.total *= Object.values(items).reduce(getOdds, 1);
     }
     state.total = getters.totalMoney;
   },

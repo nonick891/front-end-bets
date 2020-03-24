@@ -1,6 +1,10 @@
-import { SET_PARTICIPANTS } from './game/mutations-types'
+import {
+  SET_PARTICIPANTS,
+  SET_GAME_ID
+} from './game/mutations-types'
 
 const state = {
+  gameId: 0,
   participants: []
 }
 
@@ -11,7 +15,10 @@ const actions = {}
 const mutations = {
   [SET_PARTICIPANTS](state, participants) {
     state.participants = participants;
-  }
+  },
+  [SET_GAME_ID](state, gameId) {
+    state.gameId = gameId;
+  },
 }
 
 export default {

@@ -11,6 +11,7 @@ export default {
   },
   methods: {
     initEvents() {
+      this.setGameID(this.fixture.id);
       this.setGames(sortByGroups(this.fixture.games));
       this.setGroups(getExistsGroups(this.groupIds, this.groups));
       this.setParticipants(this.fixture.participants);
@@ -29,6 +30,7 @@ export default {
     ...mapMutations({
       setGroups: 'group/SET_GROUPS',
       setParticipants: 'game/SET_PARTICIPANTS',
+      setGameID: 'game/SET_GAME_ID',
       setBreadcrumbs: 'interface/SET_BREADCRUMBS',
       setGames: 'bet/SET_GAMES'
     })

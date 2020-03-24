@@ -1,5 +1,5 @@
-export default [
-  {
+export default {
+  '9805664': {
     "participants": [
       {
         "participantId": 2515142,
@@ -28,14 +28,15 @@ export default [
         }
       }
     ],
-    items: [
-      {
+    items: {
+      '459841651': {
+        "id": 459841651,
         "name": {
           "value": "Match Result",
           "sign": "EgrYQw=="
         },
-        results: [
-          {
+        results: {
+          '1355379742': {
             'id': 1355379742,
             'odds': 1.75,
             'name': {
@@ -44,8 +45,8 @@ export default [
             },
             'visibility': 'Visible'
           },
-          {
-            'id': 1355379742,
+          '1355379743': {
+            'id': 1355379743,
             'odds': 2.35,
             'name': {
               'value': 'No',
@@ -53,11 +54,11 @@ export default [
             },
             'visibility': 'Visible'
           }
-        ]
+        }
       }
-    ]
+    }
   },
-  {
+  '9805663': {
     "participants": [
       {
         "participantId": 2515142,
@@ -86,24 +87,25 @@ export default [
         }
       }
     ],
-    items: [
-      {
+    items: {
+      '459841651': {
+        "id": 459841651,
         "name": {
           "value": "Total Goals - Over/Under",
           "sign": "qoQh8Q=="
         },
-        results: [
-         {
-           "id": 1355379742,
-           "odds": 1.75,
-           "name": {
-             "value": "Yes",
-             "sign": "a58cKg=="
-           },
-           "visibility": "Visible"
-         }
-        ]
+        results: {
+          '1355379742': {
+            "id": 1355379742,
+            "odds": 1.75,
+            "name": {
+              "value": "Yes",
+              "sign": "a58cKg=="
+            },
+            "visibility": "Visible"
+          }
+        }
       }
-    ]
+    }
   }
-]
+}

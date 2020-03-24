@@ -1,1 +1,2 @@
 export const SET_PARTICIPANTS = 'SET_PARTICIPANTS';
+export const SET_GAME_ID = 'SET_GAME_ID';
