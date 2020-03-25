@@ -49,7 +49,7 @@ export default {
     tab: null
   }),
   computed: {
-    ...mapState('bet', ['games']),
+    ...mapState('game', ['games']),
     ...mapState('group', ['groups'])
   }
 }

@@ -7,7 +7,7 @@ export default {
       groups: state => state.data.groups,
       participants: state => state.game.participants
     }),
-    ...mapGetters({ groupIds: 'bet/groupIds' })
+    ...mapGetters({ groupIds: 'game/groupIds' })
   },
   methods: {
     initEvents() {
@@ -28,11 +28,11 @@ export default {
       ];
     },
     ...mapMutations({
+      setBreadcrumbs: 'interface/SET_BREADCRUMBS',
       setGroups: 'group/SET_GROUPS',
       setParticipants: 'game/SET_PARTICIPANTS',
       setGameID: 'game/SET_GAME_ID',
-      setBreadcrumbs: 'interface/SET_BREADCRUMBS',
-      setGames: 'bet/SET_GAMES'
+      setGames: 'game/SET_GAMES'
     })
   }
 }

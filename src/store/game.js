@@ -1,4 +1,4 @@
-import { get } from 'lodash'
+import { get, keys } from 'lodash'
 import {
   SET_PARTICIPANTS,
   SET_GAME_ID,
@@ -12,7 +12,9 @@ const state = {
   participants: []
 }
 
-const getters = {}
+const getters = {
+  groupIds: state => keys(state.games)
+}
 
 const actions = {
   loadChunkGames({ commit }, id) {

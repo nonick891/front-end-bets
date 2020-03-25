@@ -1,4 +1,4 @@
-import { has, keys } from 'lodash'
+import { has } from 'lodash'
 import decisions from './bet/decisions'
 import {
   REMOVE_DECISION,
@@ -18,8 +18,7 @@ const state = {
 }
 
 const getters = {
-  totalMoney: state => parseFloat((state.total * state.amount).toFixed(2)),
-  groupIds: state => keys(state.games)
+  totalMoney: state => parseFloat((state.total * state.amount).toFixed(2))
 }
 
 const actions = {

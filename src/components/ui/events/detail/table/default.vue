@@ -35,12 +35,6 @@ export default {
   components: { toggleRow },
   props: {
     odd: Object
-  },
-  computed: {
-  
-  },
-  mounted() {
-    console.log(this.odd);
   }
 }
 </script>
