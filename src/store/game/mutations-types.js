@@ -1,2 +1,5 @@
 export const SET_PARTICIPANTS = 'SET_PARTICIPANTS';
 export const SET_GAME_ID = 'SET_GAME_ID';
+export const SET_GAMES = 'SET_GAMES';
+export const SET_CHUNK_GAMES = 'SET_CHUNK_GAMES';
+export const GET_CHUNK_GAMES = 'GET_CHUNK_GAMES';

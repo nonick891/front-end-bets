@@ -1,6 +1,3 @@
 export const REMOVE_DECISION = 'REMOVE_DECISION';
 export const CALCULATE_ALL = 'CALCULATE_ALL';
 export const CLEAR_ALL = 'CLEAR_ALL';
-export const SET_GAMES = 'SET_GAMES';
-export const SET_CHUNK_GAMES = 'SET_CHUNK_GAMES';
-export const GET_CHUNK_GAMES = 'GET_CHUNK_GAMES';
