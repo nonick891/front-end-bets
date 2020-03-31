@@ -13,7 +13,8 @@ const state = {
 }
 
 const getters = {
-  groupIds: state => keys(state.games)
+  groupIds: state => keys(state.games),
+  gameId: state => state.gameId
 }
 
 const actions = {

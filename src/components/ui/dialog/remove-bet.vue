@@ -28,7 +28,7 @@ export default {
     prop: 'show',
     event: 'change-show'
   },
-  props: ['index', 'show'],
+  props: ['fixtureId', 'show'],
   components: { CloseButton },
   computed: {
     ...mapState('bet', ['decisions'])
@@ -42,7 +42,7 @@ export default {
     removeDecision() {
       this.$emit('change-show', false);
       this.$nextTick(() => {
-        this.deleteDecision(this.index);
+        this.deleteDecision(this.fixtureId);
         keys(this.decisions).length > 0
           ? this.calculateAll()
           : this.clearAll()

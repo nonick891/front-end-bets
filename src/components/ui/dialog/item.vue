@@ -5,7 +5,7 @@
     class="dialog-item"
   >
     <v-col
-      v-if="decision"
+      v-if="getOdds(fixtureId) && getOdds(fixtureId).length"
       v-touch:swipe.left="swipeLeft"
       v-touch:swipe.right="swipeRight"
       cols="10"
@@ -18,33 +18,33 @@
         <v-col
           class="bet-game-name"
         >
-          {{ decision.participants[0].name.value }} vs {{ decision.participants[1].name.value }}
+          {{ participants }}
         </v-col>
       </v-row>
       <v-row
         no-gutters
         :key="key"
-        v-for="(item, key) in decision.items"
+        v-for="(odd, key) in getOdds(fixtureId)"
       >
         <v-col
           :key="k"
-          v-for="(result, k) in item.results"
+          v-for="(item, k) in getOddItems(fixtureId, odd.id)"
           class="bet-decision"
           cols="12"
         >
-          {{ item.name.value }}: {{ result.name.value }}
+          {{ odd.name }}: {{ item.name }}
         </v-col>
       </v-row>
     </v-col>
     <v-col
       cols="2"
       style="position: relative"
+      v-if="getOdds(fixtureId)"
     >
       <v-container
         fill-height
       >
         <v-row
-          v-if="decision"
           no-gutters
           align="stretch"
           justify="center"
@@ -52,42 +52,49 @@
         >
           <v-col
             :key="key"
-            v-for="(item, key) in decision.items"
+            v-for="(odd, key) in getOdds(fixtureId)"
             class="bet-decision"
           >
             <v-row
-              class="bet-decision"
               :key="k"
-              v-for="(result, k) in item.results"
+              v-for="(item, k) in getOddItems(fixtureId, odd.id)"
+              class="bet-decision"
             >
-              {{ result.odds }}
+              {{ item.odds }}
             </v-row>
           </v-col>
         </v-row>
       </v-container>
       <remove-bet
         v-model="showRemove"
-        :index="index"
+        :fixtureId="fixtureId"
       />
     </v-col>
   </v-row>
 </template>
 <script>
+import { mapGetters } from 'vuex'
 import RemoveBet from './remove-bet.vue'
 export default {
   name: 'DialogItem',
   components: { RemoveBet },
   model: {
-    prop: 'decision',
+    prop: 'fixtureId',
     event: 'decision-remove'
   },
   props: {
-    decision: Object,
-    index: String
+    fixtureId: Number,
+    participants: String
   },
   data: () => ({
     showRemove: false
   }),
+  computed: {
+    ...mapGetters({
+      getOdds: 'bet/getOdds',
+      getOddItems: 'bet/getOddItems'
+    })
+  },
   methods: {
     swipeLeft() {
       this.showRemove = true;

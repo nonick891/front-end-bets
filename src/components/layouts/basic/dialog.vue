@@ -10,9 +10,9 @@
       />
       <dialog-item
         :key="key"
-        :index="key"
-        v-for="(decision, key) in decisions"
-        :decision="decision"
+        v-for="(fixtureId, key) in fixtureIds"
+        :fixtureId="fixtureId"
+        :participants="decisionParticipants[fixtureId]"
         :class="key === 0 ? 'no-border-top' : ''"
       />
       <dialog-footer />
@@ -29,7 +29,14 @@ export default {
   name: 'BasicDialog',
   components: { DialogHeader, DialogItem, DialogFooter },
   computed: {
-    ...mapState('bet', ['dialog', 'decisions', 'amount', 'count', 'total'])
+    ...mapState('bet', [
+      'dialog',
+      'fixtureIds',
+      'decisionParticipants',
+      'amount',
+      'count',
+      'total'
+    ])
   },
   watch: {
     amount: {
