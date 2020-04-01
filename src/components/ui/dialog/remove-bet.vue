@@ -31,19 +31,26 @@ export default {
   props: ['fixtureId', 'show'],
   components: { CloseButton },
   computed: {
-    ...mapState('bet', ['decisions'])
+    ...mapState('bet', ['oddItems'])
   },
   methods: {
     ...mapActions({ calculateAll: 'bet/calculateAll' }),
     ...mapMutations({
       deleteDecision: 'bet/REMOVE_DECISION',
+      removeId: 'bet/REMOVE_FIXTURE_ID',
+      removeParticipants: 'bet/REMOVE_PARTICIPANTS',
+      removeOdds: 'bet/REMOVE_ODDS',
+      removeOddItems: 'bet/REMOVE_ODD_ITEMS',
       clearAll: 'bet/CLEAR_ALL'
     }),
     removeDecision() {
       this.$emit('change-show', false);
       this.$nextTick(() => {
-        this.deleteDecision(this.fixtureId);
-        keys(this.decisions).length > 0
+        this.removeId(this.fixtureId);
+        this.removeParticipants(this.fixtureId);
+        this.removeOdds(this.fixtureId);
+        this.removeOddItems(this.fixtureId);
+        keys(this.oddItems).length > 0
           ? this.calculateAll()
           : this.clearAll()
       });

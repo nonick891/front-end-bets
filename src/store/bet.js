@@ -6,9 +6,13 @@ import {
   CLEAR_ALL,
   FETCH_DECISION,
   ADD_FIXTURE_ID,
+  REMOVE_FIXTURE_ID,
   ADD_PARTICIPANTS,
+  REMOVE_PARTICIPANTS,
   ADD_ODD,
-  ADD_ODD_ITEM
+  REMOVE_ODDS,
+  ADD_ODD_ITEM,
+  REMOVE_ODD_ITEMS
 } from './bet/mutations-types'
 
 const getShort = (participants, i) =>
@@ -59,19 +63,40 @@ const mutations = {
       state.fixtureIds = newFixtures;
     }
   },
+  [REMOVE_FIXTURE_ID](state, gameId) {
+    let index = state.fixtureIds.findIndex(id => id === gameId);
+    if (index > -1) {
+      state.fixtureIds.splice(index, 1);
+    }
+  },
   [ADD_PARTICIPANTS](state, {gameId, participants}) {
     let part = Object.assign({}, state.decisionParticipants);
     part[gameId] = getGameName(participants);
     state.decisionParticipants = part;
+  },
+  [REMOVE_PARTICIPANTS](state, gameId) {
+    delete state.decisionParticipants[gameId];
   },
   [ADD_ODD](state, { gameId, odd }) {
     if (!state.odds.find(item => item.id === odd.id)) {
       state.odds.push({ gameId, id: odd.id, name: odd.name.value });
     }
   },
+  [REMOVE_ODDS](state, gameId) {
+    let removeElements = state.odds.reduce((arr, e, i) => ((e.gameId === gameId) && arr.push(i), arr), []);
+    for (let i = removeElements.length -1; i >= 0; i--) {
+      state.odds.splice(removeElements[i],1);
+    }
+  },
   [ADD_ODD_ITEM](state, { gameId, oddId, item }) {
     if (!state.oddItems.find(oddItem => oddItem.id === item.id)) {
       state.oddItems.push({gameId, oddId, ...item});
+    }
+  },
+  [REMOVE_ODD_ITEMS](state, gameId) {
+    let removeElements = state.oddItems.reduce((arr, e, i) => ((e.gameId === gameId) && arr.push(i), arr), []);
+    for (let i = removeElements.length -1; i >= 0; i--) {
+      state.oddItems.splice(removeElements[i],1);
     }
   },
   [FETCH_DECISION](state) {
