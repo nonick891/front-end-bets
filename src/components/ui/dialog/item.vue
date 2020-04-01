@@ -59,6 +59,7 @@
               :key="k"
               v-for="(item, k) in getOddItems(fixtureId, odd.id)"
               class="bet-decision"
+              no-gutters
             >
               {{ item.odds }}
             </v-row>
