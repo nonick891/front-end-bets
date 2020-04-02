@@ -1,5 +1,4 @@
 import { get } from 'lodash'
-import decisions from './bet/decisions'
 import {
   REMOVE_DECISION,
   CALCULATE_ALL,
@@ -22,7 +21,6 @@ const getGameName = participants =>
   `${getShort(participants, 0)} vs ${getShort(participants, 1)}`;
 
 const state = {
-  decisions: decisions,
   amount: 0,
   count: 0,
   total: 0,
