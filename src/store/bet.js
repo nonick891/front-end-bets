@@ -11,7 +11,9 @@ import {
   ADD_ODD,
   REMOVE_ODDS,
   ADD_ODD_ITEM,
-  REMOVE_ODD_ITEMS
+  REMOVE_ODD_ITEMS,
+  SHOW_DIALOG,
+  HIDE_DIALOG
 } from './bet/mutations-types'
 
 const getShort = (participants, i) =>
@@ -21,6 +23,7 @@ const getGameName = participants =>
   `${getShort(participants, 0)} vs ${getShort(participants, 1)}`;
 
 const state = {
+  dialog: false,
   amount: 0,
   count: 0,
   total: 0,
@@ -28,7 +31,6 @@ const state = {
   decisionParticipants: {},
   odds: [],
   oddItems: [],
-  dialog: true,
   games: [],
   chunkGames: [],
   lastIndex: []
@@ -48,6 +50,7 @@ const actions = {
 
 const mutations = {
   [CLEAR_ALL](state) {
+    state.dialog = false;
     state.fixtureIds = [];
     state.decisionParticipants = {};
     state.odds = [];
@@ -55,6 +58,11 @@ const mutations = {
     state.amount = 0;
     state.count = 0;
     state.total = 0;
+  },
+  [SHOW_DIALOG](state) {
+    state.dialog = true;
+  },
+  [HIDE_DIALOG](state) {
     state.dialog = false;
   },
   [ADD_FIXTURE_ID](state, gameId){
