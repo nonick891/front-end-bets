@@ -49,6 +49,7 @@ export default {
       addParticipants: 'bet/ADD_PARTICIPANTS',
       addOdd: 'bet/ADD_ODD',
       addOddItem: 'bet/ADD_ODD_ITEM',
+      calculateAll: 'bet/CALCULATE_ALL'
     }),
     click(odd, item) {
       let gameId = parseInt(this.gameId);
@@ -56,6 +57,7 @@ export default {
       this.addParticipants({gameId, participants: Object.assign({}, this.participants)});
       this.addOdd({gameId, odd: { id: odd.id, name: odd.name }});
       this.addOddItem({gameId, oddId: odd.id, item: { id: item.id, odds: item.odds, name: item.name.value } });
+      this.calculateAll();
     }
   }
 }

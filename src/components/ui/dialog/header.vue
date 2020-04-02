@@ -13,7 +13,7 @@
       class="flex-grow-1"
     >
       <span class="dialog-total">
-        Total: {{ total }}
+        Total: {{ totalMoney }}
       </span>
     </v-col>
     <v-col
@@ -29,7 +29,7 @@
   </v-row>
 </template>
 <script>
-import { mapMutations } from 'vuex'
+import { mapGetters, mapMutations } from 'vuex'
 import totalCircle from './cirlce.vue'
 import closeButton from '../buttons/close.vue'
 export default {
@@ -44,6 +44,9 @@ export default {
     total: Number
   },
   components: { totalCircle, closeButton },
+  computed: {
+    ...mapGetters({ totalMoney: 'bet/totalMoney' })
+  },
   methods: {
     ...mapMutations({ clearBetData: 'bet/CLEAR_ALL' }),
     closeDialog() {

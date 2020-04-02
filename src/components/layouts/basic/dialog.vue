@@ -4,10 +4,7 @@
     class="pa-0 custom-dialog"
   >
     <v-container class="framed">
-      <dialog-header
-        :count="count"
-        :total="total"
-      />
+      <dialog-header :count="count" />
       <dialog-item
         :key="key"
         v-for="(fixtureId, key) in fixtureIds"
