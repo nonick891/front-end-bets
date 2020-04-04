@@ -19,7 +19,7 @@
       <tr
         :key="key"
         v-for="(result, key) in odd.results"
-        @click="click(odd, result)"
+        @click="addOddClick(odd, result)"
       >
         <td>{{ result.name.value }}</td>
         <td class="text-right"><b>{{ result.odds }}</b></td>
@@ -29,38 +29,14 @@
   </v-simple-table>
 </template>
 <script>
-import { mapState, mapGetters, mapMutations } from 'vuex'
 import toggleRow from './toggle-row.vue'
 import toggleTableMixin from '../../../../../app/mixins/table-toggle'
+import addOddClickMixin from '../../../../../app/mixins/add-odd-click'
 export default {
-  mixins: [toggleTableMixin],
+  mixins: [toggleTableMixin, addOddClickMixin],
   components: { toggleRow },
   props: {
     odd: Object
-  },
-  computed: {
-    ...mapGetters('game', ['gameId']),
-    ...mapState('bet', ['decisions']),
-    ...mapState('game', ['participants'])
-  },
-  methods: {
-    ...mapMutations({
-      addFixtureId: 'bet/ADD_FIXTURE_ID',
-      addParticipants: 'bet/ADD_PARTICIPANTS',
-      addOdd: 'bet/ADD_ODD',
-      addOddItem: 'bet/ADD_ODD_ITEM',
-      calculateAll: 'bet/CALCULATE_ALL',
-      showDialog: 'bet/SHOW_DIALOG'
-    }),
-    click(odd, item) {
-      let gameId = parseInt(this.gameId);
-      this.addFixtureId(gameId);
-      this.addParticipants({gameId, participants: Object.assign({}, this.participants)});
-      this.addOdd({gameId, odd: { id: odd.id, name: odd.name }});
-      this.addOddItem({gameId, oddId: odd.id, item: { id: item.id, odds: item.odds, name: item.name.value } });
-      this.calculateAll();
-      this.showDialog();
-    }
   }
 }
 </script>

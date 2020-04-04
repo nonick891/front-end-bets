@@ -24,12 +24,29 @@
         class="text-center"
         v-for="index in maxIndex-1"
       >
-        <td>{{ get(team1, `${index}.name.value`) }} <b>{{ get(team1, `${index}.odds`) }}</b></td>
-        <td>{{ get(x, `${index}.name.value`) }} <b>{{ get(x, `${index}.odds`) }}</b></td>
-        <td>{{ get(team2, `${index}.name.value`) }} <b>{{ get(team2, `${index}.odds`) }}</b></td>
+        <td
+          @click="addOddClick(odd, team1[index])"
+        >
+          {{ get(team1, `${index}.name.value`) }} <b>{{ get(team1, `${index}.odds`) }}</b>
+        </td>
+        <td
+          @click="addOddClick(odd, x[index])"
+        >
+          {{ get(x, `${index}.name.value`) }} <b>{{ get(x, `${index}.odds`) }}</b>
+        </td>
+        <td
+          @click="addOddClick(odd, team2[index])"
+        >
+          {{ get(team2, `${index}.name.value`) }} <b>{{ get(team2, `${index}.odds`) }}</b>
+        </td>
       </tr>
       <tr class="text-center">
-        <td colspan="3">{{ any.name.value }} <b>{{ any.odds }}</b></td>
+        <td
+          colspan="3"
+          @click="addOddClick(odd, any)"
+        >
+          {{ any.name.value }} <b>{{ any.odds }}</b>
+        </td>
       </tr>
       </tbody>
     </template>
@@ -39,8 +56,9 @@
 import { get } from 'lodash'
 import toggleRow from './toggle-row.vue'
 import toggleTableMixin from '../../../../../app/mixins/table-toggle'
+import addOddClickMixin from '../../../../../app/mixins/add-odd-click'
 export default {
-  mixins: [toggleTableMixin],
+  mixins: [toggleTableMixin, addOddClickMixin],
   components: { toggleRow },
   props: {
     odd: Object

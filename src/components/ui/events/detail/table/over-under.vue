@@ -28,6 +28,7 @@
         <td
           :key="key"
           v-for="(result, key) in odd.results"
+          @click="addOddClick(odd, result)"
         >{{ result.odds }}</td>
       </tr>
       </tbody>
@@ -37,8 +38,9 @@
 <script>
 import toggleRow from './toggle-row.vue'
 import toggleTableMixin from '../../../../../app/mixins/table-toggle'
+import addOddClickMixin from '../../../../../app/mixins/add-odd-click'
 export default {
-  mixins: [toggleTableMixin],
+  mixins: [toggleTableMixin, addOddClickMixin],
   components: { toggleRow },
   props: {
     odd: Object
