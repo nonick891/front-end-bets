@@ -16,24 +16,14 @@
       </tr>
       </thead>
       <tbody v-show="showed">
-      <tr
-        :key="number"
-        v-for="number in resultsLength"
-      >
+      <tr>
         <td
-          v-if="number%2 !== 0 && getResult(number-1) !== undefined"
+          :key="key"
+          v-for="(result, key) in odd.results"
           class="text-center"
-          :colspan="getResult(number) === undefined ? 2 : false"
-          @click="addOddClick(odd, getResult(number-1))"
+          @click="addOddClick(odd, result)"
         >
-          {{ getResult(number-1).name.value }} <b>{{ getResult(number-1).odds }}</b>
-        </td>
-        <td
-          v-if="number%2 !== 0 && getResult(number) !== undefined"
-          class="text-center"
-          @click="addOddClick(odd, getResult(number))"
-        >
-          {{ getResult(number).name.value }} <b>{{ getResult(number).odds }}</b>
+          {{ result.name.value }} <b>{{ result.odds }}</b>
         </td>
       </tr>
       </tbody>
