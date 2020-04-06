@@ -29,7 +29,7 @@
         <v-col
           :key="k"
           v-for="(item, k) in getOddItems(fixtureId, odd.id)"
-          class="bet-decision"
+          class="bet-decision one-line-text"
           cols="12"
         >
           {{ odd.name }}: {{ item.name }}
@@ -121,5 +121,12 @@ export default {
   .bet-decision {
     line-height: 16px;
     font-size: 14px;
+  }
+  .one-line-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
   }
 </style>
