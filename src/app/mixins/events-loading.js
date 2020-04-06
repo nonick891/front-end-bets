@@ -19,18 +19,14 @@ export default {
     },
     getBreadcrumbsObject() {
       return [
-        {
-          text: this.fixture.region.name.value
-        },
-        {
-          text: this.fixture.competition.name.value
-        }
+        {text: this.fixture.region.name.value},
+        {text: this.fixture.competition.name.value}
       ];
     },
     ...mapMutations({
       setBreadcrumbs: 'interface/SET_BREADCRUMBS',
-      setGroups: 'group/SET_GROUPS',
       setParticipants: 'game/SET_PARTICIPANTS',
+      setGroups: 'group/SET_GROUPS',
       setGameID: 'game/SET_GAME_ID',
       setGames: 'game/SET_GAMES'
     })

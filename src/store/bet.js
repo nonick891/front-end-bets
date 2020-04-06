@@ -11,6 +11,8 @@ import {
   ADD_ODD,
   REMOVE_ODDS,
   ADD_ODD_ITEM,
+  SET_SELECTED_ITEM,
+  REMOVE_SELECTED_ITEMS,
   REMOVE_ODD_ITEMS,
   SHOW_DIALOG,
   HIDE_DIALOG
@@ -22,6 +24,9 @@ const getShort = (participants, i) =>
 const getGameName = participants =>
   `${getShort(participants, 0)} vs ${getShort(participants, 1)}`;
 
+const getRemoveItemsIndexesById = gameId =>
+  (arr, e, i) => ((e.gameId === gameId) && arr.push(i), arr);
+
 const state = {
   dialog: false,
   amount: 0,
@@ -32,6 +37,7 @@ const state = {
   odds: [],
   oddItems: [],
   games: [],
+  selectedOdds: [],
   chunkGames: [],
   lastIndex: []
 }
@@ -39,7 +45,8 @@ const state = {
 const getters = {
   totalMoney: state => parseFloat((state.total * state.amount).toFixed(2)),
   getOdds: state => gameId => get(state, 'odds', []).filter(odd => odd.gameId === gameId),
-  getOddItems: state => (gameId, oddId) => get(state, 'oddItems', []).filter(item => item.gameId === gameId && item.oddId === oddId)
+  getOddItems: state => (gameId, oddId) => get(state, 'oddItems', []).filter(item => item.gameId === gameId && item.oddId === oddId),
+  isSelectedOdd: state => itemId => state.selectedOdds.find(id => id === itemId)
 }
 
 const actions = {
@@ -55,6 +62,7 @@ const mutations = {
     state.decisionParticipants = {};
     state.odds = [];
     state.oddItems = [];
+    state.selectedOdds = [];
     state.amount = 0;
     state.count = 0;
     state.total = 0;
@@ -103,9 +111,18 @@ const mutations = {
     }
   },
   [REMOVE_ODD_ITEMS](state, gameId) {
-    let removeElements = state.oddItems.reduce((arr, e, i) => ((e.gameId === gameId) && arr.push(i), arr), []);
+    let removeElements = state.oddItems.reduce(getRemoveItemsIndexesById(gameId), []);
     for (let i = removeElements.length -1; i >= 0; i--) {
-      state.oddItems.splice(removeElements[i],1);
+      state.oddItems.splice(removeElements[i], 1);
+    }
+  },
+  [SET_SELECTED_ITEM](state, itemId) {
+    state.selectedOdds.push(itemId);
+  },
+  [REMOVE_SELECTED_ITEMS](state, gameId) {
+    let removeElements = state.oddItems.reduce(getRemoveItemsIndexesById(gameId), []);
+    for (let i = removeElements.length -1; i >= 0; i--) {
+      state.selectedOdds.splice(removeElements[i], 1);
     }
   },
   [FETCH_DECISION](state) {

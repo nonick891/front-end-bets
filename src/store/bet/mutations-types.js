@@ -10,5 +10,7 @@ export const ADD_ODD = 'ADD_ODD';
 export const REMOVE_ODDS = 'REMOVE_ODDS';
 export const ADD_ODD_ITEM = 'ADD_ODD_ITEM';
 export const REMOVE_ODD_ITEMS = 'REMOVE_ODD_ITEMS';
+export const SET_SELECTED_ITEM = 'SET_SELECTED_ITEM';
+export const REMOVE_SELECTED_ITEMS = 'REMOVE_SELECTED_ITEMS';
 export const SHOW_DIALOG = 'SHOW_DIALOG';
 export const HIDE_DIALOG = 'HIDE_DIALOG';

@@ -8,6 +8,7 @@ import {
 } from './game/mutations-types'
 
 const state = {
+  games: [],
   gameId: 0,
   participants: []
 }
@@ -34,7 +35,7 @@ const mutations = {
   [SET_GAMES](state, games) {
     state.games = games;
   },
-  [SET_CHUNK_GAMES](state, {id, chunk}) {
+  [SET_CHUNK_GAMES](state, { id, chunk }) {
     let lastIndex = get(state.lastIndex, id, 0);
     state.lastIndex[id] = lastIndex + chunk.length - 1;
     state.chunkGames[id] = state.chunkGames[id].concat(chunk)

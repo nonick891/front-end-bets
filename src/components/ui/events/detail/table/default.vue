@@ -1,5 +1,7 @@
 <template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
-  <v-simple-table>
+  <v-simple-table
+    class="custom-table"
+  >
     <template v-slot:default>
       <thead>
       <tr>
@@ -20,6 +22,7 @@
         :key="key"
         v-for="(result, key) in odd.results"
         @click="addOddClick(odd, result)"
+        :class="isSelectedOdd(result.id) ? 'result-added' : null"
       >
         <td>{{ result.name.value }}</td>
         <td class="text-right"><b>{{ result.odds }}</b></td>
@@ -40,3 +43,9 @@ export default {
   }
 }
 </script>
+<style>
+  .custom-table.theme--dark.v-data-table tbody tr.result-added,
+  .custom-table.theme--dark.v-data-table tbody tr.result-added:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
+    background: rgba(255,204,0,.300007);
+  }
+</style>

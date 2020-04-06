@@ -30,13 +30,19 @@ import { get } from 'lodash'
 import defaultTable from './table/default.vue'
 import overUnderTable from './table/over-under.vue'
 import correctScore from './table/correct-score.vue'
-import tripleColumns from './table/triple-column.vue'
 import doubleColumns from './table/double-column.vue'
+import tripleColumns from './table/triple-column.vue'
 export default {
   props: {
     odd: Object
   },
-  components: { defaultTable, overUnderTable, correctScore, doubleColumns, tripleColumns },
+  components: {
+    defaultTable,
+    overUnderTable,
+    correctScore,
+    doubleColumns,
+    tripleColumns
+  },
   methods: {
     getMarketType(odd) {
       return get(odd, 'grouping.parameters.marketType', '')
