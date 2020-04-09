@@ -1,4 +1,5 @@
-import { mapState, mapGetters, mapMutations } from 'vuex'
+import { get } from 'lodash'
+import { mapState, mapGetters, mapActions } from 'vuex'
 export default {
   computed: {
     ...mapGetters('game', ['gameId']),
@@ -7,24 +8,21 @@ export default {
     ...mapState('bet', ['selectedOdds']),
   },
   methods: {
-    ...mapMutations({
-      addFixtureId: 'bet/ADD_FIXTURE_ID',
-      addParticipants: 'bet/ADD_PARTICIPANTS',
-      addOdd: 'bet/ADD_ODD',
-      addOddItem: 'bet/ADD_ODD_ITEM',
-      setSelectedItem: 'bet/SET_SELECTED_ITEM',
-      calculateAll: 'bet/CALCULATE_ALL',
-      showDialog: 'bet/SHOW_DIALOG'
+    ...mapActions({
+      addDialogItem: 'bet/addDialogItem',
+      removeDialogItem: 'bet/removeDialogItem',
     }),
+    get() {
+      return get(...arguments);
+    },
     addOddClick(odd, item) {
-      let gameId = parseInt(this.gameId);
-      this.addFixtureId(gameId);
-      this.addParticipants({ gameId, participants: Object.assign({}, this.participants) });
-      this.addOdd({ gameId, odd: { id: odd.id, name: odd.name }});
-      this.addOddItem({ gameId, oddId: odd.id, item: { id: item.id, odds: item.odds, name: item.name.value } });
-      this.setSelectedItem(item.id);
-      this.calculateAll();
-      this.showDialog();
+      let gameId = parseInt(this.gameId),
+          participants = Object.assign({}, this.participants);
+      if (this.isSelectedOdd(item.id)) {
+        this.removeDialogItem({ gameId, oddId: odd.id, itemId: item.id });
+      } else {
+        this.addDialogItem({ gameId, participants, odd, item });
+      }
     }
   }
 }

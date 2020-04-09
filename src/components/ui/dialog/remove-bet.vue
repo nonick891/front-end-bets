@@ -19,7 +19,6 @@
   </v-slide-y-transition>
 </template>
 <script>
-import { keys } from 'lodash';
 import { mapState, mapMutations, mapActions } from 'vuex'
 import CloseButton from '../buttons/close.vue'
 export default {
@@ -50,7 +49,7 @@ export default {
         this.removeParticipants(this.fixtureId);
         this.removeOdds(this.fixtureId);
         this.removeOddItems(this.fixtureId);
-        keys(this.oddItems).length > 0
+        this.oddItems.length > 0
           ? this.calculateAll()
           : this.clearAll()
       });

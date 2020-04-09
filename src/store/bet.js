@@ -1,19 +1,23 @@
-import { get } from 'lodash'
+import { get, keys } from 'lodash'
 import {
   REMOVE_DECISION,
   CALCULATE_ALL,
   CLEAR_ALL,
+  CLEAR_COUNTERS,
   FETCH_DECISION,
   ADD_FIXTURE_ID,
   REMOVE_FIXTURE_ID,
   ADD_PARTICIPANTS,
   REMOVE_PARTICIPANTS,
   ADD_ODD,
+  REMOVE_ODD,
   REMOVE_ODDS,
   ADD_ODD_ITEM,
-  SET_SELECTED_ITEM,
-  REMOVE_SELECTED_ITEMS,
+  REMOVE_ODD_ITEM,
   REMOVE_ODD_ITEMS,
+  ADD_SELECTED_ITEM,
+  REMOVE_SELECTED_ITEM,
+  REMOVE_SELECTED_ITEMS,
   SHOW_DIALOG,
   HIDE_DIALOG
 } from './bet/mutations-types'
@@ -52,6 +56,35 @@ const getters = {
 const actions = {
   calculateAll({ commit, getters }) {
     commit('CALCULATE_ALL', getters)
+  },
+  addDialogItem({ commit }, { gameId, participants, odd, item }) {
+    let simpleOdd = { id: odd.id, name: odd.name },
+        oddItem = { id: item.id, odds: item.odds, name: item.name.value };
+    commit('ADD_FIXTURE_ID', gameId);
+    commit('ADD_PARTICIPANTS', { gameId, participants });
+    commit('ADD_ODD', { gameId, odd: simpleOdd });
+    commit('ADD_ODD_ITEM', { gameId, oddId: odd.id, item: oddItem });
+    commit('ADD_SELECTED_ITEM', item.id);
+    commit('SHOW_DIALOG');
+    commit('CALCULATE_ALL', getters);
+  },
+  removeDialogItem({ state, commit, getters }, { gameId, oddId, itemId }) {
+    commit('REMOVE_SELECTED_ITEM', itemId);
+    commit('REMOVE_ODD_ITEM', itemId);
+    state.count = state.count - 1;
+    if (getters.getOddItems(gameId, oddId).length === 0) {
+      commit('REMOVE_ODD', oddId);
+    }
+    if (getters.getOdds(gameId).length === 0) {
+      commit('REMOVE_PARTICIPANTS', gameId);
+    }
+    let participantsLength = keys(state.decisionParticipants).length;
+    if (participantsLength === 0) {
+      commit('REMOVE_FIXTURE_ID', gameId);
+      commit('HIDE_DIALOG');
+      commit('CLEAR_COUNTERS');
+    }
+    return participantsLength;
   }
 }
 
@@ -63,6 +96,11 @@ const mutations = {
     state.odds = [];
     state.oddItems = [];
     state.selectedOdds = [];
+    state.amount = 0;
+    state.count = 0;
+    state.total = 0;
+  },
+  [CLEAR_COUNTERS](state) {
     state.amount = 0;
     state.count = 0;
     state.total = 0;
@@ -82,9 +120,7 @@ const mutations = {
   },
   [REMOVE_FIXTURE_ID](state, gameId) {
     let index = state.fixtureIds.findIndex(id => id === gameId);
-    if (index > -1) {
-      state.fixtureIds.splice(index, 1);
-    }
+    if (index > -1) state.fixtureIds.splice(index, 1);
   },
   [ADD_PARTICIPANTS](state, {gameId, participants}) {
     let part = Object.assign({}, state.decisionParticipants);
@@ -99,6 +135,10 @@ const mutations = {
       state.odds.push({ gameId, id: odd.id, name: odd.name.value });
     }
   },
+  [REMOVE_ODD](state, oddId) {
+    let index = state.odds.findIndex(odd => odd.id === oddId);
+    if (index > -1) state.odds.splice(index, 1);
+  },
   [REMOVE_ODDS](state, gameId) {
     let removeElements = state.odds.reduce((arr, e, i) => ((e.gameId === gameId) && arr.push(i), arr), []);
     for (let i = removeElements.length -1; i >= 0; i--) {
@@ -110,14 +150,22 @@ const mutations = {
       state.oddItems.push({gameId, oddId, ...item});
     }
   },
+  [REMOVE_ODD_ITEM](state, itemId) {
+    let index = state.oddItems.findIndex(item => item.id === itemId);
+    if (index > -1) state.oddItems.splice(index, 1);
+  },
   [REMOVE_ODD_ITEMS](state, gameId) {
     let removeElements = state.oddItems.reduce(getRemoveItemsIndexesById(gameId), []);
     for (let i = removeElements.length -1; i >= 0; i--) {
       state.oddItems.splice(removeElements[i], 1);
     }
   },
-  [SET_SELECTED_ITEM](state, itemId) {
+  [ADD_SELECTED_ITEM](state, itemId) {
     state.selectedOdds.push(itemId);
+  },
+  [REMOVE_SELECTED_ITEM](state, itemId) {
+    let index = state.selectedOdds.findIndex(id => id === itemId);
+    if (index > -1) state.selectedOdds.splice(index, 1);
   },
   [REMOVE_SELECTED_ITEMS](state, gameId) {
     let removeElements = state.oddItems.reduce(getRemoveItemsIndexesById(gameId), []);
