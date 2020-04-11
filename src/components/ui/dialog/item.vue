@@ -51,6 +51,7 @@
           class="text-right mt-4"
         >
           <v-col
+            :cols="12"
             :key="key"
             v-for="(odd, key) in getOdds(fixtureId)"
             class="bet-decision"

@@ -24,6 +24,7 @@
           v-if="number%2 !== 0 && getResult(number-1) !== undefined"
           class="text-center"
           :colspan="getResult(number) === undefined ? 2 : false"
+          :class="getActiveClass(getResult(number-1).id)"
           @click="addOddClick(odd, getResult(number-1))"
         >
           {{ getResult(number-1).name.value }} <b>{{ getResult(number-1).odds }}</b>
@@ -32,6 +33,7 @@
           v-if="number%2 !== 0 && getResult(number) !== undefined"
           class="text-center"
           @click="addOddClick(odd, getResult(number))"
+          :class="getActiveClass(getResult(number).id)"
         >
           {{ getResult(number).name.value }} <b>{{ getResult(number).odds }}</b>
         </td>
@@ -64,3 +66,11 @@ export default {
   }
 }
 </script>
+<style>
+  .theme--dark.v-data-table tbody tr td.result-added:not(.v-data-table__mobile-row) {
+    background: rgba(255,204,0,.300007);
+  }
+  .theme--dark.v-data-table tbody tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
+    background: transparent;
+  }
+</style>
