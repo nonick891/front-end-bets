@@ -106,11 +106,3 @@ export default {
   }
 }
 </script>
-<style>
-  .theme--dark.v-data-table tbody tr td.result-added:not(.v-data-table__mobile-row) {
-    background: rgba(255,204,0,.300007);
-  }
-  .theme--dark.v-data-table tbody tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
-    background: transparent;
-  }
-</style>

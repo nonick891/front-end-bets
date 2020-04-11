@@ -75,4 +75,19 @@ export default {
   .v-data-table table tbody tr td {
     padding: 0 5px;
   }
+
+  .custom-table.theme--dark.v-data-table thead tr:last-child th {
+    border-bottom: none;
+  }
+  .custom-table.theme--dark.v-data-table tbody tr.result-added,
+  .custom-table.theme--dark.v-data-table tbody tr.result-added:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
+    background: rgba(255,204,0,.3);
+  }
+
+  .theme--dark.v-data-table tbody tr td.result-added:not(.v-data-table__mobile-row) {
+    background: rgba(255,204,0,.3);
+  }
+  .theme--dark.v-data-table tbody tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
+    background: transparent;
+  }
 </style>
