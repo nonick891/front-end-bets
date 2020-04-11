@@ -22,7 +22,7 @@
         :key="key"
         v-for="(result, key) in odd.results"
         @click="addOddClick(odd, result)"
-        :class="isSelectedOdd(result.id) ? 'result-added' : null"
+        :class="getActiveClass(result.id)"
       >
         <td>{{ result.name.value }}</td>
         <td class="text-right"><b>{{ result.odds }}</b></td>

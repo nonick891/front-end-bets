@@ -57,6 +57,13 @@ const actions = {
   calculateAll({ commit, getters }) {
     commit('CALCULATE_ALL', getters)
   },
+  toggleDialogItem({ dispatch, getters }, { item, gameId, odd, participants }) {
+    if (getters.isSelectedOdd(item.id)) {
+      dispatch('removeDialogItem', { gameId, oddId: odd.id, itemId: item.id });
+    } else {
+      dispatch('addDialogItem', { gameId, participants, odd, item });
+    }
+  },
   addDialogItem({ commit }, { gameId, participants, odd, item }) {
     let simpleOdd = { id: odd.id, name: odd.name },
         oddItem = { id: item.id, odds: item.odds, name: item.name.value };

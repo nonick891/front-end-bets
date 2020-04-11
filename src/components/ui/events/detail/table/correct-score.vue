@@ -25,17 +25,20 @@
         v-for="index in maxIndex-1"
       >
         <td
-          @click="addOddClick(odd, team1[index])"
+          :class="team1[index] ? getActiveClass(team1[index].id) : null"
+          @click="team1[index] ? addOddClick(odd, team1[index]) : function(){}"
         >
           {{ get(team1, `${index}.name.value`) }} <b>{{ get(team1, `${index}.odds`) }}</b>
         </td>
         <td
-          @click="addOddClick(odd, x[index])"
+          :class="x[index] ? getActiveClass(x[index].id) : null"
+          @click="x[index]? addOddClick(odd, x[index]) : function(){}"
         >
           {{ get(x, `${index}.name.value`) }} <b>{{ get(x, `${index}.odds`) }}</b>
         </td>
         <td
-          @click="addOddClick(odd, team2[index])"
+          :class="team2[index] ? getActiveClass(team2[index].id) : null"
+          @click="team2[index] ? addOddClick(odd, team2[index]) : function(){}"
         >
           {{ get(team2, `${index}.name.value`) }} <b>{{ get(team2, `${index}.odds`) }}</b>
         </td>
@@ -44,6 +47,7 @@
         <td
           colspan="3"
           @click="addOddClick(odd, any)"
+          :class="any ? getActiveClass(any.id) : null"
         >
           {{ any.name.value }} <b>{{ any.odds }}</b>
         </td>
@@ -99,3 +103,11 @@ export default {
   }
 }
 </script>
+<style>
+  .theme--dark.v-data-table tbody tr td.result-added:not(.v-data-table__mobile-row) {
+    background: rgba(255,204,0,.300007);
+  }
+  .theme--dark.v-data-table tbody tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
+    background: transparent;
+  }
+</style>

@@ -8,21 +8,17 @@ export default {
     ...mapState('bet', ['selectedOdds']),
   },
   methods: {
-    ...mapActions({
-      addDialogItem: 'bet/addDialogItem',
-      removeDialogItem: 'bet/removeDialogItem',
-    }),
+    ...mapActions({ toggleDialogItem: 'bet/toggleDialogItem' }),
     get() {
       return get(...arguments);
+    },
+    getActiveClass(resultId) {
+      return this.isSelectedOdd(resultId) ? 'result-added' : null;
     },
     addOddClick(odd, item) {
       let gameId = parseInt(this.gameId),
           participants = Object.assign({}, this.participants);
-      if (this.isSelectedOdd(item.id)) {
-        this.removeDialogItem({ gameId, oddId: odd.id, itemId: item.id });
-      } else {
-        this.addDialogItem({ gameId, participants, odd, item });
-      }
+      this.toggleDialogItem({ item, gameId, odd, participants });
     }
   }
 }
