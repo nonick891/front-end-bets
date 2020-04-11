@@ -25,18 +25,21 @@
         v-for="index in maxIndex-1"
       >
         <td
+          class="borders"
           :class="team1[index] ? getActiveClass(team1[index].id) : null"
           @click="team1[index] ? addOddClick(odd, team1[index]) : function(){}"
         >
           {{ get(team1, `${index}.name.value`) }} <b>{{ get(team1, `${index}.odds`) }}</b>
         </td>
         <td
+          class="borders"
           :class="x[index] ? getActiveClass(x[index].id) : null"
           @click="x[index]? addOddClick(odd, x[index]) : function(){}"
         >
           {{ get(x, `${index}.name.value`) }} <b>{{ get(x, `${index}.odds`) }}</b>
         </td>
         <td
+          class="borders"
           :class="team2[index] ? getActiveClass(team2[index].id) : null"
           @click="team2[index] ? addOddClick(odd, team2[index]) : function(){}"
         >

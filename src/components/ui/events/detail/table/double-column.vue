@@ -22,7 +22,7 @@
       >
         <td
           v-if="number%2 !== 0 && getResult(number-1) !== undefined"
-          class="text-center"
+          class="text-center borders"
           :colspan="getResult(number) === undefined ? 2 : false"
           :class="getActiveClass(getResult(number-1).id)"
           @click="addOddClick(odd, getResult(number-1))"
@@ -31,7 +31,7 @@
         </td>
         <td
           v-if="number%2 !== 0 && getResult(number) !== undefined"
-          class="text-center"
+          class="text-center borders"
           @click="addOddClick(odd, getResult(number))"
           :class="getActiveClass(getResult(number).id)"
         >

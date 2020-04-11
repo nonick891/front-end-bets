@@ -20,7 +20,7 @@
         <td
           :key="key"
           v-for="(result, key) in odd.results"
-          class="text-center"
+          class="text-center borders"
           @click="addOddClick(odd, result)"
           :class="getActiveClass(result.id)"
         >

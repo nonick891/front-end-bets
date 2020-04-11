@@ -44,6 +44,9 @@ export default {
 }
 </script>
 <style>
+  .custom-table.theme--dark.v-data-table thead tr:last-child th {
+    border-bottom: none;
+  }
   .custom-table.theme--dark.v-data-table tbody tr.result-added,
   .custom-table.theme--dark.v-data-table tbody tr.result-added:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
     background: rgba(255,204,0,.300007);

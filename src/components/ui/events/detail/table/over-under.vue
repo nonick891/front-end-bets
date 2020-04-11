@@ -25,9 +25,9 @@
         >{{ result.name.value.replace(odd.attr, '') }}</td>
       </tr>
       <tr>
-        <td class="text-center">{{ odd.attr }}</td>
+        <td class="text-center borders">{{ odd.attr }}</td>
         <td
-          class="text-center"
+          class="text-center borders"
           :key="key"
           v-for="(result, key) in odd.results"
           @click="addOddClick(odd, result)"

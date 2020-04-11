@@ -59,6 +59,18 @@ export default {
 }
 </script>
 <style>
+  .v-data-table__wrapper {
+    border-radius: 5px;
+  }
+  table thead {
+    background-color: #2e2e2e;
+  }
+  .v-data-table table {
+    border-collapse: collapse;
+  }
+  .theme--dark.v-data-table tbody tr td.borders {
+    border: 1px solid #2e2e2e;
+  }
   .v-data-table table thead tr th,
   .v-data-table table tbody tr td {
     padding: 0 5px;
