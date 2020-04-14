@@ -27,7 +27,7 @@
       <tr>
         <td class="text-center borders">{{ odd.attr }}</td>
         <td
-          class="text-center borders"
+          class="text-center borders odd-value"
           :key="key"
           v-for="(result, key) in odd.results"
           @click="addOddClick(odd, result)"

@@ -65,13 +65,17 @@ export default {
   table thead {
     background-color: #2e2e2e;
   }
-  .v-data-table table thead tr th div {
+  .theme--dark.v-data-table table thead tr th,
+  .theme--dark.v-data-table table thead tr th div,
+  .theme--dark.v-data-table tbody .odd-value {
     color: #fff;
+    font-weight: 500;
   }
-  .v-data-table table {
+  .theme--dark.v-data-table table {
+    color: #999;
     border-collapse: collapse;
   }
-  table,
+  .theme--dark.v-data-table table,
   .theme--dark.v-data-table tbody tr,
   .theme--dark.v-data-table tbody tr td.borders {
     border: 1px solid #2e2e2e;
@@ -81,8 +85,8 @@ export default {
     padding: 0 5px;
   }
 
-  .custom-table.theme--dark.v-data-table thead tr:last-child th,
-  .theme--dark.v-data-table thead tr:last-child th {
+  .theme--dark.v-data-table thead tr:last-child th,
+  .custom-table.theme--dark.v-data-table thead tr:last-child th {
     border-bottom: none;
   }
   .custom-table.theme--dark.v-data-table tbody tr.result-added,

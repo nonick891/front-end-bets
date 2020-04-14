@@ -20,6 +20,7 @@
       <tbody v-show="showed">
       <tr
         :key="key"
+        class="odd-value"
         v-for="(result, key) in odd.results"
         @click="addOddClick(odd, result)"
         :class="getActiveClass(result.id)"
