@@ -9,10 +9,10 @@
         <v-tabs
           grow
           dark
+          show-arrows
           v-model="tab"
           height="40px"
           class="groups"
-          :show-arrows="false"
           slider-color="border"
           background-color="transparent"
         >
@@ -26,6 +26,8 @@
     <v-col cols="12">
       <v-tabs-items v-model="tab">
         <v-tab-item
+          :transition="false"
+          :reverse-transition="false"
           :key="key"
           v-for="(group, key) in groups"
         >
