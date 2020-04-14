@@ -76,7 +76,8 @@ export default {
     padding: 0 5px;
   }
 
-  .custom-table.theme--dark.v-data-table thead tr:last-child th {
+  .custom-table.theme--dark.v-data-table thead tr:last-child th,
+  .theme--dark.v-data-table thead tr:last-child th {
     border-bottom: none;
   }
   .custom-table.theme--dark.v-data-table tbody tr.result-added,
