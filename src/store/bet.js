@@ -60,6 +60,7 @@ const actions = {
   toggleDialogItem({ dispatch, getters }, { item, gameId, odd, participants }) {
     if (getters.isSelectedOdd(item.id)) {
       dispatch('removeDialogItem', { gameId, oddId: odd.id, itemId: item.id });
+      dispatch('calculateAll', getters);
     } else {
       dispatch('addDialogItem', { gameId, participants, odd, item });
     }
