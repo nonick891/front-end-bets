@@ -65,9 +65,14 @@ export default {
   table thead {
     background-color: #2e2e2e;
   }
+  .v-data-table table thead tr th div {
+    color: #fff;
+  }
   .v-data-table table {
     border-collapse: collapse;
   }
+  table,
+  .theme--dark.v-data-table tbody tr,
   .theme--dark.v-data-table tbody tr td.borders {
     border: 1px solid #2e2e2e;
   }
