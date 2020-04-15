@@ -68,6 +68,9 @@
             <half-time />
           </v-col>
         </v-row>
+        <participant-events
+          v-if="expandParticipantsDetail"
+        />
       </v-card>
     </v-col>
   </v-row>
@@ -77,9 +80,10 @@ import { get } from 'lodash'
 import { mapState, mapMutations } from 'vuex'
 import toggleButton from '../../buttons/toggle.vue'
 import halfTime from '../../tabs/participants-halftime.vue'
+import participantEvents from './participant-events.vue'
 export default {
   name: 'participants',
-  components: { toggleButton, halfTime },
+  components: { toggleButton, halfTime, participantEvents },
   data: () => ({
     get: get
   }),

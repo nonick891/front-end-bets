@@ -19,7 +19,7 @@
       <tr>
         <td></td>
         <td
-          class="text-center"
+          class="text-center small-text"
           :key="key"
           v-for="(result, key) in odd.results"
         >{{ result.name.value.replace(odd.attr, '') }}</td>

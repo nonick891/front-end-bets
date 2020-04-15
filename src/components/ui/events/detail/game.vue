@@ -71,6 +71,9 @@ export default {
     color: #fff;
     font-weight: 500;
   }
+  .theme--dark.v-data-table table tbody tr td.small-text {
+    font-size: 0.675rem;
+  }
   .theme--dark.v-data-table table {
     color: #999;
     border-collapse: collapse;
