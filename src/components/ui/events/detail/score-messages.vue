@@ -28,12 +28,14 @@ export default {
   computed: {
     ...mapState('scoreboard', ['messages']),
     message() {
-      let arrayMessages = values(this.messages);
-      return arrayMessages[arrayMessages.length - 1];
+      let arrayMessages = values(this.messages),
+        message = arrayMessages[arrayMessages.length - 1];
+      return message ? message : {};
     }
   },
   methods: {
     getIcon(message) {
+      if (values(message).length === 0) return {};
       return this.mapIcons.find(el => message.messageType === el.id);
     }
   }
