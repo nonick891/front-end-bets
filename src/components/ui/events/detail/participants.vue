@@ -44,14 +44,7 @@
           class="mt-4"
           no-gutters
         >
-          <v-col class="flex-grow-1">
-            <span>
-              <v-icon size="14">$vuetify.icons.flag</v-icon>
-            </span>
-            <span class="details">
-              7th corner for Team 1
-            </span>
-          </v-col>
+          <score-messages />
           <v-col class="flex-shrink-1 flex-grow-0">
             <toggle-button
               :rotate="expandParticipantsDetail"
@@ -68,9 +61,7 @@
             <half-time />
           </v-col>
         </v-row>
-        <participant-events
-          v-if="expandParticipantsDetail"
-        />
+        <scoreboard v-if="expandParticipantsDetail" />
       </v-card>
     </v-col>
   </v-row>
@@ -80,10 +71,11 @@ import { get } from 'lodash'
 import { mapState, mapMutations } from 'vuex'
 import toggleButton from '../../buttons/toggle.vue'
 import halfTime from '../../tabs/participants-halftime.vue'
-import participantEvents from './participant-events.vue'
+import scoreboard from './scoarboard.vue'
+import scoreMessages from './score-messages.vue'
 export default {
   name: 'participants',
-  components: { toggleButton, halfTime, participantEvents },
+  components: { toggleButton, scoreMessages, halfTime, scoreboard },
   data: () => ({
     get: get
   }),

@@ -9,9 +9,9 @@
         <v-tabs
           grow
           dark
-          show-arrows
           v-model="tab"
           height="40px"
+          center-active
           class="groups"
           slider-color="border"
           background-color="transparent"

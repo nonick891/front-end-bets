@@ -9,25 +9,25 @@
         align="center"
         justify="center"
       >
-        <participant-event
+        <scoreboard-event
           name="Yellow Card"
-          :left="1"
+          :left="yellowCards.player1"
           icon="yellowCard"
-          :right="3"
+          :right="yellowCards.player2"
           color="#F7AC16"
         />
-        <participant-event
+        <scoreboard-event
           name="Goal"
-          :left="1"
+          :left="goals.player1"
           icon="ball"
-          :right="3"
+          :right="goals.player2"
           color="#fff"
         />
-        <participant-event
+        <scoreboard-event
           name="Corner"
-          :left="13"
+          :left="corners.player1"
           icon="flag"
-          :right="24"
+          :right="corners.player2"
           color="#fff"
         />
       </v-row>
@@ -41,21 +41,21 @@
         align="center"
         justify="center"
       >
-        <participant-event
+        <scoreboard-event
           name="Red Card"
-          :left="0"
+          :left="redCards.player1"
           icon="redCard"
-          :right="0"
+          :right="redCards.player2"
           color="#D32030"
         />
-        <participant-event
+        <scoreboard-event
           name="Penalty"
-          :left="0"
+          :left="penalties.player1"
           icon="sanction"
-          :right="0"
+          :right="penalties.player2"
           color="#fff"
         />
-        <participant-event
+        <scoreboard-event
           name="Subs"
           :left="2"
           icon="exchange"
@@ -67,8 +67,18 @@
   </v-row>
 </template>
 <script>
-import participantEvent from './participant-event.vue'
+import { mapState } from 'vuex'
+import scoreboardEvent from './scoreboard-event.vue'
 export default {
-  components: { participantEvent }
+  components: { scoreboardEvent },
+  computed: {
+    ...mapState('scoreboard', [
+      'goals',
+      'redCards',
+      'yellowCards',
+      'corners',
+      'penalties'
+    ])
+  }
 }
 </script>

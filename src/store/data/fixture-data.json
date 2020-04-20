@@ -1,199 +1,199 @@
 {
   "sportId": 4,
-  "version": "3-dGIIcb4jCucODfQYzQC1mQ==",
+  "version": "6-CTHoTsBJAk4l9/3AnoTQ6w==",
   "gameGroups": [
-    {
-      "id": 1,
-      "name": "Main"
-    },
-    {
-      "id": 15,
-      "name": "Handicaps"
-    },
-    {
-      "id": 20,
-      "name": "Number of goals"
-    },
-    {
-      "id": 35,
-      "name": "Correct score"
-    },
-    {
-      "id": 17,
-      "name": "Halftime"
-    },
-    {
-      "id": 25,
-      "name": "Handicaps"
-    },
-    {
-      "id": 40,
-      "name": "15 minutes"
-    },
-    {
-      "id": 30,
-      "name": "Team"
-    },
-    {
-      "id": 70,
-      "name": "Cards / Penalties"
-    },
-    {
-      "id": 75,
-      "name": "Players"
-    },
-    {
-      "id": 76,
-      "name": "Substitutions"
-    },
-    {
-      "id": 90,
-      "name": "Number of corners"
-    },
-    {
-      "id": 95,
-      "name": "Corners"
-    },
-    {
-      "id": 100,
-      "name": "Throw-ins"
-    },
-    {
-      "id": 110,
-      "name": "Goal kicks"
-    },
-    {
-      "id": 120,
-      "name": "Free kicks"
-    },
-    {
-      "id": 130,
-      "name": "Offsides"
-    },
-    {
-      "id": 150,
-      "name": "Run of play"
-    },
-    {
-      "id": 160,
-      "name": "Miscellaneous"
-    },
-    {
-      "id": 10000,
-      "name": "Other"
-    }
+	{
+	  "id": 1,
+	  "name": "Main"
+	},
+	{
+	  "id": 90,
+	  "name": "Handicaps"
+	},
+	{
+	  "id": 2,
+	  "name": "Number of goals"
+	},
+	{
+	  "id": 4,
+	  "name": "Next goal"
+	},
+	{
+	  "id": 171,
+	  "name": "Halftime"
+	},
+	{
+	  "id": 96,
+	  "name": "Correct score"
+	},
+	{
+	  "id": 97,
+	  "name": "15 minutes"
+	},
+	{
+	  "id": 3,
+	  "name": "Team goals"
+	},
+	{
+	  "id": 6,
+	  "name": "First / last to happen"
+	},
+	{
+	  "id": 7,
+	  "name": "Cards and penalties"
+	},
+	{
+	  "id": 75,
+	  "name": "MarketPlace.Groups.players"
+	},
+	{
+	  "id": 9,
+	  "name": "Number of corners"
+	},
+	{
+	  "id": 95,
+	  "name": "Corners"
+	},
+	{
+	  "id": 100,
+	  "name": "Throw-ins"
+	},
+	{
+	  "id": 110,
+	  "name": "Goal kicks"
+	},
+	{
+	  "id": 120,
+	  "name": "Free kicks"
+	},
+	{
+	  "id": 130,
+	  "name": "Offsides"
+	},
+	{
+	  "id": 140,
+	  "name": "Substitutions"
+	},
+	{
+	  "id": 10,
+	  "name": "Special bets"
+	},
+	{
+	  "id": 10000,
+	  "name": "Other"
+	}
   ],
   "optionMarketGroups": [
-    {
-      "id": 0,
-      "name": "Main"
-    },
-    {
-      "id": 1,
-      "name": "Handicaps"
-    },
-    {
-      "id": 2,
-      "name": "Number of Goals"
-    },
-    {
-      "id": 3,
-      "name": "Correct Score"
-    },
-    {
-      "id": 4,
-      "name": "Halftime"
-    },
-    {
-      "id": 5,
-      "name": "Team"
-    },
-    {
-      "id": 6,
-      "name": "Number of Corners"
-    },
-    {
-      "id": 7,
-      "name": "Number of Free Kicks"
-    },
-    {
-      "id": 8,
-      "name": "Number of Yellow Cards"
-    },
-    {
-      "id": 10000,
-      "name": "Other"
-    }
+	{
+	  "id": 0,
+	  "name": "Main"
+	},
+	{
+	  "id": 1,
+	  "name": "Handicaps"
+	},
+	{
+	  "id": 2,
+	  "name": "Number of Goals"
+	},
+	{
+	  "id": 3,
+	  "name": "Correct Score"
+	},
+	{
+	  "id": 4,
+	  "name": "Halftime"
+	},
+	{
+	  "id": 5,
+	  "name": "Team"
+	},
+	{
+	  "id": 6,
+	  "name": "Number of Corners"
+	},
+	{
+	  "id": 7,
+	  "name": "Number of Free Kicks"
+	},
+	{
+	  "id": 8,
+	  "name": "Number of Yellow Cards"
+	},
+	{
+	  "id": 10000,
+	  "name": "Other"
+	}
   ],
   "parameterTranslations": {
-    "column2OrMore": "2 Or More",
-    "column3OrMore": "3 Or More",
-    "columnAnytime": "Anytime",
-    "columnCorners": "Corners",
-    "columnFirst": "First",
-    "columnGoals": "Goals",
-    "columnLast": "Last",
-    "columnOver": "Over",
-    "columnUnder": "Under",
-    "periodExtraTime": "Extra Time",
-    "periodFirstHalf": "1st Half",
-    "periodRegularTime": "Regular Time",
-    "periodSecondHalf": "2nd Half",
-    "tabMultipleGoal": "Multiple Goals",
-    "tabSingleGoal": "Single Goal"
+	"column2OrMore": "2 Or More",
+	"column3OrMore": "3 Or More",
+	"columnAnytime": "Anytime",
+	"columnCorners": "Corners",
+	"columnFirst": "First",
+	"columnGoals": "Goals",
+	"columnLast": "Last",
+	"columnOver": "Over",
+	"columnUnder": "Under",
+	"periodExtraTime": "Extra Time",
+	"periodFirstHalf": "1st Half",
+	"periodRegularTime": "Regular Time",
+	"periodSecondHalf": "2nd Half",
+	"tabMultipleGoal": "Multiple Goals",
+	"tabSingleGoal": "Single Goal"
   },
   "marketTabs": [
-    {
-      "id": 0,
-      "sortOrder": 1,
-      "name": "Regular Time"
-    },
-    {
-      "id": 1,
-      "sortOrder": 2,
-      "name": "1st Half"
-    },
-    {
-      "id": 2,
-      "sortOrder": 3,
-      "name": "2nd Half"
-    },
-    {
-      "id": 3,
-      "sortOrder": 4,
-      "name": "Single Goal"
-    },
-    {
-      "id": 4,
-      "sortOrder": 5,
-      "name": "Multiple Goals"
-    }
+	{
+	  "id": 0,
+	  "sortOrder": 1,
+	  "name": "Regular Time"
+	},
+	{
+	  "id": 1,
+	  "sortOrder": 2,
+	  "name": "1st Half"
+	},
+	{
+	  "id": 2,
+	  "sortOrder": 3,
+	  "name": "2nd Half"
+	},
+	{
+	  "id": 3,
+	  "sortOrder": 4,
+	  "name": "Single Goal"
+	},
+	{
+	  "id": 4,
+	  "sortOrder": 5,
+	  "name": "Multiple Goals"
+	}
   ],
   "optionColumns": [
-    {
-      "id": 0,
-      "sortOrder": 1,
-      "name": "First"
-    },
-    {
-      "id": 1,
-      "sortOrder": 2,
-      "name": "Anytime"
-    },
-    {
-      "id": 2,
-      "sortOrder": 3,
-      "name": "Last"
-    },
-    {
-      "id": 3,
-      "sortOrder": 4,
-      "name": "2 Or More"
-    },
-    {
-      "id": 4,
-      "sortOrder": 5,
-      "name": "3 Or More"
-    }
+	{
+	  "id": 0,
+	  "sortOrder": 1,
+	  "name": "First"
+	},
+	{
+	  "id": 1,
+	  "sortOrder": 2,
+	  "name": "Anytime"
+	},
+	{
+	  "id": 2,
+	  "sortOrder": 3,
+	  "name": "Last"
+	},
+	{
+	  "id": 3,
+	  "sortOrder": 4,
+	  "name": "2 Or More"
+	},
+	{
+	  "id": 4,
+	  "sortOrder": 5,
+	  "name": "3 Or More"
+	}
   ]
 }

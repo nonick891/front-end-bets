@@ -1,0 +1,1 @@
+export const SET_SCOREBOARD = 'SET_SCOREBOARD';

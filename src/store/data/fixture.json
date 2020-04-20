@@ -2,48 +2,48 @@
   "fixture": {
 	"games": [
 	  {
-		"id": 459841647,
+		"id": 466633112,
 		"name": {
 		  "value": "Match Result",
-		  "sign": "EgrYQw=="
+		  "sign": "FvorEQ=="
 		},
 		"results": [
 		  {
-			"id": 1355379732,
-			"odds": 1.44,
+			"id": 1372881874,
+			"odds": 5.75,
 			"name": {
-			  "value": "Besiktas",
-			  "sign": "kdREAw=="
+			  "value": "Ahal II",
+			  "sign": "OCiS2g=="
 			},
 			"sourceName": {
 			  "value": "1",
-			  "sign": "vl9PfA=="
+			  "sign": "B+ywZw=="
 			},
 			"visibility": "Visible"
 		  },
 		  {
-			"id": 1355379733,
-			"odds": 4.5,
+			"id": 1372881875,
+			"odds": 1.14,
 			"name": {
 			  "value": "X",
-			  "sign": "AU2Hzw=="
+			  "sign": "uP541A=="
 			},
 			"sourceName": {
 			  "value": "X",
-			  "sign": "AU2Hzw=="
+			  "sign": "uP541A=="
 			},
 			"visibility": "Visible"
 		  },
 		  {
-			"id": 1355379734,
-			"odds": 6.5,
+			"id": 1372881876,
+			"odds": 18.5,
 			"name": {
-			  "value": "Antalya",
-			  "sign": "V0iQjA=="
+			  "value": "FC Sagadam II",
+			  "sign": "7ghIBQ=="
 			},
 			"sourceName": {
 			  "value": "2",
-			  "sign": "w556MQ=="
+			  "sign": "tQqNWQ=="
 			},
 			"visibility": "Visible"
 		  }
@@ -51,7 +51,7 @@
 		"templateId": 17,
 		"categoryId": 25,
 		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
+		"combo1": "OtherLiveEvents",
 		"combo2": "Single",
 		"visibility": "Visible",
 		"category": "Gridable",
@@ -61,10 +61,11 @@
 		  "detailed": [
 			{
 			  "group": 1,
-			  "index": 1,
-			  "index2": 1,
+			  "index": 0,
+			  "index2": 0,
 			  "periodIndex": 0,
 			  "marketTabId": 0,
+			  "marketHelpPath": "Football/Match Result (Regular Time)",
 			  "name": "Match Result"
 			}
 		  ],
@@ -76,414 +77,36 @@
 		}
 	  },
 	  {
-		"id": 459841648,
-		"name": {
-		  "value": "Total Goals - Over/Under",
-		  "sign": "c3KepA=="
-		},
-		"results": [
-		  {
-			"id": 1355379735,
-			"odds": 1.57,
-			"name": {
-			  "value": "Over 2,5",
-			  "sign": "jVK8tg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379736,
-			"odds": 2.3,
-			"name": {
-			  "value": "Under 2,5",
-			  "sign": "Rfg67g=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 173,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"balanced": 1,
-		"attr": "2,5",
-		"spread": 0.73,
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "tabpo1c9n",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 2,
-			  "periodIndex": 0,
-			  "marketTabId": 0,
-			  "name": "Over/Under Total Goals"
-			},
-			{
-			  "group": 20,
-			  "index": 0,
-			  "index2": 0,
-			  "subIndex": 2,
-			  "periodIndex": 0,
-			  "marketTabId": 0,
-			  "name": "Over/Under Total Goals"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "OverUnder",
-			"period": "RegularTime"
-		  }
-		}
-	  },
-	  {
-		"id": 459841649,
-		"name": {
-		  "value": "Double Chance",
-		  "sign": "IapivQ=="
-		},
-		"results": [
-		  {
-			"id": 1355379739,
-			"odds": 1.10,
-			"name": {
-			  "value": "Besiktas or X",
-			  "sign": "uOSzhg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379740,
-			"odds": 2.7,
-			"name": {
-			  "value": "X or Antalya",
-			  "sign": "QPF5Nw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379741,
-			"odds": 1.14,
-			"name": {
-			  "value": "Besiktas or Antalya",
-			  "sign": "+m1Sdg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 3187,
-		"categoryId": 190,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "e8vi2hdwz",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 5,
-			  "index2": 5
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841651,
-		"name": {
-		  "value": "Both Teams to Score",
-		  "sign": "5Ulz+A=="
-		},
-		"results": [
-		  {
-			"id": 1355379742,
-			"odds": 1.75,
-			"name": {
-			  "value": "Yes",
-			  "sign": "a58cKg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379743,
-			"odds": 1.95,
-			"name": {
-			  "value": "No",
-			  "sign": "x1Tadg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 7824,
-		"categoryId": 261,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "6xg0qprzl",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 10,
-			  "index2": 10
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841654,
-		"name": {
-		  "value": "Match Result and Both Teams to Score",
-		  "sign": "V3fyyQ=="
-		},
-		"results": [
-		  {
-			"id": 1355379751,
-			"odds": 2.8,
-			"name": {
-			  "value": "Besiktas to win and both teams to score",
-			  "sign": "/2hrlA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379752,
-			"odds": 10.5,
-			"name": {
-			  "value": "Antalya to win and both teams to score",
-			  "sign": "qaRHJA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379753,
-			"odds": 2.55,
-			"name": {
-			  "value": "Besiktas to win to nil",
-			  "sign": "JRs/Eg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379754,
-			"odds": 9.25,
-			"name": {
-			  "value": "Antalya to win to nil",
-			  "sign": "s0oNbQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379755,
-			"odds": 10.0,
-			"name": {
-			  "value": "Both teams not to score",
-			  "sign": "ZEgxgA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379756,
-			"odds": 5.5,
-			"name": {
-			  "value": "Both teams to score and the match to end in a draw",
-			  "sign": "7q5Vnw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 24392,
-		"categoryId": 261,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 11,
-			  "index2": 11
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841657,
-		"name": {
-		  "value": "Draw No Bet",
-		  "sign": "hUawOQ=="
-		},
-		"results": [
-		  {
-			"id": 1355379759,
-			"odds": 1.15,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "QMDqCA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379760,
-			"odds": 4.75,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "tTa/Yw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 12119,
-		"categoryId": 359,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "6zlvg5s1h",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 12,
-			  "index2": 12
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841658,
-		"name": {
-		  "value": "Away No Bet",
-		  "sign": "ch7QCA=="
-		},
-		"results": [
-		  {
-			"id": 1355379761,
-			"odds": 1.22,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "k9GxFQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379762,
-			"odds": 3.80,
-			"name": {
-			  "value": "X",
-			  "sign": "sAO2wQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 16450,
-		"categoryId": 359,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "Other",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 14,
-			  "index2": 14
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841660,
-		"name": {
-		  "value": "Home No Bet",
-		  "sign": "XGudNg=="
-		},
-		"results": [
-		  {
-			"id": 1355379765,
-			"odds": 1.57,
-			"name": {
-			  "value": "X",
-			  "sign": "+38k4Q=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379766,
-			"odds": 2.25,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "z0R1jg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 16451,
-		"categoryId": 359,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "Other",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 13,
-			  "index2": 13
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841661,
+		"id": 466633113,
 		"name": {
 		  "value": "Handicap 0:1",
-		  "sign": "IYi7QQ=="
+		  "sign": "0q7JCg=="
 		},
 		"results": [
 		  {
-			"id": 1355379767,
-			"odds": 2.15,
+			"id": 1372881877,
+			"odds": 67.00,
 			"name": {
-			  "value": "Besiktas",
-			  "sign": "w4OMpQ=="
+			  "value": "Ahal II",
+			  "sign": "lrArrA=="
 			},
 			"visibility": "Visible"
 		  },
 		  {
-			"id": 1355379768,
-			"odds": 3.60,
+			"id": 1372881878,
+			"odds": 5.5,
 			"name": {
 			  "value": "X",
-			  "sign": "6dya8w=="
+			  "sign": "NBLWIA=="
 			},
 			"visibility": "Visible"
 		  },
 		  {
-			"id": 1355379769,
-			"odds": 2.7,
+			"id": 1372881879,
+			"odds": 1.09,
 			"name": {
-			  "value": "Antalya",
-			  "sign": "R591+A=="
+			  "value": "FC Sagadam II",
+			  "sign": "gmNAoA=="
 			},
 			"visibility": "Visible"
 		  }
@@ -491,4642 +114,45 @@
 		"templateId": 52,
 		"categoryId": 28,
 		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
+		"combo1": "OtherLiveEvents",
 		"combo2": "Single",
-		"visibility": "Visible",
+		"visibility": "Suspended",
 		"category": "Gridable",
 		"isMain": false,
 		"grouping": {
 		  "grid": "a5r2m58xi",
 		  "detailed": [
 			{
-			  "group": 15,
-			  "index": 1,
-			  "index2": 1
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841665,
-		"name": {
-		  "value": "Handicap 0:2",
-		  "sign": "t36rSQ=="
-		},
-		"results": [
-		  {
-			"id": 1355379774,
-			"odds": 3.70,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "Wtqk9g=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379775,
-			"odds": 4.40,
-			"name": {
-			  "value": "X",
-			  "sign": "oqAI0w=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379776,
-			"odds": 1.62,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "UaXiZQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 501,
-		"categoryId": 28,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "Other",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 15,
-			  "index": 3,
-			  "index2": 3
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841667,
-		"name": {
-		  "value": "Handicap 1:0",
-		  "sign": "lo8MpQ=="
-		},
-		"results": [
-		  {
-			"id": 1355379781,
-			"odds": 1.10,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "PjTW2w=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379782,
-			"odds": 7.75,
-			"name": {
-			  "value": "X",
-			  "sign": "DOoK1g=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379783,
-			"odds": 13.5,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "/z1bEw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 54,
-		"categoryId": 28,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "ivlr1vtmy",
-		  "detailed": [
-			{
-			  "group": 15,
-			  "index": 0,
-			  "index2": 0
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841668,
-		"name": {
-		  "value": "Handicap 2:0",
-		  "sign": "nMJDow=="
-		},
-		"results": [
-		  {
-			"id": 1355379786,
-			"odds": 1.01,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "9z/DOA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379787,
-			"odds": 12.0,
-			"name": {
-			  "value": "X",
-			  "sign": "Hkm0xA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379788,
-			"odds": 26.00,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "5EcHZQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 502,
-		"categoryId": 28,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "Other",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 15,
-			  "index": 2,
-			  "index2": 2
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841670,
-		"name": {
-		  "value": "Half Time result",
-		  "sign": "9toSvA=="
-		},
-		"results": [
-		  {
-			"id": 1355379789,
-			"odds": 1.91,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "gAjbCQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379790,
-			"odds": 2.4,
-			"name": {
-			  "value": "X",
-			  "sign": "kqUaMA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379791,
-			"odds": 5.75,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "2X7iEw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 2488,
-		"categoryId": 30,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "fmm8xki37",
-		  "detailed": [
-			{
-			  "group": 1,
+			  "group": 90,
 			  "index": 1,
 			  "index2": 1,
-			  "periodIndex": 1,
-			  "marketTabId": 1,
-			  "name": "Match Result"
-			},
-			{
-			  "group": 17,
-			  "index": 0,
-			  "index2": 0,
-			  "periodIndex": 1,
-			  "marketTabId": 1,
-			  "name": "Match Result"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "ThreeWay",
-			"period": "FirstHalf"
-		  }
-		}
-	  },
-	  {
-		"id": 459841671,
-		"name": {
-		  "value": "Half Time Double Chance",
-		  "sign": "ZMz/pw=="
-		},
-		"results": [
-		  {
-			"id": 1355379792,
-			"odds": 1.08,
-			"name": {
-			  "value": "Besiktas or X",
-			  "sign": "oXTW+w=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379793,
-			"odds": 1.72,
-			"name": {
-			  "value": "X or Antalya",
-			  "sign": "gVfLUA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379794,
-			"odds": 1.44,
-			"name": {
-			  "value": "Besiktas or Antalya",
-			  "sign": "KbbGWw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 11748,
-		"categoryId": 190,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "Other",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 17,
-			  "index": 7,
-			  "index2": 7
+			  "marketHelpPath": "Football/Handicaps"
 			}
 		  ]
 		}
 	  },
 	  {
-		"id": 459841673,
-		"name": {
-		  "value": "1st Goal - 1st Half",
-		  "sign": "dGRO5Q=="
-		},
-		"results": [
-		  {
-			"id": 1355379795,
-			"odds": 1.75,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "UxmAFA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379796,
-			"odds": 3.30,
-			"name": {
-			  "value": "No goal",
-			  "sign": "qE3MTw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379797,
-			"odds": 4.00,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "Wmi//w=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 4956,
-		"categoryId": 261,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 13,
-			  "index2": 13
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841674,
-		"name": {
-		  "value": "Total Goals O/U - 1st Half",
-		  "sign": "PDqEjQ=="
-		},
-		"results": [
-		  {
-			"id": 1355379800,
-			"odds": 1.28,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "n3fxcA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379801,
-			"odds": 3.30,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "3CcY8w=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 7688,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"balanced": 1,
-		"attr": "0,5",
-		"spread": 2.02,
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "am8b21kjt",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 0,
-			  "periodIndex": 1,
-			  "marketTabId": 1,
-			  "name": "Over/Under Total Goals"
-			},
-			{
-			  "group": 20,
-			  "index": 0,
-			  "index2": 0,
-			  "subIndex": 0,
-			  "periodIndex": 1,
-			  "marketTabId": 1,
-			  "name": "Over/Under Total Goals"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "OverUnder",
-			"period": "FirstHalf"
-		  }
-		}
-	  },
-	  {
-		"id": 459841675,
-		"name": {
-		  "value": "Total Goals O/U - 1st Half",
-		  "sign": "0r69LA=="
-		},
-		"results": [
-		  {
-			"id": 1355379802,
-			"odds": 2.3,
-			"name": {
-			  "value": "Over 1,5",
-			  "sign": "p9EIqA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379803,
-			"odds": 1.55,
-			"name": {
-			  "value": "Under 1,5",
-			  "sign": "tmu8Yg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 7689,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"balanced": 1,
-		"attr": "1,5",
-		"spread": 0.75,
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "am8b21kjt",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 1,
-			  "periodIndex": 1,
-			  "marketTabId": 1,
-			  "name": "Over/Under Total Goals"
-			},
-			{
-			  "group": 20,
-			  "index": 0,
-			  "index2": 0,
-			  "subIndex": 1,
-			  "periodIndex": 1,
-			  "marketTabId": 1,
-			  "name": "Over/Under Total Goals"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "OverUnder",
-			"period": "FirstHalf"
-		  }
-		}
-	  },
-	  {
-		"id": 459841676,
-		"name": {
-		  "value": "Total Goals O/U - 1st Half",
-		  "sign": "2izz/Q=="
-		},
-		"results": [
-		  {
-			"id": 1355379804,
-			"odds": 5.0,
-			"name": {
-			  "value": "Over 2,5",
-			  "sign": "rj1zGg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379805,
-			"odds": 1.14,
-			"name": {
-			  "value": "Under 2,5",
-			  "sign": "SbkhCw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 7890,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"balanced": 1,
-		"attr": "2,5",
-		"spread": 3.86,
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "am8b21kjt",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 2,
-			  "periodIndex": 1,
-			  "marketTabId": 1,
-			  "name": "Over/Under Total Goals"
-			},
-			{
-			  "group": 20,
-			  "index": 0,
-			  "index2": 0,
-			  "subIndex": 2,
-			  "periodIndex": 1,
-			  "marketTabId": 1,
-			  "name": "Over/Under Total Goals"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "OverUnder",
-			"period": "FirstHalf"
-		  }
-		}
-	  },
-	  {
-		"id": 459841678,
-		"name": {
-		  "value": "Total Goals O/U - 1st Half",
-		  "sign": "RyPxZA=="
-		},
-		"results": [
-		  {
-			"id": 1355379808,
-			"odds": 10.5,
-			"name": {
-			  "value": "Over 3,5",
-			  "sign": "P3QHIQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379809,
-			"odds": 1.02,
-			"name": {
-			  "value": "Under 3,5",
-			  "sign": "gGNsNQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 7891,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"balanced": 1,
-		"attr": "3,5",
-		"spread": 9.48,
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "am8b21kjt",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 3,
-			  "periodIndex": 1,
-			  "marketTabId": 1,
-			  "name": "Over/Under Total Goals"
-			},
-			{
-			  "group": 20,
-			  "index": 0,
-			  "index2": 0,
-			  "subIndex": 3,
-			  "periodIndex": 1,
-			  "marketTabId": 1,
-			  "name": "Over/Under Total Goals"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "OverUnder",
-			"period": "FirstHalf"
-		  }
-		}
-	  },
-	  {
-		"id": 459841682,
-		"name": {
-		  "value": "Total Goals O/U - 2nd Half",
-		  "sign": "k595HA=="
-		},
-		"results": [
-		  {
-			"id": 1355379816,
-			"odds": 1.16,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "2PZM8Q=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379817,
-			"odds": 4.60,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "bk4hGw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 19595,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"balanced": 1,
-		"attr": "0,5",
-		"spread": 3.44,
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "nsl3u42zq",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 0,
-			  "periodIndex": 2,
-			  "marketTabId": 2,
-			  "name": "Over/Under Total Goals"
-			},
-			{
-			  "group": 20,
-			  "index": 0,
-			  "index2": 0,
-			  "subIndex": 0,
-			  "periodIndex": 2,
-			  "marketTabId": 2,
-			  "name": "Over/Under Total Goals"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "OverUnder",
-			"period": "SecondHalf"
-		  }
-		}
-	  },
-	  {
-		"id": 459841683,
-		"name": {
-		  "value": "Total Goals O/U - 2nd Half",
-		  "sign": "fRtAvQ=="
-		},
-		"results": [
-		  {
-			"id": 1355379818,
-			"odds": 1.75,
-			"name": {
-			  "value": "Over 1,5",
-			  "sign": "4FC1KQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379819,
-			"odds": 1.95,
-			"name": {
-			  "value": "Under 1,5",
-			  "sign": "BAKFig=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 19596,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"balanced": 1,
-		"attr": "1,5",
-		"spread": 0.20,
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "nsl3u42zq",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 1,
-			  "periodIndex": 2,
-			  "marketTabId": 2,
-			  "name": "Over/Under Total Goals"
-			},
-			{
-			  "group": 20,
-			  "index": 0,
-			  "index2": 0,
-			  "subIndex": 1,
-			  "periodIndex": 2,
-			  "marketTabId": 2,
-			  "name": "Over/Under Total Goals"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "OverUnder",
-			"period": "SecondHalf"
-		  }
-		}
-	  },
-	  {
-		"id": 459841685,
-		"name": {
-		  "value": "Total Goals O/U - 2nd Half",
-		  "sign": "mw03zQ=="
-		},
-		"results": [
-		  {
-			"id": 1355379824,
-			"odds": 3.30,
-			"name": {
-			  "value": "Over 2,5",
-			  "sign": "NWGuXw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379825,
-			"odds": 1.28,
-			"name": {
-			  "value": "Under 2,5",
-			  "sign": "2S65bA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 19597,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"balanced": 1,
-		"attr": "2,5",
-		"spread": 2.02,
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "nsl3u42zq",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 2,
-			  "periodIndex": 2,
-			  "marketTabId": 2,
-			  "name": "Over/Under Total Goals"
-			},
-			{
-			  "group": 20,
-			  "index": 0,
-			  "index2": 0,
-			  "subIndex": 2,
-			  "periodIndex": 2,
-			  "marketTabId": 2,
-			  "name": "Over/Under Total Goals"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "OverUnder",
-			"period": "SecondHalf"
-		  }
-		}
-	  },
-	  {
-		"id": 459841688,
-		"name": {
-		  "value": "Total Goals O/U - 2nd Half",
-		  "sign": "uaTgjA=="
-		},
-		"results": [
-		  {
-			"id": 1355379828,
-			"odds": 7.0,
-			"name": {
-			  "value": "Over 3,5",
-			  "sign": "XZVqNw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379829,
-			"odds": 1.07,
-			"name": {
-			  "value": "Under 3,5",
-			  "sign": "FQ7Glg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 20506,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"balanced": 1,
-		"attr": "3,5",
-		"spread": 5.93,
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "nsl3u42zq",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 3,
-			  "periodIndex": 2,
-			  "marketTabId": 2,
-			  "name": "Over/Under Total Goals"
-			},
-			{
-			  "group": 20,
-			  "index": 0,
-			  "index2": 0,
-			  "subIndex": 3,
-			  "periodIndex": 2,
-			  "marketTabId": 2,
-			  "name": "Over/Under Total Goals"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "OverUnder",
-			"period": "SecondHalf"
-		  }
-		}
-	  },
-	  {
-		"id": 459841689,
-		"name": {
-		  "value": "Correct Score (Regular Time)",
-		  "sign": "jYMMJg=="
-		},
-		"results": [
-		  {
-			"id": 1355379844,
-			"odds": 10.0,
-			"name": {
-			  "value": "0-0",
-			  "sign": "zUIpTg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379845,
-			"odds": 8.25,
-			"name": {
-			  "value": "1-0",
-			  "sign": "oqgJmA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379846,
-			"odds": 9.25,
-			"name": {
-			  "value": "1-1",
-			  "sign": "nR5YTA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379847,
-			"odds": 18.0,
-			"name": {
-			  "value": "0-1",
-			  "sign": "8vR4mg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379848,
-			"odds": 8.25,
-			"name": {
-			  "value": "2-0",
-			  "sign": "xIZkrQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379849,
-			"odds": 8.5,
-			"name": {
-			  "value": "2-1",
-			  "sign": "CjaBDQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379850,
-			"odds": 16.0,
-			"name": {
-			  "value": "2-2",
-			  "sign": "GeHeNw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379851,
-			"odds": 19.0,
-			"name": {
-			  "value": "1-2",
-			  "sign": "GN964g=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379852,
-			"odds": 34.00,
-			"name": {
-			  "value": "0-2",
-			  "sign": "ZD6GqQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379853,
-			"odds": 10.5,
-			"name": {
-			  "value": "3-0",
-			  "sign": "SWEskg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379854,
-			"odds": 11.5,
-			"name": {
-			  "value": "3-1",
-			  "sign": "dtd9Rg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379855,
-			"odds": 20.0,
-			"name": {
-			  "value": "3-2",
-			  "sign": "lAaWCA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379856,
-			"odds": 51.00,
-			"name": {
-			  "value": "3-3",
-			  "sign": "xptMLw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379857,
-			"odds": 41.00,
-			"name": {
-			  "value": "2-3",
-			  "sign": "qXFs+Q=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379858,
-			"odds": 51.00,
-			"name": {
-			  "value": "1-3",
-			  "sign": "WUl8WA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379859,
-			"odds": 81.00,
-			"name": {
-			  "value": "0-3",
-			  "sign": "NqNcjg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379860,
-			"odds": 17.0,
-			"name": {
-			  "value": "4-0",
-			  "sign": "G9FiWg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379861,
-			"odds": 18.0,
-			"name": {
-			  "value": "4-1",
-			  "sign": "1WGH+g=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379862,
-			"odds": 31.00,
-			"name": {
-			  "value": "4-2",
-			  "sign": "xrbYwA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379863,
-			"odds": 67.00,
-			"name": {
-			  "value": "4-3",
-			  "sign": "CAY9YA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379864,
-			"odds": 101.00,
-			"name": {
-			  "value": "4-4",
-			  "sign": "ZQXGvQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379865,
-			"odds": 101.00,
-			"name": {
-			  "value": "3-4",
-			  "sign": "uJNrbw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379866,
-			"odds": 101.00,
-			"name": {
-			  "value": "2-4",
-			  "sign": "Jn//zQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379867,
-			"odds": 101.00,
-			"name": {
-			  "value": "1-4",
-			  "sign": "J0FbGA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379868,
-			"odds": 126.00,
-			"name": {
-			  "value": "0-4",
-			  "sign": "W6CnUw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379869,
-			"odds": 10.0,
-			"name": {
-			  "value": "Any other score",
-			  "sign": "qzHMYg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 19193,
-		"categoryId": 192,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 75,
-			  "index2": 75,
-			  "periodIndex": 0,
-			  "marketTabId": 0,
-			  "name": "Correct Score"
-			},
-			{
-			  "group": 35,
-			  "index": 5,
-			  "index2": 5,
-			  "periodIndex": 0,
-			  "marketTabId": 0,
-			  "name": "Correct Score"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "CorrectScore",
-			"period": "RegularTime"
-		  }
-		}
-	  },
-	  {
-		"id": 459841696,
-		"name": {
-		  "value": "Correct Score - 1st Half",
-		  "sign": "P4O4ag=="
-		},
-		"results": [
-		  {
-			"id": 1355379884,
-			"odds": 3.30,
-			"name": {
-			  "value": "0-0",
-			  "sign": "XCkMYQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379885,
-			"odds": 3.80,
-			"name": {
-			  "value": "1-0",
-			  "sign": "M8Mstw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379886,
-			"odds": 7.75,
-			"name": {
-			  "value": "1-1",
-			  "sign": "DHV9Yw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379887,
-			"odds": 8.25,
-			"name": {
-			  "value": "0-1",
-			  "sign": "Y59dtQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379888,
-			"odds": 7.0,
-			"name": {
-			  "value": "2-0",
-			  "sign": "X9YDkQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379889,
-			"odds": 14.5,
-			"name": {
-			  "value": "2-1",
-			  "sign": "kWbmMQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379890,
-			"odds": 41.00,
-			"name": {
-			  "value": "2-2",
-			  "sign": "grG5Cw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379891,
-			"odds": 23.00,
-			"name": {
-			  "value": "1-2",
-			  "sign": "g48d3g=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379892,
-			"odds": 26.00,
-			"name": {
-			  "value": "0-2",
-			  "sign": "/27hlQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379893,
-			"odds": 16.5,
-			"name": {
-			  "value": "3-0",
-			  "sign": "0jFLrg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379894,
-			"odds": 34.00,
-			"name": {
-			  "value": "3-1",
-			  "sign": "7Ycaeg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379895,
-			"odds": 67.00,
-			"name": {
-			  "value": "3-2",
-			  "sign": "D1bxNA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379896,
-			"odds": 201.0,
-			"name": {
-			  "value": "3-3",
-			  "sign": "V/BpAA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379897,
-			"odds": 126.00,
-			"name": {
-			  "value": "2-3",
-			  "sign": "OBpJ1g=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379898,
-			"odds": 101.00,
-			"name": {
-			  "value": "1-3",
-			  "sign": "yCJZdw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379899,
-			"odds": 81.00,
-			"name": {
-			  "value": "0-3",
-			  "sign": "p8h5oQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379900,
-			"odds": 51.00,
-			"name": {
-			  "value": "4-0",
-			  "sign": "irpHdQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379901,
-			"odds": 81.00,
-			"name": {
-			  "value": "4-1",
-			  "sign": "RAqi1Q=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379902,
-			"odds": 201.0,
-			"name": {
-			  "value": "4-2",
-			  "sign": "V9397w=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379903,
-			"odds": 151.0,
-			"name": {
-			  "value": "4-3",
-			  "sign": "mW0YTw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379904,
-			"odds": 201.0,
-			"name": {
-			  "value": "4-4",
-			  "sign": "ws8t6g=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379905,
-			"odds": 201.0,
-			"name": {
-			  "value": "3-4",
-			  "sign": "H1mAOA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379906,
-			"odds": 151.0,
-			"name": {
-			  "value": "2-4",
-			  "sign": "gbUUmg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379907,
-			"odds": 201.0,
-			"name": {
-			  "value": "1-4",
-			  "sign": "gIuwTw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379908,
-			"odds": 201.0,
-			"name": {
-			  "value": "0-4",
-			  "sign": "/GpMBA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379909,
-			"odds": 101.00,
-			"name": {
-			  "value": "Any other score",
-			  "sign": "8cKV9A=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 26644,
-		"categoryId": 192,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 75,
-			  "index2": 75,
-			  "periodIndex": 1,
-			  "marketTabId": 1,
-			  "name": "Correct Score"
-			},
-			{
-			  "group": 35,
-			  "index": 5,
-			  "index2": 5,
-			  "periodIndex": 1,
-			  "marketTabId": 1,
-			  "name": "Correct Score"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "CorrectScore",
-			"period": "FirstHalf"
-		  }
-		}
-	  },
-	  {
-		"id": 459841699,
-		"name": {
-		  "value": "Half Time/Full Time",
-		  "sign": "BWgIwg=="
-		},
-		"results": [
-		  {
-			"id": 1355379910,
-			"odds": 2.15,
-			"name": {
-			  "value": "Besiktas / Besiktas",
-			  "sign": "ieTXzg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379911,
-			"odds": 4.25,
-			"name": {
-			  "value": "X / Besiktas",
-			  "sign": "TWvm1A=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379912,
-			"odds": 20.0,
-			"name": {
-			  "value": "Antalya / Besiktas",
-			  "sign": "wWIDAw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379913,
-			"odds": 17.0,
-			"name": {
-			  "value": "Besiktas / X",
-			  "sign": "nLUgZg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379914,
-			"odds": 6.75,
-			"name": {
-			  "value": "X / X",
-			  "sign": "UGkXPA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379915,
-			"odds": 17.5,
-			"name": {
-			  "value": "Antalya / X",
-			  "sign": "TNThUA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379916,
-			"odds": 51.00,
-			"name": {
-			  "value": "Besiktas / Antalya",
-			  "sign": "1j1Xkw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379917,
-			"odds": 13.5,
-			"name": {
-			  "value": "X / Antalya",
-			  "sign": "V0nx0Q=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379918,
-			"odds": 10.5,
-			"name": {
-			  "value": "Antalya / Antalya",
-			  "sign": "lKmfkA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 21,
-		"categoryId": 191,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 15,
-			  "index2": 15
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841701,
-		"name": {
-		  "value": "Half time or Full time",
-		  "sign": "6tVAww=="
-		},
-		"results": [
-		  {
-			"id": 1355379919,
-			"odds": 1.26,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "5TFZnQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379920,
-			"odds": 1.87,
-			"name": {
-			  "value": "X",
-			  "sign": "kQ/j3A=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379921,
-			"odds": 3.70,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "qft39A=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 11474,
-		"categoryId": 191,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 17,
-			  "index": 1,
-			  "index2": 1
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841704,
-		"name": {
-		  "value": "1X2 and Over/Under 2.5",
-		  "sign": "NnpJCQ=="
-		},
-		"results": [
-		  {
-			"id": 1355379929,
-			"odds": 1.95,
-			"name": {
-			  "value": "Team 1 to win and over 2,5 combined goals scored in the game",
-			  "sign": "CxYVQw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379930,
-			"odds": 9.75,
-			"name": {
-			  "value": "Team 2 to win and over 2,5 combined goals scored in the game",
-			  "sign": "OBanbA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379931,
-			"odds": 4.20,
-			"name": {
-			  "value": "Team 1 to win and under 2,5 combined goals scored in the game",
-			  "sign": "fhA/9w=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379932,
-			"odds": 13.0,
-			"name": {
-			  "value": "Team 2 to win and under 2,5 combined goals scored in the game",
-			  "sign": "grOf+Q=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379933,
-			"odds": 4.50,
-			"name": {
-			  "value": "Draw",
-			  "sign": "yUhn9A=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 20589,
-		"categoryId": 1,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 16,
-			  "index2": 16
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841707,
-		"name": {
-		  "value": "1X2 and Over/Under 3.5",
-		  "sign": "ZhBjRQ=="
-		},
-		"results": [
-		  {
-			"id": 1355379938,
-			"odds": 3.10,
-			"name": {
-			  "value": "Team 1 to win and over 3,5 combined goals scored in the game",
-			  "sign": "1w0rYw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379939,
-			"odds": 19.5,
-			"name": {
-			  "value": "Team 2 to win and over 3,5 combined goals scored in the game",
-			  "sign": "2Wltiw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379940,
-			"odds": 2.35,
-			"name": {
-			  "value": "Team 1 to win and under 3,5 combined goals to be scored in the game",
-			  "sign": "qSSI8w=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379941,
-			"odds": 8.0,
-			"name": {
-			  "value": "Team 2 to win and under 3,5 combined goals scored in the game",
-			  "sign": "7kENIw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379942,
-			"odds": 4.50,
-			"name": {
-			  "value": "Draw",
-			  "sign": "nygvPA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 20592,
-		"categoryId": 1,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 17,
-			  "index2": 17
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841708,
-		"name": {
-		  "value": "Multiple Correct Score",
-		  "sign": "OTA3VA=="
-		},
-		"results": [
-		  {
-			"id": 1355379945,
-			"odds": 3.0,
-			"name": {
-			  "value": "1-0, 2-0 or 3-0",
-			  "sign": "TGn5WQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379946,
-			"odds": 11.5,
-			"name": {
-			  "value": "0-1, 0-2 or 0-3",
-			  "sign": "8Woj8w=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379947,
-			"odds": 10.0,
-			"name": {
-			  "value": "4-0, 5-0 or 6-0",
-			  "sign": "99+mkw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379948,
-			"odds": 251.0,
-			"name": {
-			  "value": "0-4, 0-5 or 0-6",
-			  "sign": "klbzsg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379949,
-			"odds": 3.90,
-			"name": {
-			  "value": "2-1, 3-1 or 4-1",
-			  "sign": "RzSt/w=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379950,
-			"odds": 13.0,
-			"name": {
-			  "value": "1-2, 1-3 or 1-4",
-			  "sign": "p+pDcA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379951,
-			"odds": 9.5,
-			"name": {
-			  "value": "3-2, 4-2, 4-3 or 5-1",
-			  "sign": "EVU1Rg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379952,
-			"odds": 31.00,
-			"name": {
-			  "value": "2-3, 2-4, 3-4 or 1-5",
-			  "sign": "J10zaw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379953,
-			"odds": 18.5,
-			"name": {
-			  "value": "Team 1 to win by any other score",
-			  "sign": "mjBPog=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379954,
-			"odds": 251.0,
-			"name": {
-			  "value": "Team 2 to win by any other score",
-			  "sign": "PSgJVw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379955,
-			"odds": 4.50,
-			"name": {
-			  "value": "Draw",
-			  "sign": "pVNj9w=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 20590,
-		"categoryId": 192,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 35,
-			  "index": 10,
-			  "index2": 10
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841712,
-		"name": {
-		  "value": "1st Goal",
-		  "sign": "HFiitQ=="
-		},
-		"results": [
-		  {
-			"id": 1355379958,
-			"odds": 1.36,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "O+nMTw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379959,
-			"odds": 10.0,
-			"name": {
-			  "value": "No goal",
-			  "sign": "bUpYMA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379960,
-			"odds": 3.10,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "w15YbQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 118,
-		"categoryId": 261,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 5,
-			  "index2": 5
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841714,
-		"name": {
-		  "value": "Team to Score the Last Goal",
-		  "sign": "PeaoDg=="
-		},
-		"results": [
-		  {
-			"id": 1355379966,
-			"odds": 1.36,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "hdXBnQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379967,
-			"odds": 10.0,
-			"name": {
-			  "value": "No goal",
-			  "sign": "SwnhMA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379968,
-			"odds": 3.10,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "odgAdw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 4722,
-		"categoryId": 261,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 8,
-			  "index2": 8
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841715,
-		"name": {
-		  "value": "Total Goals - Over/Under",
-		  "sign": "dcegIQ=="
-		},
-		"results": [
-		  {
-			"id": 1355379969,
-			"odds": 1.02,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "WkEd4Q=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379970,
-			"odds": 10.0,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "iNvhiA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 7233,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"balanced": 1,
-		"attr": "0,5",
-		"spread": 8.98,
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "tabpo1c9n",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 0,
-			  "periodIndex": 0,
-			  "marketTabId": 0,
-			  "name": "Over/Under Total Goals"
-			},
-			{
-			  "group": 20,
-			  "index": 0,
-			  "index2": 0,
-			  "subIndex": 0,
-			  "periodIndex": 0,
-			  "marketTabId": 0,
-			  "name": "Over/Under Total Goals"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "OverUnder",
-			"period": "RegularTime"
-		  }
-		}
-	  },
-	  {
-		"id": 459841716,
-		"name": {
-		  "value": "Total Goals - Over/Under",
-		  "sign": "IjSd2w=="
-		},
-		"results": [
-		  {
-			"id": 1355379973,
-			"odds": 1.18,
-			"name": {
-			  "value": "Over 1,5",
-			  "sign": "MrXZiQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379974,
-			"odds": 4.33,
-			"name": {
-			  "value": "Under 1,5",
-			  "sign": "RPuecg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 1772,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"balanced": 1,
-		"attr": "1,5",
-		"spread": 3.15,
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "tabpo1c9n",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 1,
-			  "periodIndex": 0,
-			  "marketTabId": 0,
-			  "name": "Over/Under Total Goals"
-			},
-			{
-			  "group": 20,
-			  "index": 0,
-			  "index2": 0,
-			  "subIndex": 1,
-			  "periodIndex": 0,
-			  "marketTabId": 0,
-			  "name": "Over/Under Total Goals"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "OverUnder",
-			"period": "RegularTime"
-		  }
-		}
-	  },
-	  {
-		"id": 459841719,
-		"name": {
-		  "value": "Total Goals - Over/Under",
-		  "sign": "qoQh8Q=="
-		},
-		"results": [
-		  {
-			"id": 1355379977,
-			"odds": 2.40,
-			"name": {
-			  "value": "Over 3,5",
-			  "sign": "vcNWMQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379978,
-			"odds": 1.50,
-			"name": {
-			  "value": "Under 3,5",
-			  "sign": "Zvaspg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 8933,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"balanced": 1,
-		"attr": "3,5",
-		"spread": 0.90,
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "tabpo1c9n",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 3,
-			  "periodIndex": 0,
-			  "marketTabId": 0,
-			  "name": "Over/Under Total Goals"
-			},
-			{
-			  "group": 20,
-			  "index": 0,
-			  "index2": 0,
-			  "subIndex": 3,
-			  "periodIndex": 0,
-			  "marketTabId": 0,
-			  "name": "Over/Under Total Goals"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "OverUnder",
-			"period": "RegularTime"
-		  }
-		}
-	  },
-	  {
-		"id": 459841720,
-		"name": {
-		  "value": "Total Goals - Over/Under",
-		  "sign": "AvZvcQ=="
-		},
-		"results": [
-		  {
-			"id": 1355379979,
-			"odds": 4.00,
-			"name": {
-			  "value": "Over 4,5",
-			  "sign": "Nxki7Q=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379980,
-			"odds": 1.20,
-			"name": {
-			  "value": "Under 4,5",
-			  "sign": "RYw4yA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 1791,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"balanced": 1,
-		"attr": "4,5",
-		"spread": 2.80,
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "tabpo1c9n",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 4,
-			  "periodIndex": 0,
-			  "marketTabId": 0,
-			  "name": "Over/Under Total Goals"
-			},
-			{
-			  "group": 20,
-			  "index": 0,
-			  "index2": 0,
-			  "subIndex": 4,
-			  "periodIndex": 0,
-			  "marketTabId": 0,
-			  "name": "Over/Under Total Goals"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "OverUnder",
-			"period": "RegularTime"
-		  }
-		}
-	  },
-	  {
-		"id": 459841723,
-		"name": {
-		  "value": "Total Goals - Over/Under",
-		  "sign": "ikbTWw=="
-		},
-		"results": [
-		  {
-			"id": 1355379987,
-			"odds": 7.0,
-			"name": {
-			  "value": "Over 5,5",
-			  "sign": "gzCGQQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379988,
-			"odds": 1.07,
-			"name": {
-			  "value": "Under 5,5",
-			  "sign": "q1LmvQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 859,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"balanced": 1,
-		"attr": "5,5",
-		"spread": 5.93,
-		"category": "Gridable",
-		"isMain": false,
-		"grouping": {
-		  "grid": "tabpo1c9n",
-		  "detailed": [
-			{
-			  "group": 1,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 5,
-			  "periodIndex": 0,
-			  "marketTabId": 0,
-			  "name": "Over/Under Total Goals"
-			},
-			{
-			  "group": 20,
-			  "index": 0,
-			  "index2": 0,
-			  "subIndex": 5,
-			  "periodIndex": 0,
-			  "marketTabId": 0,
-			  "name": "Over/Under Total Goals"
-			}
-		  ],
-		  "parameters": {
-			"happening": "Goal",
-			"marketType": "OverUnder",
-			"period": "RegularTime"
-		  }
-		}
-	  },
-	  {
-		"id": 459841725,
-		"name": {
-		  "value": "Most Goals between 0 min. and 15:00 min.",
-		  "sign": "yG2BNA=="
-		},
-		"results": [
-		  {
-			"id": 1355379989,
-			"odds": 3.90,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "YlsSGQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379990,
-			"odds": 1.34,
-			"name": {
-			  "value": "Equal no. of goals",
-			  "sign": "YsZKMA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379991,
-			"odds": 9.25,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "Q8bLAA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 18354,
-		"categoryId": 1281,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 1,
-			  "index2": 1
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841726,
-		"name": {
-		  "value": "Total Goals between 0 min. and 15:00 min.",
-		  "sign": "H6gIgA=="
-		},
-		"results": [
-		  {
-			"id": 1355379992,
-			"odds": 2.75,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "/mdezQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379993,
-			"odds": 1.40,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "AtkQyQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15539,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 7,
-			  "index2": 7,
-			  "subIndex": 0
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841729,
-		"name": {
-		  "value": "Total Goals between 0 min. and 15:00 min.",
-		  "sign": "ReJvYA=="
-		},
-		"results": [
-		  {
-			"id": 1355379996,
-			"odds": 9.75,
-			"name": {
-			  "value": "Over 1,5",
-			  "sign": "lpOapQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355379997,
-			"odds": 1.02,
-			"name": {
-			  "value": "Under 1,5",
-			  "sign": "zvlvMw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15545,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 7,
-			  "index2": 7,
-			  "subIndex": 1
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841731,
-		"name": {
-		  "value": "Most Goals between 15:01 min. and 30:00 min.",
-		  "sign": "LLWaTw=="
-		},
-		"results": [
-		  {
-			"id": 1355380002,
-			"odds": 3.50,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "Uu23qQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380003,
-			"odds": 1.42,
-			"name": {
-			  "value": "Equal no. of goals",
-			  "sign": "afkb6A=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380004,
-			"odds": 8.5,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "qnW5dQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 18355,
-		"categoryId": 1281,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 2,
-			  "index2": 2
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841732,
-		"name": {
-		  "value": "Total Goals between 15:01 min. and 30:00 min.",
-		  "sign": "B8UKNQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380005,
-			"odds": 2.5,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "fyHNdg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380006,
-			"odds": 1.48,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "r99yww=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15540,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 0
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841733,
-		"name": {
-		  "value": "Total Goals between 15:01 min. and 30:00 min.",
-		  "sign": "OIjHSA=="
-		},
-		"results": [
-		  {
-			"id": 1355380007,
-			"odds": 8.5,
-			"name": {
-			  "value": "Over 1,5",
-			  "sign": "R4c0rg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380008,
-			"odds": 1.04,
-			"name": {
-			  "value": "Under 1,5",
-			  "sign": "iUpghQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15546,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 8,
-			  "index2": 8,
-			  "subIndex": 1
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841734,
-		"name": {
-		  "value": "Most Goals between 30:01 min. and Half Time",
-		  "sign": "uRCWHg=="
-		},
-		"results": [
-		  {
-			"id": 1355380009,
-			"odds": 3.20,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "xHikIw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380010,
-			"odds": 1.50,
-			"name": {
-			  "value": "Equal no. of goals",
-			  "sign": "rif6Mw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380011,
-			"odds": 7.75,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "Iq65Aw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 18356,
-		"categoryId": 1281,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 3,
-			  "index2": 3
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841736,
-		"name": {
-		  "value": "Total Goals between 30:01 min. and Half Time",
-		  "sign": "xdo0jg=="
-		},
-		"results": [
-		  {
-			"id": 1355380012,
-			"odds": 2.2,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "5njlJQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380013,
-			"odds": 1.60,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "S/qU2g=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15541,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 9,
-			  "index2": 9,
-			  "subIndex": 0
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841737,
-		"name": {
-		  "value": "Total Goals between 30:01 min. and Half Time",
-		  "sign": "SlTnRA=="
-		},
-		"results": [
-		  {
-			"id": 1355380016,
-			"odds": 7.25,
-			"name": {
-			  "value": "Over 1,5",
-			  "sign": "Dc9H4A=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380017,
-			"odds": 1.06,
-			"name": {
-			  "value": "Under 1,5",
-			  "sign": "Xm73VA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15547,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 9,
-			  "index2": 9,
-			  "subIndex": 1
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841739,
-		"name": {
-		  "value": "Most Goals between Half Time and 60:00 min.",
-		  "sign": "9QCaow=="
-		},
-		"results": [
-		  {
-			"id": 1355380018,
-			"odds": 3.25,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "b5Lc1g=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380019,
-			"odds": 1.48,
-			"name": {
-			  "value": "Equal no. of goals",
-			  "sign": "yuCtzQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380020,
-			"odds": 8.0,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "5vPLdA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 18357,
-		"categoryId": 1281,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 4,
-			  "index2": 4
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841740,
-		"name": {
-		  "value": "Total Goals between Half Time and 60:00 min.",
-		  "sign": "ScsbRQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380023,
-			"odds": 2.3,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "TZKd0A=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380024,
-			"odds": 1.55,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "0Ae13A=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15542,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 10,
-			  "index2": 10,
-			  "subIndex": 0
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841741,
-		"name": {
-		  "value": "Total Goals between Half Time and 60:00 min.",
-		  "sign": "xkXIjw=="
-		},
-		"results": [
-		  {
-			"id": 1355380025,
-			"odds": 7.5,
-			"name": {
-			  "value": "Over 1,5",
-			  "sign": "lJZvsw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380026,
-			"odds": 1.06,
-			"name": {
-			  "value": "Under 1,5",
-			  "sign": "uksRTQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15548,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 10,
-			  "index2": 10,
-			  "subIndex": 1
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841742,
-		"name": {
-		  "value": "Most Goals between 60:01 min. and 75:00 min.",
-		  "sign": "xYTDnQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380027,
-			"odds": 3.10,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "9sv0hQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380028,
-			"odds": 1.53,
-			"name": {
-			  "value": "Equal no. of goals",
-			  "sign": "udhBzQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380029,
-			"odds": 7.75,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "FFoB7w=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 18358,
-		"categoryId": 1281,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 5,
-			  "index2": 5
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841745,
-		"name": {
-		  "value": "Total Goals between 60:01 min. and 75:00 min.",
-		  "sign": "lJKcsA=="
-		},
-		"results": [
-		  {
-			"id": 1355380034,
-			"odds": 2.15,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "xxLfnw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380035,
-			"odds": 1.62,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "f9BHlg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15543,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 11,
-			  "index2": 11,
-			  "subIndex": 0
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841746,
-		"name": {
-		  "value": "Total Goals between 60:01 min. and 75:00 min.",
-		  "sign": "1UXLNg=="
-		},
-		"results": [
-		  {
-			"id": 1355380036,
-			"odds": 6.75,
-			"name": {
-			  "value": "Over 1,5",
-			  "sign": "oCogLg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380037,
-			"odds": 1.07,
-			"name": {
-			  "value": "Under 1,5",
-			  "sign": "7tZe/A=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15549,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 11,
-			  "index2": 11,
-			  "subIndex": 1
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841747,
-		"name": {
-		  "value": "Most Goals between 75:01 min. and Full Time",
-		  "sign": "pVZvSA=="
-		},
-		"results": [
-		  {
-			"id": 1355380038,
-			"odds": 2.6,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "wne7GA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380039,
-			"odds": 1.72,
-			"name": {
-			  "value": "Equal no. of goals",
-			  "sign": "e+impw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380040,
-			"odds": 7.0,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "t4Jzcg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 18359,
-		"categoryId": 1281,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 6,
-			  "index2": 6
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841748,
-		"name": {
-		  "value": "Total Goals between 75:01 min. and full Time",
-		  "sign": "48fiCQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380041,
-			"odds": 1.80,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "UYfMFQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380042,
-			"odds": 1.90,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "xtPHHw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15544,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 12,
-			  "index2": 12,
-			  "subIndex": 0
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841749,
-		"name": {
-		  "value": "Total Goals between 75:01 min. and Full Time",
-		  "sign": "z8vAQQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380043,
-			"odds": 5.0,
-			"name": {
-			  "value": "Over 1,5",
-			  "sign": "aSE1zQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380044,
-			"odds": 1.14,
-			"name": {
-			  "value": "Under 1,5",
-			  "sign": "V9XedQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15550,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 12,
-			  "index2": 12,
-			  "subIndex": 1
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841750,
-		"name": {
-		  "value": "Number of goals Team 1",
-		  "sign": "qMU8OA=="
-		},
-		"results": [
-		  {
-			"id": 1355380047,
-			"odds": 6.5,
-			"name": {
-			  "value": "No goal",
-			  "sign": "P9XKLw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380048,
-			"odds": 3.70,
-			"name": {
-			  "value": "1 goal",
-			  "sign": "9IqbFw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380049,
-			"odds": 3.40,
-			"name": {
-			  "value": "2 goals",
-			  "sign": "zZJSCw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380050,
-			"odds": 2.4,
-			"name": {
-			  "value": "3 or more goals",
-			  "sign": "TKqGKw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 4726,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 3,
-			  "index2": 3
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841752,
-		"name": {
-		  "value": "Team 1 to Score",
-		  "sign": "pkKvnQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380051,
-			"odds": 1.08,
-			"name": {
-			  "value": "Yes",
-			  "sign": "nVVtvw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380052,
-			"odds": 6.5,
-			"name": {
-			  "value": "No",
-			  "sign": "ipwmtg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 11087,
-		"categoryId": 261,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 0,
-			  "index2": 0
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841753,
-		"name": {
-		  "value": "Total Goals O/U - Team 1",
-		  "sign": "/60gVA=="
-		},
-		"results": [
-		  {
-			"id": 1355380053,
-			"odds": 1.48,
-			"name": {
-			  "value": "Over 1,5",
-			  "sign": "ujBu0A=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380054,
-			"odds": 2.5,
-			"name": {
-			  "value": "Under 1,5",
-			  "sign": "00ekkQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 16454,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"attr": "1,5",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 86,
-			  "index2": 86
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841754,
-		"name": {
-		  "value": "Team 1 to win to nil",
-		  "sign": "4xjThQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380055,
-			"odds": 2.55,
-			"name": {
-			  "value": "Yes",
-			  "sign": "f1gFVg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380056,
-			"odds": 1.45,
-			"name": {
-			  "value": "No",
-			  "sign": "gOXfqg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15051,
-		"categoryId": 1,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 6,
-			  "index2": 6
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841755,
-		"name": {
-		  "value": "Total Goals Team 2 - Exact",
-		  "sign": "eb4NIQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380057,
-			"odds": 2.25,
-			"name": {
-			  "value": "No goal",
-			  "sign": "CSFyww=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380058,
-			"odds": 2.5,
-			"name": {
-			  "value": "1 goal",
-			  "sign": "dGWIgA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380059,
-			"odds": 5.25,
-			"name": {
-			  "value": "2 goals",
-			  "sign": "AgJ95g=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380060,
-			"odds": 9.25,
-			"name": {
-			  "value": "3 or more goals",
-			  "sign": "Ip7peg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 4727,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 4,
-			  "index2": 4
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841756,
-		"name": {
-		  "value": "Team 2 to Score",
-		  "sign": "4VoHTQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380061,
-			"odds": 1.57,
-			"name": {
-			  "value": "Yes",
-			  "sign": "C0MQKw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380062,
-			"odds": 2.25,
-			"name": {
-			  "value": "No",
-			  "sign": "BVmjpA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 11086,
-		"categoryId": 261,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 1,
-			  "index2": 1
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841757,
-		"name": {
-		  "value": "Total Goals O/U - Team 2",
-		  "sign": "mr+oHQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380063,
-			"odds": 3.80,
-			"name": {
-			  "value": "Over 1,5",
-			  "sign": "C8BY2w=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380064,
-			"odds": 1.22,
-			"name": {
-			  "value": "Under 1,5",
-			  "sign": "x0JGEg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 16455,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"attr": "1,5",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 79,
-			  "index2": 79
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841758,
-		"name": {
-		  "value": "Team 2 to win to nil",
-		  "sign": "DSr+rA=="
-		},
-		"results": [
-		  {
-			"id": 1355380065,
-			"odds": 9.25,
-			"name": {
-			  "value": "Yes",
-			  "sign": "ch4f/g=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380066,
-			"odds": 1.03,
-			"name": {
-			  "value": "No",
-			  "sign": "J8S/yw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15052,
-		"categoryId": 1,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 7,
-			  "index2": 7
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841759,
-		"name": {
-		  "value": "Total Goals - Exact",
-		  "sign": "xtb17A=="
-		},
-		"results": [
-		  {
-			"id": 1355380067,
-			"odds": 10.0,
-			"name": {
-			  "value": "No goal",
-			  "sign": "EjvKLQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380068,
-			"odds": 6.0,
-			"name": {
-			  "value": "1 goal",
-			  "sign": "dsFSag=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380069,
-			"odds": 4.10,
-			"name": {
-			  "value": "2 goals",
-			  "sign": "irmZCA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380070,
-			"odds": 4.00,
-			"name": {
-			  "value": "3 goals",
-			  "sign": "A4sL2A=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380071,
-			"odds": 5.0,
-			"name": {
-			  "value": "4 goals",
-			  "sign": "WV/fhg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380072,
-			"odds": 8.0,
-			"name": {
-			  "value": "5 goals",
-			  "sign": "ZY+oVg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380073,
-			"odds": 14.5,
-			"name": {
-			  "value": "6 goals",
-			  "sign": "LH8z/A=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380074,
-			"odds": 29.00,
-			"name": {
-			  "value": "7 goals",
-			  "sign": "pU2hLA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380075,
-			"odds": 41.00,
-			"name": {
-			  "value": "8 or more goals",
-			  "sign": "mjNYZQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 2196,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 20,
-			  "index": 3,
-			  "index2": 3
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841761,
-		"name": {
-		  "value": "Total Goals - Exact",
-		  "sign": "bcFpOg=="
-		},
-		"results": [
-		  {
-			"id": 1355380078,
-			"odds": 10.0,
-			"name": {
-			  "value": "No goal",
-			  "sign": "czNctg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380079,
-			"odds": 6.0,
-			"name": {
-			  "value": "1 goal",
-			  "sign": "Nkpp6g=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380080,
-			"odds": 4.10,
-			"name": {
-			  "value": "2 goals",
-			  "sign": "gXTEkg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380081,
-			"odds": 4.00,
-			"name": {
-			  "value": "3 goals",
-			  "sign": "4ZXArw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380082,
-			"odds": 5.0,
-			"name": {
-			  "value": "4 goals",
-			  "sign": "UpKCHA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380083,
-			"odds": 4.00,
-			"name": {
-			  "value": "5 or more goals",
-			  "sign": "DooXAA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 20095,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 20,
-			  "index": 9,
-			  "index2": 9
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841762,
-		"name": {
-		  "value": "Total Goals 1st Half - Exact",
-		  "sign": "1l9eew=="
-		},
-		"results": [
-		  {
-			"id": 1355380084,
-			"odds": 3.30,
-			"name": {
-			  "value": "No goal",
-			  "sign": "8CUBWg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380085,
-			"odds": 2.7,
-			"name": {
-			  "value": "1 goal",
-			  "sign": "9++N1A=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380086,
-			"odds": 3.70,
-			"name": {
-			  "value": "2 goals",
-			  "sign": "+wYOfw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380087,
-			"odds": 5.0,
-			"name": {
-			  "value": "3 or more goals",
-			  "sign": "uP1yGQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 4718,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 20,
-			  "index": 4,
-			  "index2": 4
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841763,
-		"name": {
-		  "value": "Total Goals 2nd Half - Exact",
-		  "sign": "aQJgpg=="
-		},
-		"results": [
-		  {
-			"id": 1355380088,
-			"odds": 4.60,
-			"name": {
-			  "value": "No goal",
-			  "sign": "RcfkWg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380089,
-			"odds": 3.0,
-			"name": {
-			  "value": "1 goal",
-			  "sign": "91pvMQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380090,
-			"odds": 3.40,
-			"name": {
-			  "value": "2 goals",
-			  "sign": "TuTrfw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380091,
-			"odds": 3.30,
-			"name": {
-			  "value": "3 or more goals",
-			  "sign": "dBjSVQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 4732,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 20,
-			  "index": 5,
-			  "index2": 5
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841764,
-		"name": {
-		  "value": "Number of Goals - Odd/Even (no Goal counts as even)",
-		  "sign": "714YYg=="
-		},
-		"results": [
-		  {
-			"id": 1355380092,
-			"odds": 1.83,
-			"name": {
-			  "value": "Even",
-			  "sign": "jUFdiA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380093,
-			"odds": 1.87,
-			"name": {
-			  "value": "Odd",
-			  "sign": "W173jw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 4665,
-		"categoryId": 1228,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 20,
-			  "index": 6,
-			  "index2": 6
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841765,
-		"name": {
-		  "value": "Number of Goals 1st Half - Odd/Even (no Goal counts as even)",
-		  "sign": "L3p+FA=="
-		},
-		"results": [
-		  {
-			"id": 1355380094,
-			"odds": 1.72,
-			"name": {
-			  "value": "Even",
-			  "sign": "ATeTQg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380095,
-			"odds": 2.00,
-			"name": {
-			  "value": "Odd",
-			  "sign": "qlhD+w=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 16449,
-		"categoryId": 1228,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 20,
-			  "index": 7,
-			  "index2": 7
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841766,
-		"name": {
-		  "value": "Total Goals Team 1 1st Half - Exact",
-		  "sign": "cHBt8A=="
-		},
-		"results": [
-		  {
-			"id": 1355380096,
-			"odds": 2.35,
-			"name": {
-			  "value": "No goal",
-			  "sign": "5yWUVw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380097,
-			"odds": 2.55,
-			"name": {
-			  "value": "1 goal",
-			  "sign": "fcbnLA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380098,
-			"odds": 5.0,
-			"name": {
-			  "value": "2 goals",
-			  "sign": "7Aabcg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380099,
-			"odds": 11.0,
-			"name": {
-			  "value": "3 or more goals",
-			  "sign": "y4Y32g=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 4720,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 9,
-			  "index2": 9
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841767,
-		"name": {
-		  "value": "Total Goals Team 1 2nd Half - Exact",
-		  "sign": "PuZFzQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380100,
-			"odds": 3.10,
-			"name": {
-			  "value": "No goal",
-			  "sign": "dITIVw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380101,
-			"odds": 2.6,
-			"name": {
-			  "value": "1 goal",
-			  "sign": "fVVGcA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380102,
-			"odds": 4.00,
-			"name": {
-			  "value": "2 goals",
-			  "sign": "f6fHcg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380103,
-			"odds": 6.5,
-			"name": {
-			  "value": "3 or more goals",
-			  "sign": "jyWo4Q=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 4733,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 10,
-			  "index2": 10
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841768,
-		"name": {
-		  "value": "Total Goals Team 2 1st Half - Exact",
-		  "sign": "Zg28LA=="
-		},
-		"results": [
-		  {
-			"id": 1355380104,
-			"odds": 1.40,
-			"name": {
-			  "value": "No goal",
-			  "sign": "wWYtVw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380105,
-			"odds": 3.20,
-			"name": {
-			  "value": "1 goal",
-			  "sign": "feCklQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380106,
-			"odds": 13.5,
-			"name": {
-			  "value": "2 goals",
-			  "sign": "ykUicg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380107,
-			"odds": 81.00,
-			"name": {
-			  "value": "3 or more goals",
-			  "sign": "Q8AIrQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 4721,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 11,
-			  "index2": 11
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841770,
-		"name": {
-		  "value": "Total Goals Team 2 2nd Half - Exact",
-		  "sign": "3ImmlA=="
-		},
-		"results": [
-		  {
-			"id": 1355380110,
-			"odds": 1.55,
-			"name": {
-			  "value": "No goal",
-			  "sign": "uxTnug=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380111,
-			"odds": 2.9,
-			"name": {
-			  "value": "1 goal",
-			  "sign": "/bpV5w=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380112,
-			"odds": 10.0,
-			"name": {
-			  "value": "2 goals",
-			  "sign": "SVN/ng=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380113,
-			"odds": 41.00,
-			"name": {
-			  "value": "3 or more goals",
-			  "sign": "edqGKQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 4734,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 12,
-			  "index2": 12
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841772,
-		"name": {
-		  "value": "Both Teams to Score 1st Half",
-		  "sign": "6Yq65A=="
-		},
-		"results": [
-		  {
-			"id": 1355380116,
-			"odds": 4.00,
-			"name": {
-			  "value": "Yes",
-			  "sign": "rupKIg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380117,
-			"odds": 1.20,
-			"name": {
-			  "value": "No",
-			  "sign": "irySTQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 15085,
-		"categoryId": 261,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 17,
-			  "index": 2,
-			  "index2": 2
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841774,
-		"name": {
-		  "value": "Team to win both halves",
-		  "sign": "QAiQVw=="
-		},
-		"results": [
-		  {
-			"id": 1355380118,
-			"odds": 3.20,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "IAe1DA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380119,
-			"odds": 23.00,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "I/RfCw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380120,
-			"odds": 1.33,
-			"name": {
-			  "value": "Neither team wins both halves",
-			  "sign": "9N/dug=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 12121,
-		"categoryId": 191,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 17,
-			  "index": 5,
-			  "index2": 5
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841775,
-		"name": {
-		  "value": "Team to Score more Goals - 2nd Half",
-		  "sign": "bKqTCw=="
-		},
-		"results": [
-		  {
-			"id": 1355380123,
-			"odds": 1.70,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "5sCbNg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380124,
-			"odds": 2.9,
-			"name": {
-			  "value": "X",
-			  "sign": "pZPVug=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380125,
-			"odds": 5.5,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "7GRw5g=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 4778,
-		"categoryId": 30,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "Other",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 17,
-			  "index": 9,
-			  "index2": 9
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841776,
-		"name": {
-		  "value": "Team to Score the 1st Goal - 2nd Half",
-		  "sign": "gW7oRA=="
-		},
-		"results": [
-		  {
-			"id": 1355380126,
-			"odds": 1.57,
-			"name": {
-			  "value": "Besiktas",
-			  "sign": "nju43g=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380127,
-			"odds": 4.60,
-			"name": {
-			  "value": "No goal",
-			  "sign": "I3jmIA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380128,
-			"odds": 3.60,
-			"name": {
-			  "value": "Antalya",
-			  "sign": "WeZxfg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 4728,
-		"categoryId": 261,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 14,
-			  "index2": 14
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841777,
-		"name": {
-		  "value": "Run of Play",
-		  "sign": "B9/vgQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380131,
-			"odds": 1.35,
-			"name": {
-			  "value": "Lead - Win",
-			  "sign": "LgnysQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380132,
-			"odds": 5.5,
-			"name": {
-			  "value": "Lead - Draw",
-			  "sign": "fRqWxw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380133,
-			"odds": 6.75,
-			"name": {
-			  "value": "Lead - Lose",
-			  "sign": "axgd8w=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380134,
-			"odds": 10.0,
-			"name": {
-			  "value": "No goal",
-			  "sign": "BVu7uA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 3912,
-		"categoryId": 938,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 150,
-			  "index": 2,
-			  "index2": 2
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841779,
-		"name": {
-		  "value": "More Goals which Half",
-		  "sign": "iF1ByQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380135,
-			"odds": 3.0,
-			"name": {
-			  "value": "1st half",
-			  "sign": "lIIxsg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380136,
-			"odds": 3.60,
-			"name": {
-			  "value": "Equal no. of goals",
-			  "sign": "m04/jA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380137,
-			"odds": 2.00,
-			"name": {
-			  "value": "2nd half ",
-			  "sign": "etKB4A=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 1329,
-		"categoryId": 1230,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 17,
-			  "index": 8,
-			  "index2": 8
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841780,
-		"name": {
-		  "value": "Team 1 - More Goals Which Half",
-		  "sign": "Thr+ow=="
-		},
-		"results": [
-		  {
-			"id": 1355380138,
-			"odds": 3.10,
-			"name": {
-			  "value": "1st half",
-			  "sign": "UkUfiA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380139,
-			"odds": 3.10,
-			"name": {
-			  "value": "Equal no. of goals",
-			  "sign": "wb254Q=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380140,
-			"odds": 2.15,
-			"name": {
-			  "value": "2nd half ",
-			  "sign": "jwi3vg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 17672,
-		"categoryId": 1230,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 15,
-			  "index2": 15
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841781,
-		"name": {
-		  "value": "Team 2 - More Goals Which Half",
-		  "sign": "jjfa6Q=="
-		},
-		"results": [
-		  {
-			"id": 1355380141,
-			"odds": 4.10,
-			"name": {
-			  "value": "1st half",
-			  "sign": "JXIHuQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380142,
-			"odds": 1.87,
-			"name": {
-			  "value": "Equal no. of goals",
-			  "sign": "L6gyVw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380143,
-			"odds": 3.0,
-			"name": {
-			  "value": "2nd half ",
-			  "sign": "3L5aiw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 17673,
-		"categoryId": 1230,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 16,
-			  "index2": 16
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841782,
+		"id": 466633118,
 		"name": {
 		  "value": "Any Team to win exactly by 1 Goal",
-		  "sign": "YOYGUw=="
+		  "sign": "DcdVCA=="
 		},
 		"results": [
 		  {
-			"id": 1355380144,
-			"odds": 2.7,
+			"id": 1372881890,
+			"odds": 5.0,
 			"name": {
 			  "value": "Yes",
-			  "sign": "WJGm7Q=="
+			  "sign": "OSWgBQ=="
 			},
 			"visibility": "Visible"
 		  },
 		  {
-			"id": 1355380145,
-			"odds": 1.40,
+			"id": 1372881891,
+			"odds": 1.14,
 			"name": {
 			  "value": "No",
-			  "sign": "vNN8Gw=="
+			  "sign": "+4EcpQ=="
 			},
 			"visibility": "Visible"
 		  }
@@ -5134,1179 +160,15 @@
 		"templateId": 19508,
 		"categoryId": 1,
 		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
+		"combo1": "OtherLiveEvents",
 		"combo2": "Single",
-		"visibility": "Visible",
+		"visibility": "Suspended",
 		"category": "NonGridable",
 		"isMain": false,
 		"grouping": {
 		  "detailed": [
 			{
-			  "group": 35,
-			  "index": 11,
-			  "index2": 11
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841783,
-		"name": {
-		  "value": "Any Team to win by exactly 2 Goals",
-		  "sign": "vLMKeg=="
-		},
-		"results": [
-		  {
-			"id": 1355380146,
-			"odds": 3.80,
-			"name": {
-			  "value": "Yes",
-			  "sign": "qZcSmQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380147,
-			"odds": 1.22,
-			"name": {
-			  "value": "No",
-			  "sign": "P7ioHg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 19509,
-		"categoryId": 1,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 35,
-			  "index": 12,
-			  "index2": 12
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841785,
-		"name": {
-		  "value": "Any Team to win by exactly 3 Goals",
-		  "sign": "ojqXiA=="
-		},
-		"results": [
-		  {
-			"id": 1355380150,
-			"odds": 5.75,
-			"name": {
-			  "value": "Yes",
-			  "sign": "S5p6cA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380151,
-			"odds": 1.10,
-			"name": {
-			  "value": "No",
-			  "sign": "OW8AFQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 19510,
-		"categoryId": 1,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 35,
-			  "index": 13,
-			  "index2": 13
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841786,
-		"name": {
-		  "value": "Team 1 to Score in Both Halves",
-		  "sign": "/vr8bQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380152,
-			"odds": 2.05,
-			"name": {
-			  "value": "Yes",
-			  "sign": "3YwH5A=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380153,
-			"odds": 1.70,
-			"name": {
-			  "value": "No",
-			  "sign": "sH0tDA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 19704,
-		"categoryId": 261,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 17,
-			  "index2": 17
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841787,
-		"name": {
-		  "value": "Team 2 to Score in Both Halves",
-		  "sign": "PtfYJw=="
-		},
-		"results": [
-		  {
-			"id": 1355380154,
-			"odds": 5.75,
-			"name": {
-			  "value": "Yes",
-			  "sign": "LIqzkA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380155,
-			"odds": 1.10,
-			"name": {
-			  "value": "No",
-			  "sign": "Mxb5CQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 19705,
-		"categoryId": 261,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 18,
-			  "index2": 18
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841788,
-		"name": {
-		  "value": "Total Goals O/U - Team 1",
-		  "sign": "2n1aGQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380156,
-			"odds": 2.4,
-			"name": {
-			  "value": "Over 2,5",
-			  "sign": "3yazFA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380157,
-			"odds": 1.50,
-			"name": {
-			  "value": "Under 2,5",
-			  "sign": "+DgtLA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 24138,
-		"categoryId": 261,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 57,
-			  "index2": 57
-			},
-			{
-			  "group": 30,
-			  "index": 76,
-			  "index2": 76,
-			  "subIndex": 1
-			},
-			{
-			  "group": 30,
-			  "index": 87,
-			  "index2": 87
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841789,
-		"name": {
-		  "value": "Total Goals O/U - Team 2",
-		  "sign": "J74XLw=="
-		},
-		"results": [
-		  {
-			"id": 1355380158,
-			"odds": 9.25,
-			"name": {
-			  "value": "Over 2,5",
-			  "sign": "0OqIzQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380159,
-			"odds": 1.03,
-			"name": {
-			  "value": "Under 2,5",
-			  "sign": "pR5LvA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 20085,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"attr": "2,5",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 80,
-			  "index2": 80
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841790,
-		"name": {
-		  "value": "Total Goals  Team 1 between 0 min. and 15:00 min.",
-		  "sign": "GCg98w=="
-		},
-		"results": [
-		  {
-			"id": 1355380160,
-			"odds": 3.60,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "oitdCw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380161,
-			"odds": 1.25,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "kccLqw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 24630,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 42,
-			  "index2": 42
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841791,
-		"name": {
-		  "value": "Total Goals  Team 1 between 15:01 min. and 30:00 min.",
-		  "sign": "OP9S9Q=="
-		},
-		"results": [
-		  {
-			"id": 1355380162,
-			"odds": 3.20,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "redm0g=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380163,
-			"odds": 1.30,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "zOFtOw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 24631,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 43,
-			  "index2": 43
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841792,
-		"name": {
-		  "value": "Total Goals  Team 1 between 30:01 min. and Half Time min.",
-		  "sign": "PIAatQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380164,
-			"odds": 2.75,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "/bVbYg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380165,
-			"odds": 1.40,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "ao22UA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 24632,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 44,
-			  "index2": 44
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841793,
-		"name": {
-		  "value": "Total Goals Team 1 between Half Time and 60:00 min.",
-		  "sign": "wOOuoA=="
-		},
-		"results": [
-		  {
-			"id": 1355380166,
-			"odds": 2.9,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "8nlguw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380167,
-			"odds": 1.36,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "N6vQwA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 24633,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 45,
-			  "index2": 45
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841794,
-		"name": {
-		  "value": "Total Goals Team 1 between 60:01 min. and 75:00 min.",
-		  "sign": "UmRKMw=="
-		},
-		"results": [
-		  {
-			"id": 1355380168,
-			"odds": 2.75,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "HBdQ2Q=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380169,
-			"odds": 1.40,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "JlQAhw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 24634,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 46,
-			  "index2": 46
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841796,
-		"name": {
-		  "value": "Total Goals  Team 1 between 75:01 min. and Full Time",
-		  "sign": "fKxbXg=="
-		},
-		"results": [
-		  {
-			"id": 1355380170,
-			"odds": 2.3,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "E9trAA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380171,
-			"odds": 1.55,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "e3JmFw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 24635,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 47,
-			  "index2": 47
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841797,
-		"name": {
-		  "value": "Total Goals Team 2 between 0 min. and 15:00 min.",
-		  "sign": "RVx/Tg=="
-		},
-		"results": [
-		  {
-			"id": 1355380174,
-			"odds": 6.75,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "TEVtaQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380175,
-			"odds": 1.07,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "gDjb7A=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 24636,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 48,
-			  "index2": 48
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841798,
-		"name": {
-		  "value": "Total Goals Team 2 between 15:01 min. and 30:00 min.",
-		  "sign": "Z94Rkg=="
-		},
-		"results": [
-		  {
-			"id": 1355380176,
-			"odds": 6.25,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "n1Q2dA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380177,
-			"odds": 1.09,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "/+Ac8w=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 24637,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 49,
-			  "index2": 49
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841799,
-		"name": {
-		  "value": "Total Goals Team 2 between 30:01 min. and Half Time",
-		  "sign": "+mLNAg=="
-		},
-		"results": [
-		  {
-			"id": 1355380178,
-			"odds": 5.50,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "kJgNrQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380179,
-			"odds": 1.11,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "osZ6Yw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 24638,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 50,
-			  "index2": 50
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841800,
-		"name": {
-		  "value": "Total Goals Team 2 between Half Time and 60:00 min.",
-		  "sign": "hMNA8Q=="
-		},
-		"results": [
-		  {
-			"id": 1355380180,
-			"odds": 5.5,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "wMowHQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380181,
-			"odds": 1.11,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "BKqhCA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 24639,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 51,
-			  "index2": 51
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841801,
-		"name": {
-		  "value": "Total Goals Team 2 between 60:01 min. and 75:00 min.",
-		  "sign": "vz/RiA=="
-		},
-		"results": [
-		  {
-			"id": 1355380182,
-			"odds": 5.25,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "zwYLxA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380183,
-			"odds": 1.12,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "WYzHmA=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 24640,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 52,
-			  "index2": 52
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841802,
-		"name": {
-		  "value": "Total Goals Team 2 between 75:01 min. and Full Time",
-		  "sign": "ejiwBQ=="
-		},
-		"results": [
-		  {
-			"id": 1355380184,
-			"odds": 4.40,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "IWg7pg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380185,
-			"odds": 1.17,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "SHMX3w=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 24641,
-		"categoryId": 262,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 40,
-			  "index": 53,
-			  "index2": 53
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841803,
-		"name": {
-		  "value": "Total Goal Bands (0-4+)",
-		  "sign": "s57kZw=="
-		},
-		"results": [
-		  {
-			"id": 1355380186,
-			"odds": 4.33,
-			"name": {
-			  "value": "0-1",
-			  "sign": "DgVLHA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380187,
-			"odds": 2.1,
-			"name": {
-			  "value": "2-3",
-			  "sign": "FDAjJg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380188,
-			"odds": 2.4,
-			"name": {
-			  "value": "4+",
-			  "sign": "8sB9qw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 27531,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"attr": "-1",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 20,
-			  "index": 12,
-			  "index2": 12
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841805,
-		"name": {
-		  "value": "Total Goal Bands (0-5+)",
-		  "sign": "M8thGg=="
-		},
-		"results": [
-		  {
-			"id": 1355380189,
-			"odds": 2.3,
-			"name": {
-			  "value": "0-2",
-			  "sign": "/998zw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380191,
-			"odds": 2.3,
-			"name": {
-			  "value": "3-4",
-			  "sign": "YsLtUA=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380193,
-			"odds": 4.00,
-			"name": {
-			  "value": "5+",
-			  "sign": "cNooMg=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 27534,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"attr": "-2",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 20,
-			  "index": 13,
-			  "index2": 13
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841806,
-		"name": {
-		  "value": "Total Goal Bands (0-6+)",
-		  "sign": "kWm8yw=="
-		},
-		"results": [
-		  {
-			"id": 1355380194,
-			"odds": 1.50,
-			"name": {
-			  "value": "0-3",
-			  "sign": "uTQizg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380195,
-			"odds": 3.25,
-			"name": {
-			  "value": "4-5",
-			  "sign": "CLmq9w=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380196,
-			"odds": 7.0,
-			"name": {
-			  "value": "6+",
-			  "sign": "VOj//Q=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 27535,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"attr": "-3",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 20,
-			  "index": 14,
-			  "index2": 14
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841807,
-		"name": {
-		  "value": "Total Goal Bands 1st Half (0-2+)",
-		  "sign": "C7hkGw=="
-		},
-		"results": [
-		  {
-			"id": 1355380197,
-			"odds": 3.30,
-			"name": {
-			  "value": "0",
-			  "sign": "YTC+/A=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380198,
-			"odds": 2.7,
-			"name": {
-			  "value": "1",
-			  "sign": "c1sj2A=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380199,
-			"odds": 2.3,
-			"name": {
-			  "value": "2+",
-			  "sign": "MvAVcw=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 27536,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"attr": "0",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 20,
-			  "index": 10,
-			  "index2": 10
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841808,
-		"name": {
-		  "value": "Total Goal Bands 1st Half (0-3+)",
-		  "sign": "y/Wx8Q=="
-		},
-		"results": [
-		  {
-			"id": 1355380200,
-			"odds": 1.55,
-			"name": {
-			  "value": "0-1",
-			  "sign": "4U45XQ=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380201,
-			"odds": 3.70,
-			"name": {
-			  "value": "2",
-			  "sign": "HDmohw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380202,
-			"odds": 5.0,
-			"name": {
-			  "value": "3+",
-			  "sign": "mA6lmQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 27537,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"attr": "-1",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 20,
-			  "index": 11,
-			  "index2": 11
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841809,
-		"name": {
-		  "value": "Team 1 1st Half Total Goals 0,5",
-		  "sign": "Euefug=="
-		},
-		"results": [
-		  {
-			"id": 1355380203,
-			"odds": 1.53,
-			"name": {
-			  "value": "Over 0,5",
-			  "sign": "TkCYfw=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380204,
-			"odds": 2.35,
-			"name": {
-			  "value": "Under 0,5",
-			  "sign": "D8AYaQ=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 31316,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"attr": "0,5",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
-			  "index": 19,
-			  "index2": 19
-			}
-		  ]
-		}
-	  },
-	  {
-		"id": 459841810,
-		"name": {
-		  "value": "Team 1 1st Half Total Goals 1,5",
-		  "sign": "ipDWAA=="
-		},
-		"results": [
-		  {
-			"id": 1355380205,
-			"odds": 3.40,
-			"name": {
-			  "value": "Over 1,5",
-			  "sign": "KXhnzg=="
-			},
-			"visibility": "Visible"
-		  },
-		  {
-			"id": 1355380206,
-			"odds": 1.28,
-			"name": {
-			  "value": "Under 1,5",
-			  "sign": "ZYy8+A=="
-			},
-			"visibility": "Visible"
-		  }
-		],
-		"templateId": 31317,
-		"categoryId": 31,
-		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
-		"combo2": "Single",
-		"visibility": "Visible",
-		"attr": "1,5",
-		"category": "NonGridable",
-		"isMain": false,
-		"grouping": {
-		  "detailed": [
-			{
-			  "group": 30,
+			  "group": 3,
 			  "index": 20,
 			  "index2": 20
 			}
@@ -6314,44 +176,972 @@
 		}
 	  },
 	  {
-		"id": 459841811,
+		"id": 466633119,
 		"name": {
-		  "value": "Team 2 1st Half Total Goals 0,5",
-		  "sign": "IBw6mg=="
+		  "value": "Double Chance",
+		  "sign": "SwxO8Q=="
 		},
 		"results": [
 		  {
-			"id": 1355380207,
-			"odds": 2.75,
+			"id": 1372881892,
+			"odds": 1.01,
 			"name": {
-			  "value": "Over 0,5",
-			  "sign": "Ed6eFg=="
+			  "value": "Ahal II or X",
+			  "sign": "tTcsmg=="
 			},
 			"visibility": "Visible"
 		  },
 		  {
-			"id": 1355380208,
-			"odds": 1.40,
+			"id": 1372881893,
+			"odds": 1.09,
 			"name": {
-			  "value": "Under 0,5",
-			  "sign": "LT655g=="
+			  "value": "X or FC Sagadam II",
+			  "sign": "v1mo7g=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881894,
+			"odds": 4.00,
+			"name": {
+			  "value": "Ahal II or FC Sagadam II",
+			  "sign": "IM4ykA=="
 			},
 			"visibility": "Visible"
 		  }
 		],
-		"templateId": 31319,
+		"templateId": 3187,
+		"categoryId": 190,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "Gridable",
+		"isMain": false,
+		"grouping": {
+		  "grid": "e8vi2hdwz",
+		  "detailed": [
+			{
+			  "group": 1,
+			  "index": 12,
+			  "index2": 12,
+			  "marketHelpPath": "Football/Double Chance"
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466633125,
+		"name": {
+		  "value": "Total Goals O/U - Team 1",
+		  "sign": "BZgJ4w=="
+		},
+		"results": [
+		  {
+			"id": 1372881909,
+			"odds": 5.5,
+			"name": {
+			  "value": "Over 1,5",
+			  "sign": "S/DlRw=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881910,
+			"odds": 1.11,
+			"name": {
+			  "value": "Under 1,5",
+			  "sign": "mQ6JWw=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 16454,
 		"categoryId": 31,
 		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
+		"combo1": "OtherLiveEvents",
 		"combo2": "Single",
-		"visibility": "Visible",
-		"attr": "0,5",
+		"visibility": "Suspended",
+		"attr": "1,5",
 		"category": "NonGridable",
 		"isMain": false,
 		"grouping": {
 		  "detailed": [
 			{
-			  "group": 30,
+			  "group": 3,
+			  "index": 6,
+			  "index2": 6,
+			  "marketTabId": 0,
+			  "name": "Over/Under Total Goals - Team 1"
+			}
+		  ],
+		  "parameters": {
+			"happening": "Goal",
+			"marketType": "OverUnder",
+			"period": "RegularTime"
+		  }
+		}
+	  },
+	  {
+		"id": 466633128,
+		"name": {
+		  "value": "Total Goals O/U - Team 2",
+		  "sign": "2Jm2fw=="
+		},
+		"results": [
+		  {
+			"id": 1372881915,
+			"odds": 14.0,
+			"name": {
+			  "value": "Over 1,5",
+			  "sign": "pZ7VJQ=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881916,
+			"odds": 1.01,
+			"name": {
+			  "value": "Under 1,5",
+			  "sign": "c7vk5w=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 16455,
+		"categoryId": 31,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"attr": "1,5",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 3,
+			  "index": 12,
+			  "index2": 12,
+			  "marketTabId": 0,
+			  "name": "Over/Under Total Goals - Team 2"
+			}
+		  ],
+		  "parameters": {
+			"happening": "Goal",
+			"marketType": "OverUnder",
+			"period": "RegularTime"
+		  }
+		}
+	  },
+	  {
+		"id": 466633130,
+		"name": {
+		  "value": "Total Goals - Exact",
+		  "sign": "Ige0NQ=="
+		},
+		"results": [
+		  {
+			"id": 1372881919,
+			"odds": 1.0,
+			"name": {
+			  "value": "No goal",
+			  "sign": "eCqhdw=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1372881920,
+			"odds": 1.0,
+			"name": {
+			  "value": "1 goal",
+			  "sign": "WqrzcA=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1372881921,
+			"odds": 1.15,
+			"name": {
+			  "value": "2 goals",
+			  "sign": "AnRbOg=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881922,
+			"odds": 4.75,
+			"name": {
+			  "value": "3 goals",
+			  "sign": "i0bJ6g=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881923,
+			"odds": 8.75,
+			"name": {
+			  "value": "4 goals",
+			  "sign": "0ZIdtA=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881924,
+			"odds": 251.0,
+			"name": {
+			  "value": "5 goals",
+			  "sign": "ywHTZA=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881925,
+			"odds": 251.0,
+			"name": {
+			  "value": "6 goals",
+			  "sign": "gvFIzg=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881926,
+			"odds": 251.0,
+			"name": {
+			  "value": "7 goals",
+			  "sign": "C8PaHg=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881927,
+			"odds": 251.0,
+			"name": {
+			  "value": "8 or more goals",
+			  "sign": "b0GyuA=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 2196,
+		"categoryId": 31,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 2,
+			  "index": 3,
+			  "index2": 3
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466633131,
+		"name": {
+		  "value": "Multiple Correct Score",
+		  "sign": "wOS6HQ=="
+		},
+		"results": [
+		  {
+			"id": 1372881928,
+			"odds": 1.0,
+			"name": {
+			  "value": "1-0, 2-0 or 3-0",
+			  "sign": "KIQE5A=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1372881929,
+			"odds": 1.0,
+			"name": {
+			  "value": "0-1, 0-2 or 0-3",
+			  "sign": "N1YRUw=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1372881930,
+			"odds": 1.0,
+			"name": {
+			  "value": "4-0, 5-0 or 6-0",
+			  "sign": "kzJbLg=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1372881931,
+			"odds": 1.0,
+			"name": {
+			  "value": "0-4, 0-5 or 0-6",
+			  "sign": "EMleKQ=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1372881932,
+			"odds": 4.25,
+			"name": {
+			  "value": "2-1, 3-1 or 4-1",
+			  "sign": "I9lQQg=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881933,
+			"odds": 6.5,
+			"name": {
+			  "value": "1-2, 1-3 or 1-4",
+			  "sign": "YdZx0A=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881934,
+			"odds": 251.0,
+			"name": {
+			  "value": "3-2, 4-2, 4-3 or 5-1",
+			  "sign": "Dy3l4g=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881935,
+			"odds": 251.0,
+			"name": {
+			  "value": "2-3, 2-4, 3-4 or 1-5",
+			  "sign": "twHClw=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881936,
+			"odds": 251.0,
+			"name": {
+			  "value": "Team 1 to win by any other score",
+			  "sign": "Z+He5Q=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881937,
+			"odds": 251.0,
+			"name": {
+			  "value": "Team 2 to win by any other score",
+			  "sign": "eCD7aw=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881938,
+			"odds": 1.14,
+			"name": {
+			  "value": "Draw",
+			  "sign": "BPmAbg=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 20590,
+		"categoryId": 192,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 96,
+			  "index": 12,
+			  "index2": 12
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466633135,
+		"name": {
+		  "value": "Match Result and Both Teams to Score",
+		  "sign": "iVzkaA=="
+		},
+		"results": [
+		  {
+			"id": 1372881971,
+			"odds": 5.75,
+			"name": {
+			  "value": "Ahal II to win and both teams to score",
+			  "sign": "utMaNA=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881972,
+			"odds": 18.5,
+			"name": {
+			  "value": "FC Sagadam II to win and both teams to score",
+			  "sign": "l+fjtw=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881973,
+			"odds": 1.0,
+			"name": {
+			  "value": "Ahal II to win to nil",
+			  "sign": "31JMiQ=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1372881974,
+			"odds": 1.00,
+			"name": {
+			  "value": "FC Sagadam II to win to nil",
+			  "sign": "v3SeUQ=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1372881975,
+			"odds": 1.0,
+			"name": {
+			  "value": "Both teams not to score",
+			  "sign": "xKB+nQ=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1372881976,
+			"odds": 1.14,
+			"name": {
+			  "value": "Both teams to score and the match to end in a draw",
+			  "sign": "ILSEzw=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 24392,
+		"categoryId": 261,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 1,
+			  "index": 14,
+			  "index2": 14
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466633136,
+		"name": {
+		  "value": "Total Goal Bands (0-4+)",
+		  "sign": "mFTVxA=="
+		},
+		"results": [
+		  {
+			"id": 1372881977,
+			"odds": 1.00,
+			"name": {
+			  "value": "0-1",
+			  "sign": "Ha5WbQ=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1372881978,
+			"odds": 1.01,
+			"name": {
+			  "value": "2-3",
+			  "sign": "9p2KIw=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1372881979,
+			"odds": 31.00,
+			"name": {
+			  "value": "4+",
+			  "sign": "sI37DA=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 27531,
+		"categoryId": 31,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"attr": "-1",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 2,
+			  "index": 6,
+			  "index2": 6
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466735050,
+		"name": {
+		  "value": "Total Goals O/U - Team 1",
+		  "sign": "RQNWmg=="
+		},
+		"results": [
+		  {
+			"id": 1373129739,
+			"odds": 34.0,
+			"name": {
+			  "value": "Over 3,5",
+			  "sign": "i4E1UQ=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129740,
+			"odds": 1.01,
+			"name": {
+			  "value": "Under 3,5",
+			  "sign": "RkrLkg=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 20087,
+		"categoryId": 31,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"attr": "3,5",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 3,
+			  "index": 8,
+			  "index2": 8
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466735034,
+		"name": {
+		  "value": "Total Goals - Over/Under",
+		  "sign": "Acm65A=="
+		},
+		"results": [
+		  {
+			"id": 1373129697,
+			"odds": 4.75,
+			"name": {
+			  "value": "Over 2,5",
+			  "sign": "BnLLuA=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129698,
+			"odds": 1.15,
+			"name": {
+			  "value": "Under 2,5",
+			  "sign": "gQzoQw=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 173,
+		"categoryId": 31,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Visible",
+		"balanced": 1,
+		"attr": "2,5",
+		"spread": 3.60,
+		"category": "Gridable",
+		"isMain": false,
+		"grouping": {
+		  "grid": "tabpo1c9n",
+		  "detailed": [
+			{
+			  "group": 1,
+			  "index": 8,
+			  "index2": 8,
+			  "subIndex": 2,
+			  "periodIndex": 0,
+			  "marketTabId": 0,
+			  "name": "Over/Under Total Goals"
+			},
+			{
+			  "group": 2,
+			  "index": 0,
+			  "index2": 0,
+			  "subIndex": 2,
+			  "periodIndex": 0,
+			  "marketTabId": 0,
+			  "name": "Over/Under Total Goals"
+			}
+		  ],
+		  "parameters": {
+			"happening": "Goal",
+			"marketType": "OverUnder",
+			"period": "RegularTime"
+		  }
+		}
+	  },
+	  {
+		"id": 466735059,
+		"name": {
+		  "value": "Total Goal Bands (0-5+)",
+		  "sign": "yKW6vg=="
+		},
+		"results": [
+		  {
+			"id": 1373129760,
+			"odds": 1.15,
+			"name": {
+			  "value": "0-2",
+			  "sign": "zAnxrw=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129761,
+			"odds": 4.20,
+			"name": {
+			  "value": "3-4",
+			  "sign": "+JI2kw=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129762,
+			"odds": 101.0,
+			"name": {
+			  "value": "5+",
+			  "sign": "Tsq4ZQ=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 27534,
+		"categoryId": 31,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"attr": "-2",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 2,
+			  "index": 7,
+			  "index2": 7
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466735009,
+		"name": {
+		  "value": "Total Goals O/U - Team 2",
+		  "sign": "T2FRBA=="
+		},
+		"results": [
+		  {
+			"id": 1373129616,
+			"odds": 34.0,
+			"name": {
+			  "value": "Over 2,5",
+			  "sign": "02yPng=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129617,
+			"odds": 1.01,
+			"name": {
+			  "value": "Under 2,5",
+			  "sign": "mUgRJQ=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 20085,
+		"categoryId": 31,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"attr": "2,5",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 3,
+			  "index": 12,
+			  "index2": 12,
+			  "marketTabId": 0,
+			  "name": "Over/Under Total Goals - Team 2"
+			}
+		  ],
+		  "parameters": {
+			"happening": "Goal",
+			"marketType": "OverUnder",
+			"period": "RegularTime"
+		  }
+		}
+	  },
+	  {
+		"id": 466735008,
+		"name": {
+		  "value": "Total Goals O/U - Team 1",
+		  "sign": "sqIcMg=="
+		},
+		"results": [
+		  {
+			"id": 1373129614,
+			"odds": 34.0,
+			"name": {
+			  "value": "Over 2,5",
+			  "sign": "AH3Ugw=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129615,
+			"odds": 1.01,
+			"name": {
+			  "value": "Under 2,5",
+			  "sign": "5pDWOg=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 24138,
+		"categoryId": 261,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"attr": "2,5",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 3,
+			  "index": 6,
+			  "index2": 6,
+			  "marketTabId": 0,
+			  "name": "Over/Under Total Goals - Team 1"
+			},
+			{
+			  "group": 3,
+			  "index": 6,
+			  "index2": 6,
+			  "marketTabId": 0,
+			  "name": "Over/Under Total Goals - Team 1"
+			}
+		  ],
+		  "parameters": {
+			"happening": "Goal",
+			"marketType": "OverUnder",
+			"period": "RegularTime"
+		  }
+		}
+	  },
+	  {
+		"id": 466735007,
+		"name": {
+		  "value": "Total Goals - Over/Under",
+		  "sign": "JBnAqQ=="
+		},
+		"results": [
+		  {
+			"id": 1373129612,
+			"odds": 31.00,
+			"name": {
+			  "value": "Over 3,5",
+			  "sign": "ONstWw=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129613,
+			"odds": 1.01,
+			"name": {
+			  "value": "Under 3,5",
+			  "sign": "jNxyqw=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 8933,
+		"categoryId": 31,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"balanced": 1,
+		"attr": "3,5",
+		"spread": 29.99,
+		"category": "Gridable",
+		"isMain": false,
+		"grouping": {
+		  "grid": "tabpo1c9n",
+		  "detailed": [
+			{
+			  "group": 1,
+			  "index": 8,
+			  "index2": 8,
+			  "subIndex": 3,
+			  "periodIndex": 0,
+			  "marketTabId": 0,
+			  "name": "Over/Under Total Goals"
+			},
+			{
+			  "group": 2,
+			  "index": 0,
+			  "index2": 0,
+			  "subIndex": 3,
+			  "periodIndex": 0,
+			  "marketTabId": 0,
+			  "name": "Over/Under Total Goals"
+			}
+		  ],
+		  "parameters": {
+			"happening": "Goal",
+			"marketType": "OverUnder",
+			"period": "RegularTime"
+		  }
+		}
+	  },
+	  {
+		"id": 466735032,
+		"name": {
+		  "value": "Total Goals Team 2 - Exact",
+		  "sign": "2KbKdw=="
+		},
+		"results": [
+		  {
+			"id": 1373129691,
+			"odds": 1.0,
+			"name": {
+			  "value": "No goal",
+			  "sign": "ts7zfg=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1373129692,
+			"odds": 1.01,
+			"name": {
+			  "value": "1 goal",
+			  "sign": "hFU04A=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129693,
+			"odds": 11.0,
+			"name": {
+			  "value": "2 goals",
+			  "sign": "LkygWw=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129694,
+			"odds": 34.0,
+			"name": {
+			  "value": "3 or more goals",
+			  "sign": "D4dsvQ=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 4727,
+		"categoryId": 31,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 3,
+			  "index": 16,
+			  "index2": 16
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466735044,
+		"name": {
+		  "value": "Any Team to win by exactly 3 Goals",
+		  "sign": "/eKLww=="
+		},
+		"results": [
+		  {
+			"id": 1373129724,
+			"odds": 34.00,
+			"name": {
+			  "value": "Yes",
+			  "sign": "GVgwFA=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129725,
+			"odds": 1.01,
+			"name": {
+			  "value": "No",
+			  "sign": "IP1qNA=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 19510,
+		"categoryId": 1,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 3,
 			  "index": 22,
 			  "index2": 22
 			}
@@ -6359,46 +1149,942 @@
 		}
 	  },
 	  {
-		"id": 459841813,
+		"id": 466735051,
 		"name": {
-		  "value": "Team 2 1st Half Total Goals 1,5",
-		  "sign": "CEufNw=="
+		  "value": "Any Team to win by exactly 2 Goals",
+		  "sign": "EnIntQ=="
 		},
 		"results": [
 		  {
-			"id": 1355380211,
-			"odds": 9.75,
+			"id": 1373129741,
+			"odds": 34.0,
 			"name": {
-			  "value": "Over 1,5",
-			  "sign": "+mk80w=="
+			  "value": "Yes",
+			  "sign": "Q6sjwA=="
 			},
 			"visibility": "Visible"
 		  },
 		  {
-			"id": 1355380212,
-			"odds": 1.02,
+			"id": 1373129742,
+			"odds": 1.01,
 			"name": {
-			  "value": "Under 1,5",
-			  "sign": "4R7GHA=="
+			  "value": "No",
+			  "sign": "wC59mQ=="
 			},
 			"visibility": "Visible"
 		  }
 		],
-		"templateId": 31320,
-		"categoryId": 31,
+		"templateId": 19509,
+		"categoryId": 1,
 		"resultOrder": "Default",
-		"combo1": "NoEventCombo",
+		"combo1": "OtherLiveEvents",
 		"combo2": "Single",
-		"visibility": "Visible",
-		"attr": "1,5",
+		"visibility": "Suspended",
 		"category": "NonGridable",
 		"isMain": false,
 		"grouping": {
 		  "detailed": [
 			{
-			  "group": 30,
-			  "index": 23,
-			  "index2": 23
+			  "group": 3,
+			  "index": 21,
+			  "index2": 21
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466735049,
+		"name": {
+		  "value": "Number of Goals - Odd/Even (no Goal counts as even)",
+		  "sign": "FrkPvw=="
+		},
+		"results": [
+		  {
+			"id": 1373129737,
+			"odds": 1.14,
+			"name": {
+			  "value": "Even",
+			  "sign": "0zvHwQ=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129738,
+			"odds": 5.0,
+			"name": {
+			  "value": "Odd",
+			  "sign": "TEt+CA=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 4665,
+		"categoryId": 1228,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 2,
+			  "index": 14,
+			  "index2": 14,
+			  "marketHelpPath": "Football/Number of Goals (odd or even)"
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466735037,
+		"name": {
+		  "value": "Total Goal Bands (0-6+)",
+		  "sign": "2ZHXcA=="
+		},
+		"results": [
+		  {
+			"id": 1373129705,
+			"odds": 1.01,
+			"name": {
+			  "value": "0-3",
+			  "sign": "m5qCMA=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129706,
+			"odds": 8.25,
+			"name": {
+			  "value": "4-5",
+			  "sign": "2xG+fQ=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129707,
+			"odds": 101.0,
+			"name": {
+			  "value": "6+",
+			  "sign": "ymvigg=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 27535,
+		"categoryId": 31,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"attr": "-3",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 2,
+			  "index": 8,
+			  "index2": 8
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466735047,
+		"name": {
+		  "value": "Number of goals Team 1",
+		  "sign": "swzHBQ=="
+		},
+		"results": [
+		  {
+			"id": 1373129733,
+			"odds": 1.0,
+			"name": {
+			  "value": "No goal",
+			  "sign": "tmx1+Q=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1373129734,
+			"odds": 1.11,
+			"name": {
+			  "value": "1 goal",
+			  "sign": "FRSUMg=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129735,
+			"odds": 5.5,
+			"name": {
+			  "value": "2 goals",
+			  "sign": "vU963A=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129736,
+			"odds": 34.0,
+			"name": {
+			  "value": "3 or more goals",
+			  "sign": "h5hI0Q=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 4726,
+		"categoryId": 31,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 3,
+			  "index": 10,
+			  "index2": 10
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466735019,
+		"name": {
+		  "value": "Correct Score (Regular Time)",
+		  "sign": "O0vk7Q=="
+		},
+		"results": [
+		  {
+			"id": 1373129636,
+			"odds": 1.0,
+			"name": {
+			  "value": "0-0",
+			  "sign": "Nreo0w=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1373129637,
+			"odds": 1.0,
+			"name": {
+			  "value": "1-0",
+			  "sign": "WV2IBQ=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1373129638,
+			"odds": 1.15,
+			"name": {
+			  "value": "1-1",
+			  "sign": "ZuvZ0Q=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129639,
+			"odds": 1.0,
+			"name": {
+			  "value": "0-1",
+			  "sign": "CQH5Bw=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1373129640,
+			"odds": 1.0,
+			"name": {
+			  "value": "2-0",
+			  "sign": "P3PlMA=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1373129641,
+			"odds": 5.25,
+			"name": {
+			  "value": "2-1",
+			  "sign": "8cMAkA=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129642,
+			"odds": 41.00,
+			"name": {
+			  "value": "2-2",
+			  "sign": "4hRfqg=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129643,
+			"odds": 12.5,
+			"name": {
+			  "value": "1-2",
+			  "sign": "4yr7fw=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129644,
+			"odds": 1.0,
+			"name": {
+			  "value": "0-2",
+			  "sign": "n8sHNA=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1373129645,
+			"odds": 1.0,
+			"name": {
+			  "value": "3-0",
+			  "sign": "spStDw=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1373129646,
+			"odds": 31.00,
+			"name": {
+			  "value": "3-1",
+			  "sign": "jSL82w=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129647,
+			"odds": 101.00,
+			"name": {
+			  "value": "3-2",
+			  "sign": "b/MXlQ=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129648,
+			"odds": 67.00,
+			"name": {
+			  "value": "3-3",
+			  "sign": "PW7Nsg=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129649,
+			"odds": 101.00,
+			"name": {
+			  "value": "2-3",
+			  "sign": "UoTtZA=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129650,
+			"odds": 51.00,
+			"name": {
+			  "value": "1-3",
+			  "sign": "orz9xQ=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129651,
+			"odds": 1.0,
+			"name": {
+			  "value": "0-3",
+			  "sign": "zVbdEw=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1373129652,
+			"odds": 1.0,
+			"name": {
+			  "value": "4-0",
+			  "sign": "4CTjxw=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1373129653,
+			"odds": 67.00,
+			"name": {
+			  "value": "4-1",
+			  "sign": "LpQGZw=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129654,
+			"odds": 101.00,
+			"name": {
+			  "value": "4-2",
+			  "sign": "PUNZXQ=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129655,
+			"odds": 81.00,
+			"name": {
+			  "value": "4-3",
+			  "sign": "8/O8/Q=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129656,
+			"odds": 81.00,
+			"name": {
+			  "value": "4-4",
+			  "sign": "nvBHIA=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129657,
+			"odds": 81.00,
+			"name": {
+			  "value": "3-4",
+			  "sign": "Q2bq8g=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129658,
+			"odds": 81.00,
+			"name": {
+			  "value": "2-4",
+			  "sign": "3Yp+UA=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129659,
+			"odds": 101.00,
+			"name": {
+			  "value": "1-4",
+			  "sign": "3LTahQ=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129660,
+			"odds": 1.0,
+			"name": {
+			  "value": "0-4",
+			  "sign": "oFUmzg=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1373129661,
+			"odds": 51.00,
+			"name": {
+			  "value": "Any other score",
+			  "sign": "yXdanQ=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 19193,
+		"categoryId": 192,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 1,
+			  "index": 177,
+			  "index2": 177,
+			  "periodIndex": 0,
+			  "marketTabId": 0,
+			  "marketHelpPath": "Football/Correct Score (Regular Time)",
+			  "name": "Correct Score"
+			},
+			{
+			  "group": 96,
+			  "index": 8,
+			  "index2": 8,
+			  "periodIndex": 0,
+			  "marketTabId": 0,
+			  "marketHelpPath": "Football/Correct Score (Regular Time)",
+			  "name": "Correct Score"
+			}
+		  ],
+		  "parameters": {
+			"happening": "Goal",
+			"marketType": "CorrectScore",
+			"period": "RegularTime"
+		  }
+		}
+	  },
+	  {
+		"id": 466735036,
+		"name": {
+		  "value": "Total Goals 2nd Half - Exact",
+		  "sign": "7fbAqg=="
+		},
+		"results": [
+		  {
+			"id": 1373129701,
+			"odds": 1.0,
+			"name": {
+			  "value": "No goal",
+			  "sign": "PnUXkA=="
+			},
+			"visibility": "Suspended"
+		  },
+		  {
+			"id": 1373129702,
+			"odds": 1.15,
+			"name": {
+			  "value": "1 goal",
+			  "sign": "hmJPVg=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129703,
+			"odds": 4.75,
+			"name": {
+			  "value": "2 goals",
+			  "sign": "NVYYtQ=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373129704,
+			"odds": 31.00,
+			"name": {
+			  "value": "3 or more goals",
+			  "sign": "mGTOcg=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 4732,
+		"categoryId": 31,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 2,
+			  "index": 4,
+			  "index2": 4
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466741218,
+		"name": {
+		  "value": "Handicap 0:2",
+		  "sign": "Bti1pQ=="
+		},
+		"results": [
+		  {
+			"id": 1373143224,
+			"odds": 101.0,
+			"name": {
+			  "value": "Ahal II",
+			  "sign": "0g3hPg=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373143225,
+			"odds": 9.0,
+			"name": {
+			  "value": "X",
+			  "sign": "+WuM+Q=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373143226,
+			"odds": 1.01,
+			"name": {
+			  "value": "FC Sagadam II",
+			  "sign": "oYW5Ow=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 501,
+		"categoryId": 28,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "Other",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 90,
+			  "index": 3,
+			  "index2": 3,
+			  "marketHelpPath": "Football/Handicaps"
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466741219,
+		"name": {
+		  "value": "Handicap 1:0",
+		  "sign": "AC7MSw=="
+		},
+		"results": [
+		  {
+			"id": 1373143227,
+			"odds": 1.01,
+			"name": {
+			  "value": "Ahal II",
+			  "sign": "7zQESA=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373143228,
+			"odds": 9.0,
+			"name": {
+			  "value": "X",
+			  "sign": "dYciDQ=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373143229,
+			"odds": 101.00,
+			"name": {
+			  "value": "FC Sagadam II",
+			  "sign": "HIzfyQ=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 54,
+		"categoryId": 28,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "Gridable",
+		"isMain": false,
+		"grouping": {
+		  "grid": "ivlr1vtmy",
+		  "detailed": [
+			{
+			  "group": 90,
+			  "index": 10,
+			  "index2": 10,
+			  "marketHelpPath": "Football/Handicaps"
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466744540,
+		"name": {
+		  "value": "Total Goals O/U - Team 2",
+		  "sign": "W4paPA=="
+		},
+		"results": [
+		  {
+			"id": 1373150562,
+			"odds": 34.0,
+			"name": {
+			  "value": "Over 3,5",
+			  "sign": "FZtITg=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373150563,
+			"odds": 1.01,
+			"name": {
+			  "value": "Under 3,5",
+			  "sign": "ueW47g=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 20088,
+		"categoryId": 31,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"attr": "3,5",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 3,
+			  "index": 14,
+			  "index2": 14
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466744852,
+		"name": {
+		  "value": "Total Goals  Team 1 between 75:01 min. and Full Time",
+		  "sign": "5Ouqeg=="
+		},
+		"results": [
+		  {
+			"id": 1373151296,
+			"odds": 5.5,
+			"name": {
+			  "value": "Over 0,5",
+			  "sign": "jJXi8w=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373151297,
+			"odds": 1.11,
+			"name": {
+			  "value": "Under 0,5",
+			  "sign": "4HUldw=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 24635,
+		"categoryId": 262,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 97,
+			  "index": 54,
+			  "index2": 54,
+			  "subIndex": 0
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466744861,
+		"name": {
+		  "value": "Total Goals between 75:01 min. and full Time",
+		  "sign": "I50ydQ=="
+		},
+		"results": [
+		  {
+			"id": 1373151315,
+			"odds": 4.75,
+			"name": {
+			  "value": "Over 0,5",
+			  "sign": "mUOX1A=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373151316,
+			"odds": 1.15,
+			"name": {
+			  "value": "Under 0,5",
+			  "sign": "e4gEcQ=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 15544,
+		"categoryId": 262,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 97,
+			  "index": 4,
+			  "index2": 4,
+			  "subIndex": 0
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466744856,
+		"name": {
+		  "value": "Total Goals Team 2 between 75:01 min. and Full Time",
+		  "sign": "eMimgQ=="
+		},
+		"results": [
+		  {
+			"id": 1373151304,
+			"odds": 14.0,
+			"name": {
+			  "value": "Over 0,5",
+			  "sign": "MqnvIQ=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373151305,
+			"odds": 1.01,
+			"name": {
+			  "value": "Under 0,5",
+			  "sign": "V+YuWw=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 24641,
+		"categoryId": 262,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 97,
+			  "index": 60,
+			  "index2": 60,
+			  "subIndex": 0
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466747892,
+		"name": {
+		  "value": "3rd Goal",
+		  "sign": "RZBodg=="
+		},
+		"results": [
+		  {
+			"id": 1373159299,
+			"odds": 5.5,
+			"name": {
+			  "value": "Ahal II",
+			  "sign": "3z3Ytg=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373159300,
+			"odds": 1.15,
+			"name": {
+			  "value": "No goal",
+			  "sign": "yKMh9A=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373159301,
+			"odds": 17.0,
+			"name": {
+			  "value": "FC Sagadam II",
+			  "sign": "O7FtEw=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 1345,
+		"categoryId": 261,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Visible",
+		"category": "NonGridable",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 1,
+			  "index": 9,
+			  "index2": 9,
+			  "subIndex": 2
+			}
+		  ]
+		}
+	  },
+	  {
+		"id": 466747893,
+		"name": {
+		  "value": "Rest of the Match – Current Score: 1:1",
+		  "sign": "Oy6Dtg=="
+		},
+		"results": [
+		  {
+			"id": 1373159302,
+			"odds": 5.75,
+			"name": {
+			  "value": "Ahal II",
+			  "sign": "mHb3LQ=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373159303,
+			"odds": 1.14,
+			"name": {
+			  "value": "X",
+			  "sign": "MRqo/g=="
+			},
+			"visibility": "Visible"
+		  },
+		  {
+			"id": 1373159304,
+			"odds": 18.5,
+			"name": {
+			  "value": "FC Sagadam II",
+			  "sign": "bM/YiQ=="
+			},
+			"visibility": "Visible"
+		  }
+		],
+		"templateId": 21078,
+		"categoryId": 28,
+		"resultOrder": "Default",
+		"combo1": "OtherLiveEvents",
+		"combo2": "Single",
+		"visibility": "Suspended",
+		"category": "Other",
+		"isMain": false,
+		"grouping": {
+		  "detailed": [
+			{
+			  "group": 1,
+			  "index": 92,
+			  "index2": 92
 			}
 		  ]
 		}
@@ -6406,51 +2092,312 @@
 	],
 	"participants": [
 	  {
-		"participantId": 2515142,
+		"participantId": 2846013,
 		"name": {
-		  "value": "Besiktas",
-		  "sign": "Nfj8oQ==",
-		  "short": "Besiktas",
-		  "shortSign": "Nfj8oQ=="
-		},
-		"image": {
-		  "jersey": "2515142_1",
-		  "rotateJersey": true
+		  "value": "Ahal II",
+		  "sign": "DgCVgA==",
+		  "short": "Ahal II",
+		  "shortSign": "DgCVgA=="
 		}
 	  },
 	  {
-		"participantId": 2515122,
+		"participantId": 2846014,
 		"name": {
-		  "value": "Antalyaspor",
-		  "sign": "F9/QMw==",
-		  "short": "Antalya",
-		  "shortSign": "6n9auA=="
-		},
-		"image": {
-		  "jersey": "2515122_1",
-		  "rotateJersey": true
+		  "value": "FC Sagadam II",
+		  "sign": "saBP7g==",
+		  "short": "FC Sagadam II",
+		  "shortSign": "saBP7g=="
 		}
 	  }
 	],
-	"id": "9805664",
+	"id": "9919027",
 	"name": {
-	  "value": "Besiktas - Antalyaspor",
-	  "sign": "hXdz9Q=="
+	  "value": "Ahal II - FC Sagadam II",
+	  "sign": "vo4ivA=="
 	},
-	"sourceId": 9805664,
+	"sourceId": 9919027,
 	"source": "V1",
 	"fixtureType": "Standard",
-	"context": "v1|en|9805664",
-	"addons": {
-	  "betBuilderFixture": "6298564",
-	  "betRadar": 18808072
-	},
-	"stage": "PreMatch",
-	"groupId": 2044421,
+	"context": "v1|en|9919027",
+	"addons": {},
+	"stage": "Live",
+	"groupId": 2073787,
 	"liveType": "NotSet",
 	"liveAlert": true,
-	"startDate": "2020-03-21T17:00:00Z",
-	"cutOffDate": "2020-03-21T17:00:00Z",
+	"scoreboard": {
+	  "bookieTicker": "",
+	  "messages": {
+		"6472314": {
+		  "messageType": 252,
+		  "content": "6th Corner to Ahal II",
+		  "timer": "90:01",
+		  "order": 18
+		},
+		"5412399": {
+		  "messageType": 254,
+		  "content": "1st Red card to FC Sagadam II",
+		  "timer": "72:21",
+		  "order": 17
+		},
+		"4627327": {
+		  "messageType": 255,
+		  "content": "Goal for Ahal II: 1-1",
+		  "timer": "59:16",
+		  "order": 16
+		},
+		"4437159": {
+		  "messageType": 252,
+		  "content": "5th Corner to Ahal II",
+		  "timer": "56:06",
+		  "order": 15
+		},
+		"4408068": {
+		  "messageType": 253,
+		  "content": "6th Yellow card to FC Sagadam II",
+		  "timer": "55:37",
+		  "order": 14
+		},
+		"4215998": {
+		  "messageType": 252,
+		  "content": "4th Corner to Ahal II",
+		  "timer": "52:25",
+		  "order": 13
+		},
+		"3770375": {
+		  "messageType": 1,
+		  "content": "2nd Half",
+		  "timer": "45:00",
+		  "order": 12
+		},
+		"2789977": {
+		  "messageType": 1,
+		  "content": "Halftime",
+		  "timer": "46:34",
+		  "order": 11
+		},
+		"2739607": {
+		  "messageType": 253,
+		  "content": "5th Yellow card to Ahal II",
+		  "timer": "45:44",
+		  "order": 10
+		},
+		"2570133": {
+		  "messageType": 255,
+		  "content": "Goal for FC Sagadam II: 0-1",
+		  "timer": "42:55",
+		  "order": 9
+		},
+		"1634149": {
+		  "messageType": 253,
+		  "content": "4th Yellow card to FC Sagadam II",
+		  "timer": "27:19",
+		  "order": 8
+		},
+		"1624776": {
+		  "messageType": 252,
+		  "content": "3rd Corner to FC Sagadam II",
+		  "timer": "27:09",
+		  "order": 7
+		},
+		"1024359": {
+		  "messageType": 253,
+		  "content": "3rd Yellow card to FC Sagadam II",
+		  "timer": "17:09",
+		  "order": 6
+		},
+		"812958": {
+		  "messageType": 253,
+		  "content": "2nd Yellow card to Ahal II",
+		  "timer": "13:38",
+		  "order": 5
+		},
+		"454881": {
+		  "messageType": 253,
+		  "content": "1st Yellow card to FC Sagadam II",
+		  "timer": "07:39",
+		  "order": 4
+		},
+		"353285": {
+		  "messageType": 252,
+		  "content": "2nd Corner to Ahal II",
+		  "timer": "05:58",
+		  "order": 3
+		},
+		"228546": {
+		  "messageType": 252,
+		  "content": "1st Corner to Ahal II",
+		  "timer": "03:53",
+		  "order": 2
+		},
+		"0": {
+		  "messageType": 1,
+		  "content": "1st Half",
+		  "timer": "00:00",
+		  "order": 1
+		}
+	  },
+	  "playerInfo": {
+		"colorsAvailable": false,
+		"players": {
+		  "01": {
+			"id": "01",
+			"visible": true,
+			"teamName": "Ahal II",
+			"shirtColor": "#000000",
+			"shortsColor": "#000000"
+		  },
+		  "02": {
+			"id": "02",
+			"visible": true,
+			"teamName": "FC Sagadam II",
+			"shirtColor": "#ffffff",
+			"shortsColor": "#ffffff"
+		  }
+		}
+	  },
+	  "parentPeriod": "Halftime",
+	  "corners": {
+		"player1": {
+		  "1": 2,
+		  "3": 3,
+		  "254": 5,
+		  "253": 0,
+		  "255": 5
+		},
+		"player2": {
+		  "1": 1,
+		  "3": 0,
+		  "254": 1,
+		  "253": 0,
+		  "255": 1
+		}
+	  },
+	  "redCards": {
+		"player1": {
+		  "1": 0,
+		  "3": 0,
+		  "254": 0,
+		  "253": 0,
+		  "255": 0
+		},
+		"player2": {
+		  "1": 0,
+		  "3": 1,
+		  "254": 1,
+		  "253": 0,
+		  "255": 1
+		}
+	  },
+	  "yellowCards": {
+		"player1": {
+		  "1": 2,
+		  "3": 0,
+		  "254": 2,
+		  "253": 0,
+		  "255": 2
+		},
+		"player2": {
+		  "1": 3,
+		  "3": 1,
+		  "254": 4,
+		  "253": 0,
+		  "255": 4
+		}
+	  },
+	  "penaltiesControl": {
+		"team1": {
+		  "1": {
+			"periodId": 1,
+			"value": 2
+		  },
+		  "2": {
+			"periodId": 2,
+			"value": 2
+		  },
+		  "3": {
+			"periodId": 3,
+			"value": 2
+		  },
+		  "4": {
+			"periodId": 4,
+			"value": 2
+		  },
+		  "5": {
+			"periodId": 5,
+			"value": 2
+		  }
+		},
+		"team2": {
+		  "1": {
+			"periodId": 1,
+			"value": 2
+		  },
+		  "2": {
+			"periodId": 2,
+			"value": 2
+		  },
+		  "3": {
+			"periodId": 3,
+			"value": 2
+		  },
+		  "4": {
+			"periodId": 4,
+			"value": 2
+		  },
+		  "5": {
+			"periodId": 5,
+			"value": 2
+		  }
+		}
+	  },
+	  "penalties": {
+		"player1": {
+		  "1": 0,
+		  "3": 0,
+		  "254": 0,
+		  "253": 0,
+		  "255": 0
+		},
+		"player2": {
+		  "1": 0,
+		  "3": 0,
+		  "254": 0,
+		  "253": 0,
+		  "255": 0
+		}
+	  },
+	  "scoreDetailed": {
+		"player1": {
+		  "1": 0,
+		  "3": 1,
+		  "255": 1,
+		  "253": 0,
+		  "254": 1
+		},
+		"player2": {
+		  "1": 1,
+		  "3": 0,
+		  "255": 1,
+		  "253": 0,
+		  "254": 1
+		}
+	  },
+	  "source": "V1",
+	  "sportId": 4,
+	  "scoreboardId": 9919027,
+	  "period": "2H",
+	  "periodId": 3,
+	  "score": "1:1",
+	  "timer": {
+		"running": true,
+		"base": "2020-04-19T11:03:16.0853761Z",
+		"visible": true,
+		"seconds": 2700
+	  },
+	  "started": true
+	},
+	"startDate": "2020-04-19T10:00:00Z",
+	"cutOffDate": "2020-04-19T12:00:00Z",
 	"sport": {
 	  "type": "Sport",
 	  "id": 4,
@@ -6460,31 +2407,31 @@
 	  }
 	},
 	"competition": {
-	  "parentLeagueId": 844,
-	  "statistics": true,
+	  "parentLeagueId": 75568,
+	  "statistics": false,
 	  "sportId": 4,
 	  "type": "Competition",
-	  "id": 844,
-	  "parentId": 31,
+	  "id": 75569,
+	  "parentId": 215,
 	  "name": {
-		"value": "Super Lig",
-		"sign": "YIu3AQ=="
+		"value": "Yokari Liga Youth",
+		"sign": "lg9QXg=="
 	  }
 	},
 	"region": {
-	  "code": "TUR",
+	  "code": "TKM",
 	  "sportId": 4,
 	  "type": "Region",
-	  "id": 31,
+	  "id": 215,
 	  "parentId": 4,
 	  "name": {
-		"value": "Turkey",
-		"sign": "s2brnQ=="
+		"value": "Turkmenistan",
+		"sign": "ecGsXA=="
 	  }
 	},
 	"viewType": "European",
 	"isOpenForBetting": true
   },
   "splitFixtures": [],
-  "groupingVersion": "3-dGIIcb4jCucODfQYzQC1mQ=="
+  "groupingVersion": "6-CTHoTsBJAk4l9/3AnoTQ6w=="
 }
