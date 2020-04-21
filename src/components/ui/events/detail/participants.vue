@@ -47,8 +47,8 @@
           <score-messages />
           <v-col class="flex-shrink-1 flex-grow-0">
             <toggle-button
-              :rotate="expandParticipantsDetail"
-              @click.native="toggleParticipants"
+              :rotate="toggleScoreboardControl"
+              @click.native="toggleScoreboard"
             />
           </v-col>
         </v-row>
@@ -81,10 +81,13 @@ export default {
   }),
   computed: {
     ...mapState('game', ['participants']),
-    ...mapState('interface', ['expandParticipantsDetail', 'toggleParticipantsControl'])
+    ...mapState('interface', ['expandParticipantsDetail', 'toggleParticipantsControl', 'toggleScoreboardControl'])
   },
   methods: {
-    ...mapMutations({ toggleParticipants: 'interface/TOGGLE_PARTICIPANTS_DETAIL' })
+    ...mapMutations({
+      toggleScoreboard: 'interface/TOGGLE_SCOREBOARD',
+      toggleParticipants: 'interface/TOGGLE_PARTICIPANTS_DETAIL'
+    })
   }
 }
 </script>

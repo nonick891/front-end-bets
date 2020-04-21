@@ -1,18 +1,41 @@
 <template>
   <v-col class="flex-grow-1">
-    <span style="vertical-align:3px">
-      <v-icon
-        size="14"
-        :color="getIcon(message).color"
-      >$vuetify.icons.{{ getIcon(message).icon }}</v-icon>
-    </span>
-    <span class="details">
-      {{ message.content }}
-    </span>
+    <v-row no-gutters>
+      <v-col>
+        <span style="vertical-align:3px">
+          <v-icon
+            size="14"
+            :color="getIcon(firstMessage).color"
+          >$vuetify.icons.{{ getIcon(firstMessage).icon }}</v-icon>
+        </span>
+        <span class="details">
+          {{ firstMessage.content }}
+        </span>
+      </v-col>
+    </v-row>
+    <div v-if="toggleScoreboardControl">
+      <v-row
+        :key="key"
+        v-for="key in otherKeys"
+        no-gutters
+      >
+        <v-col>
+          <span style="vertical-align:3px">
+            <v-icon
+              size="14"
+              :color="getIcon(messages[key]).color"
+            >$vuetify.icons.{{ getIcon(messages[key]).icon }}</v-icon>
+          </span>
+          <span class="details">
+            {{ messages[key].content }}
+          </span>
+        </v-col>
+      </v-row>
+    </div>
   </v-col>
 </template>
 <script>
-import { values } from 'lodash'
+import { keys, values } from 'lodash'
 import { mapState } from 'vuex';
 export default {
   data: () => ({
@@ -27,11 +50,21 @@ export default {
   }),
   computed: {
     ...mapState('scoreboard', ['messages']),
-    message() {
-      let arrayMessages = values(this.messages),
-        message = arrayMessages[arrayMessages.length - 1];
-      return message ? message : {};
+    ...mapState('interface', ['toggleScoreboardControl']),
+    firstMessage() {
+      return this.messages[this.messagesKeys[0]];
+    },
+    messagesKeys() {
+      return keys(this.messages).reverse();
+    },
+    otherKeys() {
+      let keys = [ ...this.messagesKeys ];
+      keys.shift();
+      return keys;
     }
+  },
+  mounted(){
+    console.log(this.messages);
   },
   methods: {
     getIcon(message) {

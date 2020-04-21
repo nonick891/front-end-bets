@@ -55,13 +55,7 @@
           :right="penalties.player2"
           color="#fff"
         />
-        <scoreboard-event
-          name="Subs"
-          :left="2"
-          icon="exchange"
-          :right="0"
-          color="#fff"
-        />
+        <v-col></v-col>
       </v-row>
     </v-col>
   </v-row>

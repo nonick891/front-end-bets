@@ -2,6 +2,7 @@ import {
   TOGGLE_MENU,
   SET_BREADCRUMBS,
   TOGGLE_PARTICIPANTS_DETAIL,
+  TOGGLE_SCOREBOARD,
   SHOW_PARTICIPANTS_DETAIL,
   HIDE_PARTICIPANTS_DETAIL
 } from './interface/mutations-types'
@@ -10,7 +11,8 @@ const state = {
   drawer: null,
   breadcrumbs: [],
   toggleParticipantsControl: true,
-  expandParticipantsDetail: false
+  expandParticipantsDetail: false,
+  toggleScoreboardControl: true
 };
 
 const getters = {};
@@ -23,6 +25,9 @@ const mutations = {
   },
   [SET_BREADCRUMBS](state, breadcrumbs) {
     state.breadcrumbs = breadcrumbs;
+  },
+  [TOGGLE_SCOREBOARD](state) {
+    state.toggleScoreboardControl = !state.toggleScoreboardControl;
   },
   [TOGGLE_PARTICIPANTS_DETAIL](state) {
     state.expandParticipantsDetail = !state.expandParticipantsDetail;
