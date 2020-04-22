@@ -52,7 +52,8 @@ export default {
     ...mapState('scoreboard', ['messages']),
     ...mapState('interface', ['toggleScoreboardControl']),
     firstMessage() {
-      return this.messages[this.messagesKeys[0]];
+      let result = this.messages[this.messagesKeys[0]];
+      return result ? result : {};
     },
     messagesKeys() {
       return keys(this.messages).reverse();
@@ -62,9 +63,6 @@ export default {
       keys.shift();
       return keys;
     }
-  },
-  mounted(){
-    console.log(this.messages);
   },
   methods: {
     getIcon(message) {

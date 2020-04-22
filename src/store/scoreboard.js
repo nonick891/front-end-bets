@@ -10,7 +10,11 @@ const state = {
   redCards: {},
   yellowCards: {},
   corners: {},
-  penalties: {}
+  score: {},
+  penalties: {},
+  timer: {},
+  period: '1H',
+  selectedPeriodTab: null
 }
 
 const getters = {}
@@ -21,6 +25,9 @@ const mutations = {
   [SET_SCOREBOARD](state, scoreboard) {
     let convertKeys = keys(getKeyPairs());
     state.messages = scoreboard.messages;
+    state.period = scoreboard.period;
+    state.timer = scoreboard.timer;
+    state.selectedPeriodTab = `tab-${scoreboard.period.toLowerCase()}`;
     for(let value of convertKeys) {
       state[value] = scoreboard[value];
     }

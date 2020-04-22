@@ -18,9 +18,9 @@
         />
         <scoreboard-event
           name="Goal"
-          :left="goals.player1"
+          :left="score.player1"
           icon="ball"
-          :right="goals.player2"
+          :right="score.player2"
           color="#fff"
         />
         <scoreboard-event
@@ -67,7 +67,7 @@ export default {
   components: { scoreboardEvent },
   computed: {
     ...mapState('scoreboard', [
-      'goals',
+      'score',
       'redCards',
       'yellowCards',
       'corners',

@@ -1,6 +1,6 @@
 <template>
   <v-tabs
-    v-model="model"
+    v-model="selectedPeriodTab"
     centered
     class="half-time"
     slider-color="border"
@@ -17,17 +17,26 @@
       2H
     </v-tab>
     <v-tab
-      href="#tab-ft"
+      href="#tab-fh"
     >
       FH
     </v-tab>
   </v-tabs>
 </template>
 <script>
+import { mapState } from 'vuex'
 export default {
-  data: () => ({
-    model: null
-  })
+  computed: {
+    selectedPeriodTab: {
+      get() {
+        return this.$store.state.scoreboard.selectedPeriodTab;
+      },
+      set(value) {
+        this.$store.state.scoreboard.selectedPeriodTab = value;
+      }
+    },
+    ...mapState('scoreboard', ['period'])
+  }
 }
 </script>
 <style>

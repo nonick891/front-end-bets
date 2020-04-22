@@ -1,13 +1,13 @@
 <template>
   <v-col class="col-12 py-0">
-    <participants />
+    <scoreboard />
     <main-tabs />
   </v-col>
 </template>
 <script>
-import Participants from '../../ui/events/detail/participants.vue'
+import Scoreboard from '../../ui/events/detail/scoreboard.vue'
 import MainTabs from '../../ui/events/detail/tabs.vue'
 export default {
-  components: { Participants, MainTabs }
+  components: { Scoreboard, MainTabs }
 }
 </script>

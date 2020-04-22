@@ -1,7 +1,6 @@
 import {
   TOGGLE_MENU,
   SET_BREADCRUMBS,
-  TOGGLE_PARTICIPANTS_DETAIL,
   TOGGLE_SCOREBOARD,
   SHOW_PARTICIPANTS_DETAIL,
   HIDE_PARTICIPANTS_DETAIL
@@ -12,7 +11,7 @@ const state = {
   breadcrumbs: [],
   toggleParticipantsControl: true,
   expandParticipantsDetail: false,
-  toggleScoreboardControl: true
+  toggleScoreboardControl: false
 };
 
 const getters = {};
@@ -28,13 +27,6 @@ const mutations = {
   },
   [TOGGLE_SCOREBOARD](state) {
     state.toggleScoreboardControl = !state.toggleScoreboardControl;
-  },
-  [TOGGLE_PARTICIPANTS_DETAIL](state) {
-    state.expandParticipantsDetail = !state.expandParticipantsDetail;
-    setTimeout(
-      () => state.toggleParticipantsControl = !state.toggleParticipantsControl,
-      state.toggleParticipantsControl ? 150 : 0
-    );
   },
   [SHOW_PARTICIPANTS_DETAIL](state) {
     state.expandParticipantsDetail = true;

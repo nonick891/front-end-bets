@@ -20,9 +20,9 @@
           <v-col
             class="col-2 px-0 text-center"
           >
-            <span class="font-weight-bold score">1</span>
+            <span class="font-weight-bold score">{{ score.player1 }}</span>
             <span class="divider"></span>
-            <span class="font-weight-bold score">3</span>
+            <span class="font-weight-bold score">{{ score.player2 }}</span>
           </v-col>
           <v-col
             class="col-5 text-center font-weight-bold team-title"
@@ -37,10 +37,11 @@
           <v-col
             class="text-center time"
           >
-            43:30
+            {{ timer.running ? period : '' }} 43:30
           </v-col>
         </v-row>
         <v-row
+          v-if="!expandParticipantsDetail"
           class="mt-4"
           no-gutters
         >
@@ -58,10 +59,10 @@
           class="pt-1"
         >
           <v-col>
-            <half-time />
+            <scoreboard-period />
           </v-col>
         </v-row>
-        <scoreboard v-if="expandParticipantsDetail" />
+        <scoreboard-details v-if="expandParticipantsDetail" />
       </v-card>
     </v-col>
   </v-row>
@@ -70,23 +71,23 @@
 import { get } from 'lodash'
 import { mapState, mapMutations } from 'vuex'
 import toggleButton from '../../buttons/toggle.vue'
-import halfTime from '../../tabs/participants-halftime.vue'
-import scoreboard from './scoarboard.vue'
+import scoreboardPeriod from '../../tabs/scoreboard-period.vue'
+import scoreboardDetails from './scoarboard-details.vue'
 import scoreMessages from './score-messages.vue'
 export default {
   name: 'participants',
-  components: { toggleButton, scoreMessages, halfTime, scoreboard },
+  components: { toggleButton, scoreMessages, scoreboardPeriod, scoreboardDetails },
   data: () => ({
     get: get
   }),
   computed: {
     ...mapState('game', ['participants']),
-    ...mapState('interface', ['expandParticipantsDetail', 'toggleParticipantsControl', 'toggleScoreboardControl'])
+    ...mapState('scoreboard', ['score', 'period', 'timer']),
+    ...mapState('interface', ['expandParticipantsDetail', 'toggleScoreboardControl'])
   },
   methods: {
     ...mapMutations({
-      toggleScoreboard: 'interface/TOGGLE_SCOREBOARD',
-      toggleParticipants: 'interface/TOGGLE_PARTICIPANTS_DETAIL'
+      toggleScoreboard: 'interface/TOGGLE_SCOREBOARD'
     })
   }
 }

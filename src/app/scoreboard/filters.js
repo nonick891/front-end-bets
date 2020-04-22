@@ -3,6 +3,8 @@ import { has, values } from 'lodash'
 export const getScores = scoreboard => {
   let result = getScoreboardCounters(scoreboard);
   result.messages = values(scoreboard.messages);
+  result.period = scoreboard.period;
+  result.timer = scoreboard.timer;
   return result;
 };
 
@@ -18,8 +20,10 @@ const getScoreboardCounters = scoreboard => {
 };
 
 export const getKeyPairs = () => ({
-  corners: 'corners', redCards: 'redCards',
-  yellowCards: 'yellowCards', penalties: 'penalties',
+  corners: 'corners',
+  redCards: 'redCards',
+  yellowCards: 'yellowCards',
+  penalties: 'penalties',
   score: 'scoreDetailed'
 });
 
