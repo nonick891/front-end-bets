@@ -6,11 +6,13 @@
   >
     <v-col
       cols="1"
+      @click="toggleDialogPopup"
     >
       <total-circle :number="count" />
     </v-col>
     <v-col
       class="flex-grow-1"
+      @click="toggleDialogPopup"
     >
       <span class="dialog-total">
         Total: {{ totalMoney }}
@@ -45,12 +47,23 @@ export default {
   },
   components: { totalCircle, closeButton },
   computed: {
-    ...mapGetters({ totalMoney: 'bet/totalMoney' })
+    ...mapGetters({ totalMoney: 'bet/totalMoney' }),
+    toggleDialog: {
+      get() {
+        return this.$store.state.interface.toggleDialogControl;
+      },
+      set(value) {
+        this.$store.state.interface.toggleDialogControl = value;
+      }
+    }
   },
   methods: {
     ...mapMutations({ clearBetData: 'bet/CLEAR_ALL' }),
     closeDialog() {
       this.clearBetData();
+    },
+    toggleDialogPopup() {
+      this.toggleDialog = !this.toggleDialog;
     }
   }
 }

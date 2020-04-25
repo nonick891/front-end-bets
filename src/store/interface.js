@@ -11,7 +11,8 @@ const state = {
   breadcrumbs: [],
   toggleParticipantsControl: true,
   expandParticipantsDetail: false,
-  toggleScoreboardControl: false
+  toggleScoreboardControl: false,
+  toggleDialogControl: false
 };
 
 const getters = {};
@@ -19,7 +20,7 @@ const getters = {};
 const actions = {};
 
 const mutations = {
-  [TOGGLE_MENU](state){
+  [TOGGLE_MENU](state) {
     state.drawer = !state.drawer;
   },
   [SET_BREADCRUMBS](state, breadcrumbs) {

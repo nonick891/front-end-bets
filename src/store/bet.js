@@ -50,6 +50,7 @@ const getters = {
   totalMoney: state => parseFloat((state.total * state.amount).toFixed(2)),
   getOdds: state => gameId => get(state, 'odds', []).filter(odd => odd.gameId === gameId),
   getOddItems: state => (gameId, oddId) => get(state, 'oddItems', []).filter(item => item.gameId === gameId && item.oddId === oddId),
+  getOddItemsLength: state => get(state, 'oddItems', []).length,
   isSelectedOdd: state => itemId => state.selectedOdds.find(id => id === itemId)
 }
 

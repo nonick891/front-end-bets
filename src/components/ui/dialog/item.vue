@@ -24,11 +24,12 @@
       <v-row
         no-gutters
         :key="key"
-        v-for="(odd, key) in getOdds(fixtureId)"
+        v-for="(odd, key) in (toggleDialogControl ? [getOdds(fixtureId)[0]] : getOdds(fixtureId))"
       >
         <v-col
           :key="k"
-          v-for="(item, k) in getOddItems(fixtureId, odd.id)"
+          v-for="(item, k) in (toggleDialogControl ? [getOddItems(fixtureId, odd.id)[0]] : getOddItems(fixtureId,
+          odd.id))"
           class="bet-decision one-line-text"
           cols="12"
         >
@@ -53,12 +54,13 @@
           <v-col
             :cols="12"
             :key="key"
-            v-for="(odd, key) in getOdds(fixtureId)"
+            v-for="(odd, key) in (toggleDialogControl ? [getOdds(fixtureId)[0]] : getOdds(fixtureId))"
             class="bet-decision"
           >
             <v-row
               :key="k"
-              v-for="(item, k) in getOddItems(fixtureId, odd.id)"
+              v-for="(item, k) in (toggleDialogControl ? [getOddItems(fixtureId, odd.id)[0]] : getOddItems(fixtureId,
+               odd.id))"
               class="bet-decision"
               no-gutters
             >
@@ -75,7 +77,7 @@
   </v-row>
 </template>
 <script>
-import { mapGetters } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 import RemoveBet from './remove-bet.vue'
 export default {
   name: 'DialogItem',
@@ -92,6 +94,7 @@ export default {
     showRemove: false
   }),
   computed: {
+    ...mapState('interface', ['toggleDialogControl']),
     ...mapGetters({
       getOdds: 'bet/getOdds',
       getOddItems: 'bet/getOddItems'

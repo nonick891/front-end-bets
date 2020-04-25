@@ -40,6 +40,10 @@ import { mapState } from 'vuex';
 export default {
   data: () => ({
     mapIcons: [
+      /**
+       * @TODO:
+       * Add time icon for start first half, second half and extra time
+       */
       {id: 253, icon: 'yellowCard', color: '#F7AC16'},
       {id: 255, icon: 'ball', color: '#fff'},
       {id: 252, icon: 'flag', color: '#fff'},
