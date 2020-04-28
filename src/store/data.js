@@ -1,5 +1,5 @@
-import fixture from './data/fixture.json'
-import fixtureData from './data/fixture-data.json'
+import fixture from './data/fixture-before-game.json'
+import fixtureData from './data/fixture-data-before-game.json'
 
 const state = {
 	fixture: fixture.fixture,

@@ -5,6 +5,8 @@ import {
 } from './scoreboard/mutations-types'
 
 const state = {
+  stage: '',
+  startDate: '',
   messages: [],
   goals: {},
   redCards: {},
@@ -24,6 +26,8 @@ const actions = {}
 const mutations = {
   [SET_SCOREBOARD](state, scoreboard) {
     let convertKeys = keys(getKeyPairs());
+    state.stage = scoreboard.stage;
+    state.startDate = scoreboard.startDate;
     state.messages = scoreboard.messages;
     state.period = scoreboard.period;
     state.timer = scoreboard.timer;

@@ -10,7 +10,9 @@ import {
 const state = {
   games: [],
   gameId: 0,
-  participants: []
+  participants: [],
+  chunkGames: [],
+  lastIndex: []
 }
 
 const getters = {

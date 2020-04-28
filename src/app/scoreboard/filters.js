@@ -1,10 +1,13 @@
-import { has, values } from 'lodash'
+import { has, get, values } from 'lodash'
 
-export const getScores = scoreboard => {
-  let result = getScoreboardCounters(scoreboard);
-  result.messages = values(scoreboard.messages);
-  result.period = scoreboard.period;
-  result.timer = scoreboard.timer;
+export const getScores = fixture => {
+  let scoreboard = fixture.scoreboard,
+      result = getScoreboardCounters(scoreboard);
+  result.stage = fixture.stage;
+  result.startDate = fixture.startDate;
+  result.messages = values(get(scoreboard, 'messages', false));
+  result.period = get(scoreboard, 'period', '');
+  result.timer = get(scoreboard, 'timer', false);
   return result;
 };
 
@@ -13,8 +16,9 @@ const getScoreboardCounters = scoreboard => {
       keys = getKeyPairs();
   for (let key in keys) {
     if (!has(keys, key)) continue;
-    let value = keys[key];
-    result[key] = getPlayersCounter(scoreboard[value]);
+    let value = keys[key],
+        counterValues = get(scoreboard, value, false);
+    result[key] = counterValues ? getPlayersCounter(counterValues) : false;
   }
   return result;
 };

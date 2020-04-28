@@ -17,13 +17,8 @@
           >
             {{ get(participants, '0.name.short', '') }}
           </v-col>
-          <v-col
-            class="col-2 px-0 text-center"
-          >
-            <span class="font-weight-bold score">{{ score.player1 }}</span>
-            <span class="divider"></span>
-            <span class="font-weight-bold score">{{ score.player2 }}</span>
-          </v-col>
+          <score v-if="stage === 'Live'" />
+          <start-date v-else-if="stage === 'PreMatch'" />
           <v-col
             class="col-5 text-center font-weight-bold team-title"
           >
@@ -31,6 +26,7 @@
           </v-col>
         </v-row>
         <v-row
+          v-if="stage === 'Live'"
           no-gutters
           class="mt-2"
         >
@@ -41,7 +37,7 @@
           </v-col>
         </v-row>
         <v-row
-          v-if="!expandParticipantsDetail"
+          v-if="!expandParticipantsDetail && stage === 'Live'"
           class="mt-4"
           no-gutters
         >
@@ -54,7 +50,7 @@
           </v-col>
         </v-row>
         <v-row
-          v-if="expandParticipantsDetail"
+          v-if="expandParticipantsDetail && stage === 'Live'"
           no-gutters
           class="pt-1"
         >
@@ -62,7 +58,7 @@
             <scoreboard-period />
           </v-col>
         </v-row>
-        <scoreboard-details v-if="expandParticipantsDetail" />
+        <scoreboard-details v-if="expandParticipantsDetail && stage === 'Live'" />
       </v-card>
     </v-col>
   </v-row>
@@ -72,17 +68,26 @@ import { get } from 'lodash'
 import { mapState, mapMutations } from 'vuex'
 import toggleButton from '../../buttons/toggle.vue'
 import scoreboardPeriod from '../../tabs/scoreboard-period.vue'
-import scoreboardDetails from './scoarboard-details.vue'
-import scoreMessages from './score-messages.vue'
+import scoreboardDetails from './scorboard/scoarboard-details.vue'
+import scoreMessages from './scorboard/score-messages.vue'
+import score from './scorboard/score.vue'
+import startDate from './scorboard/start-date.vue'
 export default {
   name: 'participants',
-  components: { toggleButton, scoreMessages, scoreboardPeriod, scoreboardDetails },
+  components: {
+    toggleButton,
+    score,
+    startDate,
+    scoreMessages,
+    scoreboardPeriod,
+    scoreboardDetails
+  },
   data: () => ({
     get: get
   }),
   computed: {
     ...mapState('game', ['participants']),
-    ...mapState('scoreboard', ['score', 'period', 'timer']),
+    ...mapState('scoreboard', ['stage', 'period', 'timer']),
     ...mapState('interface', ['expandParticipantsDetail', 'toggleScoreboardControl'])
   },
   methods: {
@@ -98,13 +103,6 @@ export default {
   }
   .team-title {
     font-size: 16px;
-  }
-  .score {
-    font-size: 22px;
-  }
-  .divider {
-    margin: 0 9px;
-    border: 1px solid #999999;
   }
   .participants {
     width: 100%;

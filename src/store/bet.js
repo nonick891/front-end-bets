@@ -40,10 +40,7 @@ const state = {
   decisionParticipants: {},
   odds: [],
   oddItems: [],
-  games: [],
-  selectedOdds: [],
-  chunkGames: [],
-  lastIndex: []
+  selectedOdds: []
 }
 
 const getters = {

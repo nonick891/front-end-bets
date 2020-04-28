@@ -10,6 +10,7 @@
         justify="center"
       >
         <scoreboard-event
+          v-if="yellowCards"
           name="Yellow Card"
           :left="yellowCards.player1"
           icon="yellowCard"
@@ -17,6 +18,7 @@
           color="#F7AC16"
         />
         <scoreboard-event
+          v-if="score"
           name="Goal"
           :left="score.player1"
           icon="ball"
@@ -24,6 +26,7 @@
           color="#fff"
         />
         <scoreboard-event
+          v-if="corners"
           name="Corner"
           :left="corners.player1"
           icon="flag"
@@ -42,6 +45,7 @@
         justify="center"
       >
         <scoreboard-event
+          v-if="redCards"
           name="Red Card"
           :left="redCards.player1"
           icon="redCard"
@@ -49,6 +53,7 @@
           color="#D32030"
         />
         <scoreboard-event
+          v-if="penalties"
           name="Penalty"
           :left="penalties.player1"
           icon="sanction"

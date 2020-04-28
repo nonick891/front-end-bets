@@ -16,7 +16,7 @@ export default {
       this.setGames(sortByGroups(this.fixture.games));
       this.setGroups(getExistsGroups(this.groupIds, this.groups));
       this.setParticipants(this.fixture.participants);
-      this.setScoreboard(getScores(this.fixture.scoreboard));
+      this.setScoreboard(getScores(this.fixture));
       this.setBreadcrumbs(this.getBreadcrumbsObject());
     },
     getBreadcrumbsObject() {
