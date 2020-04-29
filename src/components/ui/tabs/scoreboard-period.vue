@@ -36,6 +36,20 @@ export default {
       }
     },
     ...mapState('scoreboard', ['period'])
+  },
+  watch: {
+    selectedPeriodTab(value) {
+      this.$store.state.scoreboard.periodIndex = this.getPeriodIndex(value);
+    }
+  },
+  methods: {
+    getPeriodIndex(tab) {
+      switch (tab) {
+        case 'tab-1h': return 1;
+        case 'tab-2h': return 3;
+        case 'tab-fh': return 255;
+      }
+    }
   }
 }
 </script>

@@ -58,7 +58,9 @@
             <scoreboard-period />
           </v-col>
         </v-row>
-        <scoreboard-details v-if="expandParticipantsDetail && stage === 'Live'" />
+        <scoreboard-details
+          v-if="expandParticipantsDetail && stage === 'Live'"
+        />
       </v-card>
     </v-col>
   </v-row>

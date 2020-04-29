@@ -16,9 +16,8 @@ const getScoreboardCounters = scoreboard => {
       keys = getKeyPairs();
   for (let key in keys) {
     if (!has(keys, key)) continue;
-    let value = keys[key],
-        counterValues = get(scoreboard, value, false);
-    result[key] = counterValues ? getPlayersCounter(counterValues) : false;
+    let value = keys[key];
+    result[key] = get(scoreboard, value, false);
   }
   return result;
 };
@@ -31,6 +30,7 @@ export const getKeyPairs = () => ({
   score: 'scoreDetailed'
 });
 
+/*
 const getPlayersCounter = counter => ({
   player1: getLastCounter(counter.player1),
   player2: getLastCounter(counter.player2)
@@ -39,4 +39,4 @@ const getPlayersCounter = counter => ({
 const getLastCounter = player => {
   let playerValues = values(player);
   return playerValues[playerValues.length - 1];
-};
+};*/

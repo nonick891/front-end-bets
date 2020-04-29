@@ -16,6 +16,7 @@ const state = {
   penalties: {},
   timer: {},
   period: '1H',
+  periodIndex: 1,
   selectedPeriodTab: null
 }
 
