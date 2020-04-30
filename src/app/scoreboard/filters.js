@@ -8,6 +8,10 @@ export const getScores = fixture => {
   result.messages = values(get(scoreboard, 'messages', false));
   result.period = get(scoreboard, 'period', '');
   result.timer = get(scoreboard, 'timer', false);
+  result.dateTimer = {
+    startDate: get(fixture, 'startDate', false),
+    cutOffDate: get(fixture, 'cutOffDate', false)
+  };
   return result;
 };
 

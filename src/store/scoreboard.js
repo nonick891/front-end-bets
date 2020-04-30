@@ -15,6 +15,7 @@ const state = {
   score: {},
   penalties: {},
   timer: {},
+  dateTimer: {},
   period: '1H',
   periodIndex: 1,
   selectedPeriodTab: null
@@ -27,10 +28,12 @@ const actions = {}
 const mutations = {
   [SET_SCOREBOARD](state, scoreboard) {
     let convertKeys = keys(getKeyPairs());
+    console.log(scoreboard.dateTimer);
     state.stage = scoreboard.stage;
     state.startDate = scoreboard.startDate;
     state.messages = scoreboard.messages;
     state.period = scoreboard.period;
+    state.dateTimer = scoreboard.dateTimer;
     state.timer = scoreboard.timer;
     state.selectedPeriodTab = `tab-${scoreboard.period.toLowerCase()}`;
     for(let value of convertKeys) {

@@ -33,7 +33,7 @@
           <v-col
             class="text-center time"
           >
-            {{ timer.running ? period : '' }} 43:30
+            {{ timer.running ? period : '' }} {{ gameTimer }}
           </v-col>
         </v-row>
         <v-row
@@ -67,6 +67,7 @@
 </template>
 <script>
 import { get } from 'lodash'
+import moment from 'moment'
 import { mapState, mapMutations } from 'vuex'
 import toggleButton from '../../buttons/toggle.vue'
 import scoreboardPeriod from '../../tabs/scoreboard-period.vue'
@@ -85,14 +86,46 @@ export default {
     scoreboardDetails
   },
   data: () => ({
-    get: get
+    get: get,
+    gameTimer: '00:00'
   }),
+  watch: {
+    timer(value) {
+      if (value.base && value.running && value.visible) {
+        let timerId = null;
+        timerId = setInterval(() => {
+          let current = moment.utc(),
+            endFH = this.getMomentAdd(45),
+            endSH = this.getMomentAdd(105),
+            endFirstSeconds = endFH.diff(current, 'seconds'),
+            endSecondSeconds = endSH.diff(current, 'seconds'),
+            finalSeconds = endFirstSeconds > 0
+              ? endFirstSeconds
+              : endSecondSeconds;
+          this.gameTimer = this.getStringTimer(finalSeconds);
+          if ((endFirstSeconds < 0 && endSecondSeconds/60 > 45) || endSecondSeconds < 0) {
+            this.gameTimer = 'Finished';
+            clearInterval(timerId);
+          }
+        }, 1000);
+      }
+    }
+  },
   computed: {
     ...mapState('game', ['participants']),
-    ...mapState('scoreboard', ['stage', 'period', 'timer']),
+    ...mapState('scoreboard', ['stage', 'period', 'timer', 'dateTimer']),
     ...mapState('interface', ['expandParticipantsDetail', 'toggleScoreboardControl'])
   },
   methods: {
+    getMomentAdd(minutes) {
+      return moment.utc(this.dateTimer.startDate).add(minutes, 'minutes')
+    },
+    getStringTimer(seconds) {
+      return moment(moment().format('YYYY-MM-DD'))
+        .startOf('day')
+        .seconds(seconds)
+        .format('mm:ss')
+    },
     ...mapMutations({
       toggleScoreboard: 'interface/TOGGLE_SCOREBOARD'
     })
