@@ -28,7 +28,6 @@ const actions = {}
 const mutations = {
   [SET_SCOREBOARD](state, scoreboard) {
     let convertKeys = keys(getKeyPairs());
-    console.log(scoreboard.dateTimer);
     state.stage = scoreboard.stage;
     state.startDate = scoreboard.startDate;
     state.messages = scoreboard.messages;

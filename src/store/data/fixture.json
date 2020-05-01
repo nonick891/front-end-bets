@@ -2390,14 +2390,14 @@
 	  "score": "1:1",
 	  "timer": {
 		"running": true,
-		"base": "2020-04-30T19:27:40.0202348Z",
+		"base": "2020-05-01T16:59:17.2087147Z",
 		"visible": true,
 		"seconds": 0
 	  },
 	  "started": true
 	},
-	"startDate": "2020-04-30T19:20:00Z",
-	"cutOffDate": "2020-04-30T21:20:00Z",
+	"startDate": "2020-05-01T16:50:00Z",
+	"cutOffDate": "2020-05-01T18:50:00Z",
 	"sport": {
 	  "type": "Sport",
 	  "id": 4,
