@@ -103,4 +103,27 @@ export default {
   .theme--dark.v-data-table tbody tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
     background: transparent;
   }
+  td.odd-value {
+    position: relative;
+  }
+  td.odd-value.up-value:after {
+    position: absolute;
+    top: 30%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 8px 0;
+    border-color: transparent #51b828 transparent transparent;
+  }
+  td.odd-value.low-value:after {
+    position: absolute;
+    bottom: 30%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 8px 8px;
+    border-color: transparent transparent #db3030 transparent;
+  }
 </style>
