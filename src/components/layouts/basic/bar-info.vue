@@ -1,6 +1,7 @@
 <template>
   <v-content
     class="pb-0"
+    style="padding-top: 0"
   >
     <v-container
       fluid

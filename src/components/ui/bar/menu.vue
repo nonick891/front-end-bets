@@ -10,7 +10,7 @@
       tile
       height="100%"
       class="pa-0"
-      @click.stop="toggleMenu"
+      to="/"
     >
       <v-icon>$vuetify.icons.homeRun</v-icon>
     </v-btn>
@@ -22,13 +22,16 @@
     </v-btn>
     <v-btn
       tile
+      disabled
       height="100%"
+      style="background: rgba(39, 39, 39, 0)!important"
     >
       <v-icon>$vuetify.icons.ball</v-icon>
     </v-btn>
     <v-btn
       tile
       height="100%"
+      to="/bets-list"
     >
       <v-icon>$vuetify.icons.newsfeed</v-icon>
     </v-btn>
@@ -37,21 +40,26 @@
       height="100%"
       class="pa-0"
     >
-      <v-row no-gutters>
-        <v-col style="font-size: 13px" cols="12">
-          MIKEL
-        </v-col>
-        <v-col
-          cols="6"
-          class="text-right"
-        >
-          <v-icon size="13">$vuetify.icons.wallet</v-icon>
-        </v-col>
-        <v-col
-          cols="6"
-          class="text-left"
-        >23</v-col>
-      </v-row>
+      <router-link
+        to="/personal"
+        style="text-decoration: none"
+      >
+        <v-row no-gutters>
+          <v-col style="font-size: 13px" cols="12">
+            MIKEL
+          </v-col>
+          <v-col
+            cols="6"
+            class="text-right"
+          >
+            <v-icon size="13">$vuetify.icons.wallet</v-icon>
+          </v-col>
+          <v-col
+            cols="6"
+            class="text-left"
+          >23</v-col>
+        </v-row>
+      </router-link>
     </v-btn>
   </v-bottom-navigation>
 </template>
