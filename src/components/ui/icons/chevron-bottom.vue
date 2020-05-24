@@ -1,10 +1,5 @@
 <template>
-  <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg class="colorised" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M5.00232 5.42494L0.656759 0.972549C0.506506 0.818625 0.262909 0.818625 0.112656 0.972549C-0.0375519 1.12652 -0.0375519 1.37608 0.112656 1.53003L4.73027 6.26116C4.88052 6.41506 5.12412 6.41506 5.27437 6.26116L9.89199 1.53003C10.0396 1.3734 10.0354 1.12382 9.88252 0.972549C9.73339 0.825001 9.49699 0.825001 9.34788 0.972549L5.00232 5.42494Z" fill="white"/>
   </svg>
 </template>
-<style>
-  svg * {
-    fill: currentColor;
-  }
-</style>

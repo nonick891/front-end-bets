@@ -7,10 +7,7 @@ requireModule.keys().forEach(fileName => {
   const moduleName = camelCase(
     fileName.replace(/(\.\/|\.vue)/g, '')
   );
-  icons[moduleName] = {
-    component: requireModule(fileName).default,
-    props: { fill: '#ffffff' }
-  }
+  icons[moduleName] = { component: requireModule(fileName).default }
 });
 
 export default icons;

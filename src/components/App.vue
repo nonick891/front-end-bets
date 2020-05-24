@@ -16,3 +16,8 @@ export default {
   }
 }
 </script>
+<style>
+  svg.colorised * {
+    fill: currentColor;
+  }
+</style>

@@ -6,8 +6,7 @@
       fluid
       class="pa-0"
     >
-      account
-      <v-btn to="/account/admin">Admin page</v-btn>
+      admin
     </v-container>
   </v-content>
 </template>
