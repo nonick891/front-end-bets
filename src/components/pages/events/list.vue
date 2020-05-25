@@ -6,12 +6,13 @@
       fluid
       class="pa-0"
     >
-      events list
+      <slider />
     </v-container>
   </v-content>
 </template>
 <script>
+import slider from '../../ui/events/list/slider.vue'
 export default {
-  data: () => ({})
+  components: { slider }
 }
 </script>

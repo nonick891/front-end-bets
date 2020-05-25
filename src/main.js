@@ -1,5 +1,5 @@
 /**
- * Starter point file always should stay lightweight
+ * Starter point file always should stay lightweight.
  * Use plugins folder to mess around with Vue.use
  */
 
