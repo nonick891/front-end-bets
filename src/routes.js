@@ -1,3 +1,8 @@
+/**
+ * Routes file navigation part of application
+ *
+ * @TODO: use auto discover script for page components
+ */
 import BetsList from './components/pages/bets.vue'
 import EventsList from './components/pages/events/list.vue'
 import EventsDetail from './components/pages/events/detail.vue'
