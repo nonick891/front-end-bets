@@ -1,7 +1,7 @@
 <template>
   <v-row
     no-gutters
-    class="py-2 px-1"
+    class="pa-1"
   >
     <v-card
       :color="color"
