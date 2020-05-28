@@ -7,19 +7,18 @@
       class="pa-0"
     >
       <line-btn
-        :icon="'credit'"
-        :color="'transparent'"
-        :text="'Credit: 234 EUR'"
+        class="mt-3"
+        icon="credit"
+        color="transparent"
+        text="Credit: 234 EUR"
       />
       <line-btn
-        :icon="'lock'"
-        :color="'#4C4C4C'"
-        :text="'Change password'"
+        icon="lock"
+        text="Change password"
       />
       <line-btn
-        :icon="'logout'"
-        :color="'#4C4C4C'"
-        :text="'Logout'"
+        icon="logout"
+        text="Logout"
       />
       <!-- START REMOVABLE TEMPLATE -->
       <v-row
@@ -29,7 +28,7 @@
       >
         <v-btn
           color="red"
-          to="/account/admin"
+          to="/personal/admin"
         >Admin page</v-btn>
       </v-row>
       <!-- END REMOVABLE TEMPLATE -->
