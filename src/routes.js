@@ -1,5 +1,6 @@
 /**
- * Routes file navigation part of application
+ * Routes file navigation part of application.
+ * Adding new pages from components/pages folder happens here.
  *
  * @TODO: use auto discover script for page components
  */
