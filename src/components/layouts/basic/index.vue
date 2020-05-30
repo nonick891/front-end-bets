@@ -1,20 +1,17 @@
 <template>
   <div>
-    <navigation-basic />
     <bar-basic />
     <content-basic />
     <basic-dialog />
   </div>
 </template>
 <script>
-import NavigationBasic from './navigation.vue'
 import BarBasic from './bar.vue'
 import ContentBasic from './content.vue'
 import BasicDialog from './dialog.vue'
 export default {
   name: 'BasicLayout',
   components: {
-    NavigationBasic,
     BarBasic,
     ContentBasic,
     BasicDialog
