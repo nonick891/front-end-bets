@@ -18,8 +18,11 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="2">
-        <v-icon>
+      <v-col
+        cols="2"
+        class="text-right"
+      >
+        <v-icon v-if="icon">
           $vuetify.icons.{{ icon }}
         </v-icon>
       </v-col>
@@ -28,14 +31,14 @@
       no-gutters
     >
       <v-col>
-        {{ gameName }}
+        {{ name }}
       </v-col>
     </v-row>
   </v-col>
 </template>
 <script>
 export default {
-  props: ['category', 'icon', 'gameName']
+  props: ['category', 'icon', 'name']
 }
 </script>
 <style>

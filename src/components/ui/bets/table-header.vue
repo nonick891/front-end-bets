@@ -10,13 +10,13 @@
     </v-col>
     <v-col
       cols="4"
-      class="header-text"
+      class="header-text text-center"
     >
       Odds
     </v-col>
     <v-col
       cols="4"
-      class="header-text"
+      class="header-text text-right"
     >
       Winnings
     </v-col>

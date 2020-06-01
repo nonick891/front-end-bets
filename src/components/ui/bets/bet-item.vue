@@ -1,29 +1,38 @@
 <template>
   <v-row
     no-gutters
+    v-if="bet"
+    class="bet-item my-2 py-1"
   >
     <top-info
-      :icon="'time'"
-      :category="'Team 1'"
-      :gameName="'Team 1 - Team 2'"
+      :icon="bet.icon"
+      :category="bet.category"
+      :name="bet.name"
+      class="px-4 my-1"
     />
-    <v-col>
+    <v-col
+      class="px-4 separator"
+    >
       <v-row
         no-gutters
+        class="mt-1 mb-2"
       >
         <v-col cols="12">
           
-          <table-header />
+          <table-header
+          />
           
           <table-item
-            :investment="10"
-            :odds="2.75"
-            :winnings="27.5"
+            class="pl-2 mt-1"
+            :investment="bet.investment"
+            :odds="bet.odds"
+            :winnings="bet.winnings"
           />
           
           <table-footer
-            :time="'23:40'"
-            :betId="2238642"
+            class="mt-2"
+            :id="bet.id"
+            :time="bet.time"
           />
         
         </v-col>
@@ -43,8 +52,15 @@ export default {
     tableItem,
     tableFooter
   },
-  props: {
-  
-  }
+  props: ['bet']
 }
 </script>
+<style>
+  .bet-item {
+    border: 1px solid #4C4C4C;
+    border-radius: 15px;
+  }
+  .separator {
+    border-top: .5px solid #4C4C4C;
+  }
+</style>

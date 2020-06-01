@@ -10,13 +10,13 @@
     </v-col>
     <v-col
       cols="4"
-      class="item-text"
+      class="item-text text-center"
     >
       {{ odds }}
     </v-col>
     <v-col
       cols="4"
-      class="item-text"
+      class="item-text text-right"
     >
       {{ winnings }} EUR
     </v-col>

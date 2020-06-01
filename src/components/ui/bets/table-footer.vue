@@ -12,13 +12,13 @@
       cols="6"
       class="text-right footer-text"
     >
-      {{ betId }}
+      {{ id }}
     </v-col>
   </v-row>
 </template>
 <script>
 export default {
-  props: ['time', 'betId']
+  props: ['id', 'time']
 }
 </script>
 <style>
