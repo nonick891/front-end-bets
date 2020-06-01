@@ -18,7 +18,7 @@
       cols="4"
       class="item-text text-right"
     >
-      {{ winnings }} EUR
+      {{ winnings ? winnings + ' EUR' : '-' }}
     </v-col>
   </v-row>
 </template>
