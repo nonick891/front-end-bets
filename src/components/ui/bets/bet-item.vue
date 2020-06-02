@@ -19,8 +19,7 @@
       >
         <v-col cols="12">
           
-          <table-header
-          />
+          <table-header />
           
           <table-item
             class="pl-2 mt-1"

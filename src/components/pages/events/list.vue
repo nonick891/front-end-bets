@@ -14,8 +14,12 @@
           title="PREMIER LEAGUE"
           iconName="flagBritain"
         />
-        <v-row>
+        <v-row
+          class="mt-3"
+        >
           <event
+            v-ripple
+            @click.native="redirectToDetailPage"
             :key="index"
             v-for="(event, index) in events"
             :time="event.time"
@@ -52,6 +56,11 @@ export default {
         }
       }
     ]
-  })
+  }),
+  methods: {
+    redirectToDetailPage() {
+      this.$router.push({ path: '/events/detail' });
+    }
+  }
 }
 </script>
