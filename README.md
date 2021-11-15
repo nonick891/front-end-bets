@@ -1,5 +1,3 @@
-# bet
-
 ## Project setup
 ```
 yarn install
